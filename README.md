@@ -75,3 +75,21 @@ https://github.com/andyjmorgan/WOLMesh/tree/master/Publish/Agent
 3. Drop the nodeconfig.json file into the installation folder
 4. Start the Wake On Lan Mesh Agent service.
 5. Your device should now appear in the console.
+
+# Known issues:
+
+1. Machines need to be configured to enable Wake on Lan (bios and driver settings). This guide covers it well: https://www.partitionwizard.com/partitionmanager/enable-wake-on-lan.html
+2. Current user is currently not reporting.
+
+# To Do:
+
+This is my "I gotta do these things next" list. I welcome all suggestions.
+
+1. Implement Authentication (p-2)
+2. Allow specifying another ssl cert.
+3. Allow wake up of unknown devices.
+4. Networks view.
+5. Online devices view.
+6. Search.
+7. Run as Service for web service. Stupid .Net Core 3.0 changed everything.
+8. Create an agent for Linux / Raspberry Pi.
