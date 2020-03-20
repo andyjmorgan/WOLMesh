@@ -37,6 +37,8 @@ From the REST API, you can list and power manage devices in bulk or in an automa
 
 ### WOLMesh Agent:
 
+Requires .Net Framework 4.7.2
+
 The WOLMesh Agent needs to be installed on all devices you wish to manage with WOLMesh. Once installed, you must configure the agent to communicate with the server via a SignalR websocket. Once connected, the agent monitors it's network connection and state and sends it to the server.
 
 Once connected, the device can be leveraged to wake up other devices on the same subnet.
