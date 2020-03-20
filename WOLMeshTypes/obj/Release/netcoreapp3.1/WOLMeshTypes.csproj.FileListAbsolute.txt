@@ -1,0 +1,7 @@
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Release\netcoreapp3.1\WOLMeshTypes.deps.json
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Release\netcoreapp3.1\WOLMeshTypes.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Release\netcoreapp3.1\WOLMeshTypes.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.AssemblyInfoInputs.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.AssemblyInfo.cs
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.pdb

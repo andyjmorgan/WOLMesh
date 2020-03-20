@@ -1,0 +1,10 @@
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\bin\Debug\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\bin\Debug\WTSUnsafeMethods.pdb
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.csproj.CoreCompileInputs.cache
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.pdb
+C:\Users\andy\source\repos\idleTimeCMD\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\bin\Debug\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\bin\Debug\WTSUnsafeMethods.pdb
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\obj\Debug\WTSUnsafeMethods.pdb

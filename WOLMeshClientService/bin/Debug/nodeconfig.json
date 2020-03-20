@@ -1,0 +1,5 @@
+{
+  "serveraddress": "https://localhost:5001/wolmeshhub",
+  "ignoreSSLErrors": true,
+  "timerInterval": 30
+}

@@ -1,0 +1,84 @@
+<div *ngIf="machines">
+
+
+  <div style="display: flex; align-items: center;  height:40px;">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <h3>Registered Devices: {{machines.length}}  </h3>
+          </div>
+        </td>
+      
+        <td>
+          <div>
+            <button type="button" class="btn btn-icon btn-sm" aria-label="home" style="margin-left:12px;">
+              <clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <clr-datagrid [(clrDgSelected)]="selected"  class="datagrid-compact">
+    <clr-dg-column style="min-width: 35px; width:35px;" [clrDgSortBy]="'machineSummary.isOnline'"></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.hostname'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.hostname'"><ng-container *clrDgHideableColumn="{hidden: false}">State</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.currentUser'">Current User</clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.domainName'"><ng-container *clrDgHideableColumn="{hidden: false}">Domain Name</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.ipAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Last IP</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.windowsVersion'"><ng-container *clrDgHideableColumn="{hidden: false}">Windows Version</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.lastHeardFrom'"><ng-container *clrDgHideableColumn="{hidden: false}">Last Heard From</ng-container></clr-dg-column>
+    <clr-dg-row *clrDgItems="let machine of machines" [clrDgItem]="machine">
+      <clr-dg-cell style="min-width: 35px; width:35px;"><clr-icon shape="computer" [ngClass]="{'is-success' : machine.machineSummary.isOnline}"></clr-icon></clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.hostName}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.isOnline | booltoonline}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.currentUser}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.domainName}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.ipAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.macAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.windowsVersion}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.machineSummary.lastHeardFrom | date:'short'}}</clr-dg-cell>
+    </clr-dg-row>
+
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+  <button class="btn btn-success" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()">Wake</button>
+</div>
+
+
+<div *ngIf="wakeUpResults && wakeUpResults.length > 0">
+  <h3>Wake Results:</h3>
+  <clr-datagrid  class="datagrid-compact">
+    <clr-dg-column [clrDgSortBy]="'sent'">Result</clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineName'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'viaMachine'">Via Machine:</clr-dg-column>
+    <clr-dg-column [clrDgField]="'failureReason'">Failure Reason:</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let result of wakeUpResults" [clrDgItem]="machine">
+      <clr-dg-cell><clr-icon shape="check-circle" size="16" [ngClass]="{'is-success': result.sent,'is-error': !result.sent}" style="margin-right: 5px;"></clr-icon> {{result.sent | booltoresult}}</clr-dg-cell>
+      <clr-dg-cell>{{result.machineName}}</clr-dg-cell>
+      <clr-dg-cell>{{result.macAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{result.viaMachine}}</clr-dg-cell>
+      <clr-dg-cell>{{result.failureReason}}</clr-dg-cell>
+    </clr-dg-row>
+
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+</div>
+

@@ -1,0 +1,2255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.Http.Abstractions.2.2.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.Extensions.MapMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.#ctor(Microsoft.AspNetCore.Builder.Extensions.MapMiddleware)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.AllInstances.InvokeHttpContext">
+            <summary>Sets the shim of MapMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.ConstructorRequestDelegateMapOptions">
+            <summary>Sets the shim of MapMiddleware.MapMiddleware(RequestDelegate next, MapOptions options)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapMiddleware.InvokeHttpContext">
+            <summary>Sets the shim of MapMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.Extensions.MapOptions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.#ctor(Microsoft.AspNetCore.Builder.Extensions.MapOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.AllInstances.BranchGet">
+            <summary>Sets the shim of MapOptions.get_Branch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.AllInstances.BranchSetRequestDelegate">
+            <summary>Sets the shim of MapOptions.set_Branch(RequestDelegate value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.AllInstances.PathMatchGet">
+            <summary>Sets the shim of MapOptions.get_PathMatch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.AllInstances.PathMatchSetPathString">
+            <summary>Sets the shim of MapOptions.set_PathMatch(PathString value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.BranchGet">
+            <summary>Sets the shim of MapOptions.get_Branch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.BranchSetRequestDelegate">
+            <summary>Sets the shim of MapOptions.set_Branch(RequestDelegate value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.Constructor">
+            <summary>Sets the shim of MapOptions.MapOptions()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.PathMatchGet">
+            <summary>Sets the shim of MapOptions.get_PathMatch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapOptions.PathMatchSetPathString">
+            <summary>Sets the shim of MapOptions.set_PathMatch(PathString value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.#ctor(Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.AllInstances.InvokeHttpContext">
+            <summary>Sets the shim of MapWhenMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.ConstructorRequestDelegateMapWhenOptions">
+            <summary>Sets the shim of MapWhenMiddleware.MapWhenMiddleware(RequestDelegate next, MapWhenOptions options)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenMiddleware.InvokeHttpContext">
+            <summary>Sets the shim of MapWhenMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.#ctor(Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.AllInstances.BranchGet">
+            <summary>Sets the shim of MapWhenOptions.get_Branch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.AllInstances.BranchSetRequestDelegate">
+            <summary>Sets the shim of MapWhenOptions.set_Branch(RequestDelegate value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.AllInstances.PredicateGet">
+            <summary>Sets the shim of MapWhenOptions.get_Predicate()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.AllInstances.PredicateSetFuncOfHttpContextBoolean">
+            <summary>Sets the shim of MapWhenOptions.set_Predicate(Func`2&lt;HttpContext,Boolean&gt; value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.BranchGet">
+            <summary>Sets the shim of MapWhenOptions.get_Branch()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.BranchSetRequestDelegate">
+            <summary>Sets the shim of MapWhenOptions.set_Branch(RequestDelegate value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.Constructor">
+            <summary>Sets the shim of MapWhenOptions.MapWhenOptions()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.PredicateGet">
+            <summary>Sets the shim of MapWhenOptions.get_Predicate()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimMapWhenOptions.PredicateSetFuncOfHttpContextBoolean">
+            <summary>Sets the shim of MapWhenOptions.set_Predicate(Func`2&lt;HttpContext,Boolean&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.#ctor(Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.AllInstances.InvokeHttpContext">
+            <summary>Sets the shim of UsePathBaseMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.ConstructorRequestDelegatePathString">
+            <summary>Sets the shim of UsePathBaseMiddleware.UsePathBaseMiddleware(RequestDelegate next, PathString pathBase)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.ShimUsePathBaseMiddleware.InvokeHttpContext">
+            <summary>Sets the shim of UsePathBaseMiddleware.Invoke(HttpContext context)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.Extensions.MapMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware.InitializeStub">
+            <summary>Initializes a new instance of type StubMapMiddleware</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapMiddleware.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.Extensions.MapOptions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubMapOptions</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware.InitializeStub">
+            <summary>Initializes a new instance of type StubMapWhenMiddleware</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenMiddleware.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubMapWhenOptions</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubMapWhenOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.PathString)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware.InitializeStub">
+            <summary>Initializes a new instance of type StubUsePathBaseMiddleware</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Extensions.Fakes.StubUsePathBaseMiddleware.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.MapExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimMapExtensions.MapIApplicationBuilderPathStringActionOfIApplicationBuilder">
+            <summary>Sets the shim of MapExtensions.Map(IApplicationBuilder app, PathString pathMatch, Action`1&lt;IApplicationBuilder&gt; configuration)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.MapWhenExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimMapWhenExtensions.MapWhenIApplicationBuilderFuncOfHttpContextBooleanActionOfIApplicationBuilder">
+            <summary>Sets the shim of MapWhenExtensions.MapWhen(IApplicationBuilder app, Func`2&lt;HttpContext,Boolean&gt; predicate, Action`1&lt;IApplicationBuilder&gt; configuration)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.RunExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimRunExtensions.RunIApplicationBuilderRequestDelegate">
+            <summary>Sets the shim of RunExtensions.Run(IApplicationBuilder app, RequestDelegate handler)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.UseExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseExtensions.UseIApplicationBuilderFuncOfHttpContextFuncOfTaskTask">
+            <summary>Sets the shim of UseExtensions.Use(IApplicationBuilder app, Func`3&lt;HttpContext,Func`1&lt;Task&gt;,Task&gt; middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.UseMiddlewareExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.CompileOf1MethodInfoParameterInfoArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Reflection.MethodInfo,System.Reflection.ParameterInfo[],System.Func{``0,Microsoft.AspNetCore.Http.HttpContext,System.IServiceProvider,System.Threading.Tasks.Task}})">
+            <summary>Sets the shim of UseMiddlewareExtensions.Compile(MethodInfo methodInfo, ParameterInfo[] parameters)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.GetServiceIServiceProviderTypeType">
+            <summary>Sets the shim of UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.StaticConstructor">
+            <summary>Sets the shim of UseMiddlewareExtensions.UseMiddlewareExtensions()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.UseMiddlewareIApplicationBuilderTypeObjectArray">
+            <summary>Sets the shim of UseMiddlewareExtensions.UseMiddleware(IApplicationBuilder app, Type middleware, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.UseMiddlewareInterfaceIApplicationBuilderType">
+            <summary>Sets the shim of UseMiddlewareExtensions.UseMiddlewareInterface(IApplicationBuilder app, Type middlewareType)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseMiddlewareExtensions.UseMiddlewareOf1IApplicationBuilderObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Object[],Microsoft.AspNetCore.Builder.IApplicationBuilder})">
+            <summary>Sets the shim of UseMiddlewareExtensions.UseMiddleware(IApplicationBuilder app, Object[] args)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.UsePathBaseExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUsePathBaseExtensions.UsePathBaseIApplicationBuilderPathString">
+            <summary>Sets the shim of UsePathBaseExtensions.UsePathBase(IApplicationBuilder app, PathString pathBase)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.UseWhenExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimUseWhenExtensions.UseWhenIApplicationBuilderFuncOfHttpContextBooleanActionOfIApplicationBuilder">
+            <summary>Sets the shim of UseWhenExtensions.UseWhen(IApplicationBuilder app, Func`2&lt;HttpContext,Boolean&gt; predicate, Action`1&lt;IApplicationBuilder&gt; configuration)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder">
+            <summary>Stub type of Microsoft.AspNetCore.Builder.IApplicationBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.#ctor">
+            <summary>Initializes a new instance of type StubIApplicationBuilder</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#ApplicationServices">
+            <summary>Sets the stub of IApplicationBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.ApplicationServicesGet">
+            <summary>Sets the stub of IApplicationBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.ApplicationServicesSetIServiceProvider">
+            <summary>Sets the stub of IApplicationBuilder.set_ApplicationServices(IServiceProvider value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.AttachBackingFieldToApplicationServices">
+            <summary>Attaches delegates to emulate StubIApplicationBuilder.ApplicationServices as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Build">
+            <summary>Sets the stub of IApplicationBuilder.Build()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#Build">
+            <summary>Sets the stub of IApplicationBuilder.Build()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#New">
+            <summary>Sets the stub of IApplicationBuilder.New()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#Use(System.Func{Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.RequestDelegate})">
+            <summary>Sets the stub of IApplicationBuilder.Use(Func`2&lt;RequestDelegate,RequestDelegate&gt; middleware)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.New">
+            <summary>Sets the stub of IApplicationBuilder.New()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#Properties">
+            <summary>Sets the stub of IApplicationBuilder.get_Properties()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.PropertiesGet">
+            <summary>Sets the stub of IApplicationBuilder.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.Microsoft#AspNetCore#Builder#IApplicationBuilder#ServerFeatures">
+            <summary>Sets the stub of IApplicationBuilder.get_ServerFeatures()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.ServerFeaturesGet">
+            <summary>Sets the stub of IApplicationBuilder.get_ServerFeatures()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Builder.Fakes.StubIApplicationBuilder.UseFuncOfRequestDelegateRequestDelegate">
+            <summary>Sets the stub of IApplicationBuilder.Use(Func`2&lt;RequestDelegate,RequestDelegate&gt; middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Authentication.AuthenticateInfo</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.#ctor(Microsoft.AspNetCore.Http.Authentication.AuthenticateInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.DescriptionGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Description()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.DescriptionSetAuthenticationDescription">
+            <summary>Sets the shim of AuthenticateInfo.set_Description(AuthenticationDescription value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.PrincipalGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Principal()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.PrincipalSetClaimsPrincipal">
+            <summary>Sets the shim of AuthenticateInfo.set_Principal(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.PropertiesGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.AllInstances.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of AuthenticateInfo.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.Constructor">
+            <summary>Sets the shim of AuthenticateInfo.AuthenticateInfo()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.DescriptionGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Description()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.DescriptionSetAuthenticationDescription">
+            <summary>Sets the shim of AuthenticateInfo.set_Description(AuthenticationDescription value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.PrincipalGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Principal()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.PrincipalSetClaimsPrincipal">
+            <summary>Sets the shim of AuthenticateInfo.set_Principal(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.PropertiesGet">
+            <summary>Sets the shim of AuthenticateInfo.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticateInfo.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of AuthenticateInfo.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Authentication.AuthenticationDescription</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.#ctor(Microsoft.AspNetCore.Http.Authentication.AuthenticationDescription)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.AuthenticationSchemeGet">
+            <summary>Sets the shim of AuthenticationDescription.get_AuthenticationScheme()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.AuthenticationSchemeSetString">
+            <summary>Sets the shim of AuthenticationDescription.set_AuthenticationScheme(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.DisplayNameGet">
+            <summary>Sets the shim of AuthenticationDescription.get_DisplayName()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.DisplayNameSetString">
+            <summary>Sets the shim of AuthenticationDescription.set_DisplayName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.GetStringString">
+            <summary>Sets the shim of AuthenticationDescription.GetString(String name)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AllInstances.ItemsGet">
+            <summary>Sets the shim of AuthenticationDescription.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AuthenticationSchemeGet">
+            <summary>Sets the shim of AuthenticationDescription.get_AuthenticationScheme()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.AuthenticationSchemeSetString">
+            <summary>Sets the shim of AuthenticationDescription.set_AuthenticationScheme(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.Constructor">
+            <summary>Sets the shim of AuthenticationDescription.AuthenticationDescription()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.ConstructorIDictionaryOfStringObject">
+            <summary>Sets the shim of AuthenticationDescription.AuthenticationDescription(IDictionary`2&lt;String,Object&gt; items)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.DisplayNameGet">
+            <summary>Sets the shim of AuthenticationDescription.get_DisplayName()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.DisplayNameSetString">
+            <summary>Sets the shim of AuthenticationDescription.set_DisplayName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.GetStringString">
+            <summary>Sets the shim of AuthenticationDescription.GetString(String name)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationDescription.ItemsGet">
+            <summary>Sets the shim of AuthenticationDescription.get_Items()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Authentication.AuthenticationProperties</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.#ctor(Microsoft.AspNetCore.Http.Authentication.AuthenticationProperties)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.AllowRefreshGet">
+            <summary>Sets the shim of AuthenticationProperties.get_AllowRefresh()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.AllowRefreshSetNullableOfBoolean">
+            <summary>Sets the shim of AuthenticationProperties.set_AllowRefresh(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.ExpiresUtcGet">
+            <summary>Sets the shim of AuthenticationProperties.get_ExpiresUtc()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.ExpiresUtcSetNullableOfDateTimeOffset">
+            <summary>Sets the shim of AuthenticationProperties.set_ExpiresUtc(Nullable`1&lt;DateTimeOffset&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.IsPersistentGet">
+            <summary>Sets the shim of AuthenticationProperties.get_IsPersistent()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.IsPersistentSetBoolean">
+            <summary>Sets the shim of AuthenticationProperties.set_IsPersistent(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.IssuedUtcGet">
+            <summary>Sets the shim of AuthenticationProperties.get_IssuedUtc()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.IssuedUtcSetNullableOfDateTimeOffset">
+            <summary>Sets the shim of AuthenticationProperties.set_IssuedUtc(Nullable`1&lt;DateTimeOffset&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.ItemsGet">
+            <summary>Sets the shim of AuthenticationProperties.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.RedirectUriGet">
+            <summary>Sets the shim of AuthenticationProperties.get_RedirectUri()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllInstances.RedirectUriSetString">
+            <summary>Sets the shim of AuthenticationProperties.set_RedirectUri(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllowRefreshGet">
+            <summary>Sets the shim of AuthenticationProperties.get_AllowRefresh()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.AllowRefreshSetNullableOfBoolean">
+            <summary>Sets the shim of AuthenticationProperties.set_AllowRefresh(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.Constructor">
+            <summary>Sets the shim of AuthenticationProperties.AuthenticationProperties()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.ConstructorIDictionaryOfStringString">
+            <summary>Sets the shim of AuthenticationProperties.AuthenticationProperties(IDictionary`2&lt;String,String&gt; items)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.ExpiresUtcGet">
+            <summary>Sets the shim of AuthenticationProperties.get_ExpiresUtc()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.ExpiresUtcSetNullableOfDateTimeOffset">
+            <summary>Sets the shim of AuthenticationProperties.set_ExpiresUtc(Nullable`1&lt;DateTimeOffset&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.IsPersistentGet">
+            <summary>Sets the shim of AuthenticationProperties.get_IsPersistent()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.IsPersistentSetBoolean">
+            <summary>Sets the shim of AuthenticationProperties.set_IsPersistent(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.IssuedUtcGet">
+            <summary>Sets the shim of AuthenticationProperties.get_IssuedUtc()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.IssuedUtcSetNullableOfDateTimeOffset">
+            <summary>Sets the shim of AuthenticationProperties.set_IssuedUtc(Nullable`1&lt;DateTimeOffset&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.ItemsGet">
+            <summary>Sets the shim of AuthenticationProperties.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.RedirectUriGet">
+            <summary>Sets the shim of AuthenticationProperties.get_RedirectUri()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.ShimAuthenticationProperties.RedirectUriSetString">
+            <summary>Sets the shim of AuthenticationProperties.set_RedirectUri(String value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo">
+            <summary>Stub type of Microsoft.AspNetCore.Http.Authentication.AuthenticateInfo</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubAuthenticateInfo</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticateInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription">
+            <summary>Stub type of Microsoft.AspNetCore.Http.Authentication.AuthenticationDescription</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.InitializeStub">
+            <summary>Initializes a new instance of type StubAuthenticationDescription</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationDescription.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties">
+            <summary>Stub type of Microsoft.AspNetCore.Http.Authentication.AuthenticationProperties</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.InitializeStub">
+            <summary>Initializes a new instance of type StubAuthenticationProperties</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Authentication.Fakes.StubAuthenticationProperties.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo">
+            <summary>Shim type of Microsoft.AspNetCore.Http.ConnectionInfo</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.#ctor(Microsoft.AspNetCore.Http.ConnectionInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimConnectionInfo.Constructor">
+            <summary>Sets the shim of ConnectionInfo.ConnectionInfo()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder">
+            <summary>Shim type of Microsoft.AspNetCore.Http.CookieBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.#ctor(Microsoft.AspNetCore.Http.CookieBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.BuildHttpContext">
+            <summary>Sets the shim of CookieBuilder.Build(HttpContext context)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.BuildHttpContextDateTimeOffset">
+            <summary>Sets the shim of CookieBuilder.Build(HttpContext context, DateTimeOffset expiresFrom)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.DomainGet">
+            <summary>Sets the shim of CookieBuilder.get_Domain()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.DomainSetString">
+            <summary>Sets the shim of CookieBuilder.set_Domain(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.ExpirationGet">
+            <summary>Sets the shim of CookieBuilder.get_Expiration()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.ExpirationSetNullableOfTimeSpan">
+            <summary>Sets the shim of CookieBuilder.set_Expiration(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.HttpOnlyGet">
+            <summary>Sets the shim of CookieBuilder.get_HttpOnly()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.HttpOnlySetBoolean">
+            <summary>Sets the shim of CookieBuilder.set_HttpOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.IsEssentialGet">
+            <summary>Sets the shim of CookieBuilder.get_IsEssential()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.IsEssentialSetBoolean">
+            <summary>Sets the shim of CookieBuilder.set_IsEssential(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.MaxAgeGet">
+            <summary>Sets the shim of CookieBuilder.get_MaxAge()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.MaxAgeSetNullableOfTimeSpan">
+            <summary>Sets the shim of CookieBuilder.set_MaxAge(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.NameGet">
+            <summary>Sets the shim of CookieBuilder.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.NameSetString">
+            <summary>Sets the shim of CookieBuilder.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.PathGet">
+            <summary>Sets the shim of CookieBuilder.get_Path()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.PathSetString">
+            <summary>Sets the shim of CookieBuilder.set_Path(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.SameSiteGet">
+            <summary>Sets the shim of CookieBuilder.get_SameSite()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.SameSiteSetSameSiteMode">
+            <summary>Sets the shim of CookieBuilder.set_SameSite(SameSiteMode value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.SecurePolicyGet">
+            <summary>Sets the shim of CookieBuilder.get_SecurePolicy()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.AllInstances.SecurePolicySetCookieSecurePolicy">
+            <summary>Sets the shim of CookieBuilder.set_SecurePolicy(CookieSecurePolicy value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.BuildHttpContext">
+            <summary>Sets the shim of CookieBuilder.Build(HttpContext context)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.BuildHttpContextDateTimeOffset">
+            <summary>Sets the shim of CookieBuilder.Build(HttpContext context, DateTimeOffset expiresFrom)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.Constructor">
+            <summary>Sets the shim of CookieBuilder.CookieBuilder()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.DomainGet">
+            <summary>Sets the shim of CookieBuilder.get_Domain()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.DomainSetString">
+            <summary>Sets the shim of CookieBuilder.set_Domain(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.ExpirationGet">
+            <summary>Sets the shim of CookieBuilder.get_Expiration()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.ExpirationSetNullableOfTimeSpan">
+            <summary>Sets the shim of CookieBuilder.set_Expiration(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.HttpOnlyGet">
+            <summary>Sets the shim of CookieBuilder.get_HttpOnly()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.HttpOnlySetBoolean">
+            <summary>Sets the shim of CookieBuilder.set_HttpOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.IsEssentialGet">
+            <summary>Sets the shim of CookieBuilder.get_IsEssential()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.IsEssentialSetBoolean">
+            <summary>Sets the shim of CookieBuilder.set_IsEssential(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.MaxAgeGet">
+            <summary>Sets the shim of CookieBuilder.get_MaxAge()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.MaxAgeSetNullableOfTimeSpan">
+            <summary>Sets the shim of CookieBuilder.set_MaxAge(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.NameGet">
+            <summary>Sets the shim of CookieBuilder.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.NameSetString">
+            <summary>Sets the shim of CookieBuilder.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.PathGet">
+            <summary>Sets the shim of CookieBuilder.get_Path()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.PathSetString">
+            <summary>Sets the shim of CookieBuilder.set_Path(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.SameSiteGet">
+            <summary>Sets the shim of CookieBuilder.get_SameSite()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.SameSiteSetSameSiteMode">
+            <summary>Sets the shim of CookieBuilder.set_SameSite(SameSiteMode value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.SecurePolicyGet">
+            <summary>Sets the shim of CookieBuilder.get_SecurePolicy()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimCookieBuilder.SecurePolicySetCookieSecurePolicy">
+            <summary>Sets the shim of CookieBuilder.set_SecurePolicy(CookieSecurePolicy value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString">
+            <summary>Shim type of Microsoft.AspNetCore.Http.FragmentString</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.EqualityOpFragmentStringFragmentString">
+            <summary>Sets the shim of FragmentString.op_Equality(FragmentString left, FragmentString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.FromUriComponentString">
+            <summary>Sets the shim of FragmentString.FromUriComponent(String uriComponent)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.FromUriComponentUri">
+            <summary>Sets the shim of FragmentString.FromUriComponent(Uri uri)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.InequalityOpFragmentStringFragmentString">
+            <summary>Sets the shim of FragmentString.op_Inequality(FragmentString left, FragmentString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimFragmentString.StaticConstructor">
+            <summary>Sets the shim of FragmentString.FragmentString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HeaderDictionaryExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.AppendCommaSeparatedValuesIHeaderDictionaryStringStringArray">
+            <summary>Sets the shim of HeaderDictionaryExtensions.AppendCommaSeparatedValues(IHeaderDictionary headers, String key, String[] values)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.AppendIHeaderDictionaryStringStringValues">
+            <summary>Sets the shim of HeaderDictionaryExtensions.Append(IHeaderDictionary headers, String key, StringValues value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.GetCommaSeparatedValuesIHeaderDictionaryString">
+            <summary>Sets the shim of HeaderDictionaryExtensions.GetCommaSeparatedValues(IHeaderDictionary headers, String key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHeaderDictionaryExtensions.SetCommaSeparatedValuesIHeaderDictionaryStringStringArray">
+            <summary>Sets the shim of HeaderDictionaryExtensions.SetCommaSeparatedValues(IHeaderDictionary headers, String key, String[] values)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHostString">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HostString</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHostString.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHostString.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHostString.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHostString.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.EqualityOpHostStringHostString">
+            <summary>Sets the shim of HostString.op_Equality(HostString left, HostString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.FromUriComponentString">
+            <summary>Sets the shim of HostString.FromUriComponent(String uriComponent)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.FromUriComponentUri">
+            <summary>Sets the shim of HostString.FromUriComponent(Uri uri)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.GetPartsStringSegmentStringSegmentOutStringSegmentOut">
+            <summary>Sets the shim of HostString.GetParts(StringSegment value, StringSegment&amp; host, StringSegment&amp; port)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.InequalityOpHostStringHostString">
+            <summary>Sets the shim of HostString.op_Inequality(HostString left, HostString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHostString.MatchesAnyStringSegmentIListOfStringSegment">
+            <summary>Sets the shim of HostString.MatchesAny(StringSegment value, IList`1&lt;StringSegment&gt; patterns)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HttpContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.#ctor(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpContext.Constructor">
+            <summary>Sets the shim of HttpContext.HttpContext()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HttpMethods</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsConnectString">
+            <summary>Sets the shim of HttpMethods.IsConnect(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsDeleteString">
+            <summary>Sets the shim of HttpMethods.IsDelete(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsGetString">
+            <summary>Sets the shim of HttpMethods.IsGet(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsHeadString">
+            <summary>Sets the shim of HttpMethods.IsHead(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsOptionsString">
+            <summary>Sets the shim of HttpMethods.IsOptions(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsPatchString">
+            <summary>Sets the shim of HttpMethods.IsPatch(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsPostString">
+            <summary>Sets the shim of HttpMethods.IsPost(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsPutString">
+            <summary>Sets the shim of HttpMethods.IsPut(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.IsTraceString">
+            <summary>Sets the shim of HttpMethods.IsTrace(String method)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpMethods.StaticConstructor">
+            <summary>Sets the shim of HttpMethods.HttpMethods()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HttpRequest</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.#ctor(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpRequest.Constructor">
+            <summary>Sets the shim of HttpRequest.HttpRequest()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HttpResponse</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.#ctor(Microsoft.AspNetCore.Http.HttpResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.AllInstances.OnCompletedFuncOfTask">
+            <summary>Sets the shim of HttpResponse.OnCompleted(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.AllInstances.OnStartingFuncOfTask">
+            <summary>Sets the shim of HttpResponse.OnStarting(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.AllInstances.RedirectString">
+            <summary>Sets the shim of HttpResponse.Redirect(String location)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.AllInstances.RegisterForDisposeIDisposable">
+            <summary>Sets the shim of HttpResponse.RegisterForDispose(IDisposable disposable)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.Constructor">
+            <summary>Sets the shim of HttpResponse.HttpResponse()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.OnCompletedFuncOfTask">
+            <summary>Sets the shim of HttpResponse.OnCompleted(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.OnStartingFuncOfTask">
+            <summary>Sets the shim of HttpResponse.OnStarting(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.RedirectString">
+            <summary>Sets the shim of HttpResponse.Redirect(String location)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.RegisterForDisposeIDisposable">
+            <summary>Sets the shim of HttpResponse.RegisterForDispose(IDisposable disposable)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponse.StaticConstructor">
+            <summary>Sets the shim of HttpResponse.HttpResponse()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Http.HttpResponseWritingExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.WriteAsyncHttpResponseStringCancellationToken">
+            <summary>Sets the shim of HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimHttpResponseWritingExtensions.WriteAsyncHttpResponseStringEncodingCancellationToken">
+            <summary>Sets the shim of HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimPathString">
+            <summary>Shim type of Microsoft.AspNetCore.Http.PathString</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimPathString.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.AdditionOpPathStringPathString">
+            <summary>Sets the shim of PathString.op_Addition(PathString left, PathString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.AdditionOpPathStringQueryString">
+            <summary>Sets the shim of PathString.op_Addition(PathString left, QueryString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.AdditionOpPathStringString">
+            <summary>Sets the shim of PathString.op_Addition(PathString left, String right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.AdditionOpStringPathString">
+            <summary>Sets the shim of PathString.op_Addition(String left, PathString right)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimPathString.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimPathString.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimPathString.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.ConvertFromStringString">
+            <summary>Sets the shim of PathString.ConvertFromString(String s)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.EqualityOpPathStringPathString">
+            <summary>Sets the shim of PathString.op_Equality(PathString left, PathString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.FromUriComponentString">
+            <summary>Sets the shim of PathString.FromUriComponent(String uriComponent)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.FromUriComponentUri">
+            <summary>Sets the shim of PathString.FromUriComponent(Uri uri)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.ImplicitOpPathStringString">
+            <summary>Sets the shim of PathString.op_Implicit(PathString path)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.ImplicitOpStringPathString">
+            <summary>Sets the shim of PathString.op_Implicit(String s)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.InequalityOpPathStringPathString">
+            <summary>Sets the shim of PathString.op_Inequality(PathString left, PathString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimPathString.StaticConstructor">
+            <summary>Sets the shim of PathString.PathString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimQueryString">
+            <summary>Shim type of Microsoft.AspNetCore.Http.QueryString</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.AdditionOpQueryStringQueryString">
+            <summary>Sets the shim of QueryString.op_Addition(QueryString left, QueryString right)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.AppendKeyValuePairStringBuilderStringStringBoolean">
+            <summary>Sets the shim of QueryString.AppendKeyValuePair(StringBuilder builder, String key, String value, Boolean first)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.CreateIEnumerableOfKeyValuePairOfStringString">
+            <summary>Sets the shim of QueryString.Create(IEnumerable`1&lt;KeyValuePair`2&lt;String,String&gt;&gt; parameters)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.CreateIEnumerableOfKeyValuePairOfStringStringValues">
+            <summary>Sets the shim of QueryString.Create(IEnumerable`1&lt;KeyValuePair`2&lt;String,StringValues&gt;&gt; parameters)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.CreateStringString">
+            <summary>Sets the shim of QueryString.Create(String name, String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.EqualityOpQueryStringQueryString">
+            <summary>Sets the shim of QueryString.op_Equality(QueryString left, QueryString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.FromUriComponentString">
+            <summary>Sets the shim of QueryString.FromUriComponent(String uriComponent)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.FromUriComponentUri">
+            <summary>Sets the shim of QueryString.FromUriComponent(Uri uri)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.InequalityOpQueryStringQueryString">
+            <summary>Sets the shim of QueryString.op_Inequality(QueryString left, QueryString right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimQueryString.StaticConstructor">
+            <summary>Sets the shim of QueryString.QueryString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Http.ResponseTrailerExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.AppendTrailerHttpResponseStringStringValues">
+            <summary>Sets the shim of ResponseTrailerExtensions.AppendTrailer(HttpResponse response, String trailerName, StringValues trailerValues)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.DeclareTrailerHttpResponseString">
+            <summary>Sets the shim of ResponseTrailerExtensions.DeclareTrailer(HttpResponse response, String trailerName)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimResponseTrailerExtensions.SupportsTrailersHttpResponse">
+            <summary>Sets the shim of ResponseTrailerExtensions.SupportsTrailers(HttpResponse response)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimStatusCodes">
+            <summary>Shim type of Microsoft.AspNetCore.Http.StatusCodes</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimStatusCodes.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimStatusCodes.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimStatusCodes.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimStatusCodes.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager">
+            <summary>Shim type of Microsoft.AspNetCore.Http.WebSocketManager</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.#ctor(Microsoft.AspNetCore.Http.WebSocketManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.AcceptWebSocketAsync">
+            <summary>Sets the shim of WebSocketManager.AcceptWebSocketAsync()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.AllInstances.AcceptWebSocketAsync">
+            <summary>Sets the shim of WebSocketManager.AcceptWebSocketAsync()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.ShimWebSocketManager.Constructor">
+            <summary>Sets the shim of WebSocketManager.WebSocketManager()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo">
+            <summary>Stub type of Microsoft.AspNetCore.Http.ConnectionInfo</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToClientCertificate">
+            <summary>Attaches delegates to emulate StubConnectionInfo.ClientCertificate as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToId">
+            <summary>Attaches delegates to emulate StubConnectionInfo.Id as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToLocalIpAddress">
+            <summary>Attaches delegates to emulate StubConnectionInfo.LocalIpAddress as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToLocalPort">
+            <summary>Attaches delegates to emulate StubConnectionInfo.LocalPort as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToRemoteIpAddress">
+            <summary>Attaches delegates to emulate StubConnectionInfo.RemoteIpAddress as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.AttachBackingFieldToRemotePort">
+            <summary>Attaches delegates to emulate StubConnectionInfo.RemotePort as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.ClientCertificate">
+            <summary>Sets the stub of ConnectionInfo.get_ClientCertificate()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.ClientCertificateGet">
+            <summary>Sets the stub of ConnectionInfo.get_ClientCertificate()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.ClientCertificateSetX509Certificate2">
+            <summary>Sets the stub of ConnectionInfo.set_ClientCertificate(X509Certificate2 value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.GetClientCertificateAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of ConnectionInfo.GetClientCertificateAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.GetClientCertificateAsyncCancellationToken">
+            <summary>Sets the stub of ConnectionInfo.GetClientCertificateAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.Id">
+            <summary>Sets the stub of ConnectionInfo.get_Id()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.IdGet">
+            <summary>Sets the stub of ConnectionInfo.get_Id()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.IdSetString">
+            <summary>Sets the stub of ConnectionInfo.set_Id(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionInfo</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalIpAddress">
+            <summary>Sets the stub of ConnectionInfo.get_LocalIpAddress()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalIpAddressGet">
+            <summary>Sets the stub of ConnectionInfo.get_LocalIpAddress()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalIpAddressSetIPAddress">
+            <summary>Sets the stub of ConnectionInfo.set_LocalIpAddress(IPAddress value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalPort">
+            <summary>Sets the stub of ConnectionInfo.get_LocalPort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalPortGet">
+            <summary>Sets the stub of ConnectionInfo.get_LocalPort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.LocalPortSetInt32">
+            <summary>Sets the stub of ConnectionInfo.set_LocalPort(Int32 value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemoteIpAddress">
+            <summary>Sets the stub of ConnectionInfo.get_RemoteIpAddress()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemoteIpAddressGet">
+            <summary>Sets the stub of ConnectionInfo.get_RemoteIpAddress()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemoteIpAddressSetIPAddress">
+            <summary>Sets the stub of ConnectionInfo.set_RemoteIpAddress(IPAddress value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemotePort">
+            <summary>Sets the stub of ConnectionInfo.get_RemotePort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemotePortGet">
+            <summary>Sets the stub of ConnectionInfo.get_RemotePort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubConnectionInfo.RemotePortSetInt32">
+            <summary>Sets the stub of ConnectionInfo.set_RemotePort(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder">
+            <summary>Stub type of Microsoft.AspNetCore.Http.CookieBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToDomain">
+            <summary>Attaches delegates to emulate StubCookieBuilder.Domain as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToExpiration">
+            <summary>Attaches delegates to emulate StubCookieBuilder.Expiration as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToHttpOnly">
+            <summary>Attaches delegates to emulate StubCookieBuilder.HttpOnly as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToIsEssential">
+            <summary>Attaches delegates to emulate StubCookieBuilder.IsEssential as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToMaxAge">
+            <summary>Attaches delegates to emulate StubCookieBuilder.MaxAge as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToName">
+            <summary>Attaches delegates to emulate StubCookieBuilder.Name as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToPath">
+            <summary>Attaches delegates to emulate StubCookieBuilder.Path as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToSameSite">
+            <summary>Attaches delegates to emulate StubCookieBuilder.SameSite as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.AttachBackingFieldToSecurePolicy">
+            <summary>Attaches delegates to emulate StubCookieBuilder.SecurePolicy as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.Build(Microsoft.AspNetCore.Http.HttpContext,System.DateTimeOffset)">
+            <summary>Sets the stub of CookieBuilder.Build(HttpContext context, DateTimeOffset expiresFrom)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.BuildHttpContextDateTimeOffset">
+            <summary>Sets the stub of CookieBuilder.Build(HttpContext context, DateTimeOffset expiresFrom)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.Domain">
+            <summary>Sets the stub of CookieBuilder.get_Domain()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.DomainGet">
+            <summary>Sets the stub of CookieBuilder.get_Domain()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.DomainSetString">
+            <summary>Sets the stub of CookieBuilder.set_Domain(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.Expiration">
+            <summary>Sets the stub of CookieBuilder.get_Expiration()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.ExpirationGet">
+            <summary>Sets the stub of CookieBuilder.get_Expiration()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.ExpirationSetNullableOfTimeSpan">
+            <summary>Sets the stub of CookieBuilder.set_Expiration(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.HttpOnly">
+            <summary>Sets the stub of CookieBuilder.get_HttpOnly()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.HttpOnlyGet">
+            <summary>Sets the stub of CookieBuilder.get_HttpOnly()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.HttpOnlySetBoolean">
+            <summary>Sets the stub of CookieBuilder.set_HttpOnly(Boolean value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieBuilder</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.IsEssential">
+            <summary>Sets the stub of CookieBuilder.get_IsEssential()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.IsEssentialGet">
+            <summary>Sets the stub of CookieBuilder.get_IsEssential()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.IsEssentialSetBoolean">
+            <summary>Sets the stub of CookieBuilder.set_IsEssential(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.MaxAge">
+            <summary>Sets the stub of CookieBuilder.get_MaxAge()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.MaxAgeGet">
+            <summary>Sets the stub of CookieBuilder.get_MaxAge()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.MaxAgeSetNullableOfTimeSpan">
+            <summary>Sets the stub of CookieBuilder.set_MaxAge(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.Name">
+            <summary>Sets the stub of CookieBuilder.get_Name()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.NameGet">
+            <summary>Sets the stub of CookieBuilder.get_Name()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.NameSetString">
+            <summary>Sets the stub of CookieBuilder.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.Path">
+            <summary>Sets the stub of CookieBuilder.get_Path()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.PathGet">
+            <summary>Sets the stub of CookieBuilder.get_Path()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.PathSetString">
+            <summary>Sets the stub of CookieBuilder.set_Path(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SameSite">
+            <summary>Sets the stub of CookieBuilder.get_SameSite()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SameSiteGet">
+            <summary>Sets the stub of CookieBuilder.get_SameSite()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SameSiteSetSameSiteMode">
+            <summary>Sets the stub of CookieBuilder.set_SameSite(SameSiteMode value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SecurePolicy">
+            <summary>Sets the stub of CookieBuilder.get_SecurePolicy()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SecurePolicyGet">
+            <summary>Sets the stub of CookieBuilder.get_SecurePolicy()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubCookieBuilder.SecurePolicySetCookieSecurePolicy">
+            <summary>Sets the stub of CookieBuilder.set_SecurePolicy(CookieSecurePolicy value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubHttpContext">
+            <summary>Stub type of Microsoft.AspNetCore.Http.HttpContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Abort">
+            <summary>Sets the stub of HttpContext.Abort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Abort01">
+            <summary>Sets the stub of HttpContext.Abort()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToItems">
+            <summary>Attaches delegates to emulate StubHttpContext.Items as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToRequestAborted">
+            <summary>Attaches delegates to emulate StubHttpContext.RequestAborted as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToRequestServices">
+            <summary>Attaches delegates to emulate StubHttpContext.RequestServices as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToSession">
+            <summary>Attaches delegates to emulate StubHttpContext.Session as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToTraceIdentifier">
+            <summary>Attaches delegates to emulate StubHttpContext.TraceIdentifier as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AttachBackingFieldToUser">
+            <summary>Attaches delegates to emulate StubHttpContext.User as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Authentication">
+            <summary>Sets the stub of HttpContext.get_Authentication()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.AuthenticationGet">
+            <summary>Sets the stub of HttpContext.get_Authentication()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Connection">
+            <summary>Sets the stub of HttpContext.get_Connection()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.ConnectionGet">
+            <summary>Sets the stub of HttpContext.get_Connection()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Features">
+            <summary>Sets the stub of HttpContext.get_Features()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.FeaturesGet">
+            <summary>Sets the stub of HttpContext.get_Features()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.InitializeStub">
+            <summary>Initializes a new instance of type StubHttpContext</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Items">
+            <summary>Sets the stub of HttpContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.ItemsGet">
+            <summary>Sets the stub of HttpContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the stub of HttpContext.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Request">
+            <summary>Sets the stub of HttpContext.get_Request()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestAborted">
+            <summary>Sets the stub of HttpContext.get_RequestAborted()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestAbortedGet">
+            <summary>Sets the stub of HttpContext.get_RequestAborted()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestAbortedSetCancellationToken">
+            <summary>Sets the stub of HttpContext.set_RequestAborted(CancellationToken value)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestGet">
+            <summary>Sets the stub of HttpContext.get_Request()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestServices">
+            <summary>Sets the stub of HttpContext.get_RequestServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestServicesGet">
+            <summary>Sets the stub of HttpContext.get_RequestServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.RequestServicesSetIServiceProvider">
+            <summary>Sets the stub of HttpContext.set_RequestServices(IServiceProvider value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Response">
+            <summary>Sets the stub of HttpContext.get_Response()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.ResponseGet">
+            <summary>Sets the stub of HttpContext.get_Response()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.Session">
+            <summary>Sets the stub of HttpContext.get_Session()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.SessionGet">
+            <summary>Sets the stub of HttpContext.get_Session()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.SessionSetISession">
+            <summary>Sets the stub of HttpContext.set_Session(ISession value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.TraceIdentifier">
+            <summary>Sets the stub of HttpContext.get_TraceIdentifier()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.TraceIdentifierGet">
+            <summary>Sets the stub of HttpContext.get_TraceIdentifier()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.TraceIdentifierSetString">
+            <summary>Sets the stub of HttpContext.set_TraceIdentifier(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.User">
+            <summary>Sets the stub of HttpContext.get_User()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.UserGet">
+            <summary>Sets the stub of HttpContext.get_User()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.UserSetClaimsPrincipal">
+            <summary>Sets the stub of HttpContext.set_User(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.WebSockets">
+            <summary>Sets the stub of HttpContext.get_WebSockets()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpContext.WebSocketsGet">
+            <summary>Sets the stub of HttpContext.get_WebSockets()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest">
+            <summary>Stub type of Microsoft.AspNetCore.Http.HttpRequest</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToBody">
+            <summary>Attaches delegates to emulate StubHttpRequest.Body as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToContentLength">
+            <summary>Attaches delegates to emulate StubHttpRequest.ContentLength as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToContentType">
+            <summary>Attaches delegates to emulate StubHttpRequest.ContentType as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToCookies">
+            <summary>Attaches delegates to emulate StubHttpRequest.Cookies as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToForm">
+            <summary>Attaches delegates to emulate StubHttpRequest.Form as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToHost">
+            <summary>Attaches delegates to emulate StubHttpRequest.Host as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToIsHttps">
+            <summary>Attaches delegates to emulate StubHttpRequest.IsHttps as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToMethod">
+            <summary>Attaches delegates to emulate StubHttpRequest.Method as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToPath">
+            <summary>Attaches delegates to emulate StubHttpRequest.Path as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToPathBase">
+            <summary>Attaches delegates to emulate StubHttpRequest.PathBase as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToProtocol">
+            <summary>Attaches delegates to emulate StubHttpRequest.Protocol as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToQuery">
+            <summary>Attaches delegates to emulate StubHttpRequest.Query as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToQueryString">
+            <summary>Attaches delegates to emulate StubHttpRequest.QueryString as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.AttachBackingFieldToScheme">
+            <summary>Attaches delegates to emulate StubHttpRequest.Scheme as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Body">
+            <summary>Sets the stub of HttpRequest.get_Body()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.BodyGet">
+            <summary>Sets the stub of HttpRequest.get_Body()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.BodySetStream">
+            <summary>Sets the stub of HttpRequest.set_Body(Stream value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentLength">
+            <summary>Sets the stub of HttpRequest.get_ContentLength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentLengthGet">
+            <summary>Sets the stub of HttpRequest.get_ContentLength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentLengthSetNullableOfInt64">
+            <summary>Sets the stub of HttpRequest.set_ContentLength(Nullable`1&lt;Int64&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentType">
+            <summary>Sets the stub of HttpRequest.get_ContentType()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentTypeGet">
+            <summary>Sets the stub of HttpRequest.get_ContentType()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ContentTypeSetString">
+            <summary>Sets the stub of HttpRequest.set_ContentType(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Cookies">
+            <summary>Sets the stub of HttpRequest.get_Cookies()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.CookiesGet">
+            <summary>Sets the stub of HttpRequest.get_Cookies()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.CookiesSetIRequestCookieCollection">
+            <summary>Sets the stub of HttpRequest.set_Cookies(IRequestCookieCollection value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Form">
+            <summary>Sets the stub of HttpRequest.get_Form()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.FormGet">
+            <summary>Sets the stub of HttpRequest.get_Form()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.FormSetIFormCollection">
+            <summary>Sets the stub of HttpRequest.set_Form(IFormCollection value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HasFormContentType">
+            <summary>Sets the stub of HttpRequest.get_HasFormContentType()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HasFormContentTypeGet">
+            <summary>Sets the stub of HttpRequest.get_HasFormContentType()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Headers">
+            <summary>Sets the stub of HttpRequest.get_Headers()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HeadersGet">
+            <summary>Sets the stub of HttpRequest.get_Headers()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Host">
+            <summary>Sets the stub of HttpRequest.get_Host()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HostGet">
+            <summary>Sets the stub of HttpRequest.get_Host()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HostSetHostString">
+            <summary>Sets the stub of HttpRequest.set_Host(HostString value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HttpContext">
+            <summary>Sets the stub of HttpRequest.get_HttpContext()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.HttpContextGet">
+            <summary>Sets the stub of HttpRequest.get_HttpContext()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.InitializeStub">
+            <summary>Initializes a new instance of type StubHttpRequest</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.IsHttps">
+            <summary>Sets the stub of HttpRequest.get_IsHttps()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.IsHttpsGet">
+            <summary>Sets the stub of HttpRequest.get_IsHttps()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.IsHttpsSetBoolean">
+            <summary>Sets the stub of HttpRequest.set_IsHttps(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Method">
+            <summary>Sets the stub of HttpRequest.get_Method()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.MethodGet">
+            <summary>Sets the stub of HttpRequest.get_Method()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.MethodSetString">
+            <summary>Sets the stub of HttpRequest.set_Method(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Path">
+            <summary>Sets the stub of HttpRequest.get_Path()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.PathBase">
+            <summary>Sets the stub of HttpRequest.get_PathBase()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.PathBaseGet">
+            <summary>Sets the stub of HttpRequest.get_PathBase()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.PathBaseSetPathString">
+            <summary>Sets the stub of HttpRequest.set_PathBase(PathString value)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.PathGet">
+            <summary>Sets the stub of HttpRequest.get_Path()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.PathSetPathString">
+            <summary>Sets the stub of HttpRequest.set_Path(PathString value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Protocol">
+            <summary>Sets the stub of HttpRequest.get_Protocol()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ProtocolGet">
+            <summary>Sets the stub of HttpRequest.get_Protocol()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ProtocolSetString">
+            <summary>Sets the stub of HttpRequest.set_Protocol(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Query">
+            <summary>Sets the stub of HttpRequest.get_Query()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.QueryGet">
+            <summary>Sets the stub of HttpRequest.get_Query()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.QuerySetIQueryCollection">
+            <summary>Sets the stub of HttpRequest.set_Query(IQueryCollection value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.QueryString">
+            <summary>Sets the stub of HttpRequest.get_QueryString()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.QueryStringGet">
+            <summary>Sets the stub of HttpRequest.get_QueryString()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.QueryStringSetQueryString">
+            <summary>Sets the stub of HttpRequest.set_QueryString(QueryString value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ReadFormAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of HttpRequest.ReadFormAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.ReadFormAsyncCancellationToken">
+            <summary>Sets the stub of HttpRequest.ReadFormAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.Scheme">
+            <summary>Sets the stub of HttpRequest.get_Scheme()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.SchemeGet">
+            <summary>Sets the stub of HttpRequest.get_Scheme()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpRequest.SchemeSetString">
+            <summary>Sets the stub of HttpRequest.set_Scheme(String value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse">
+            <summary>Stub type of Microsoft.AspNetCore.Http.HttpResponse</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.AttachBackingFieldToBody">
+            <summary>Attaches delegates to emulate StubHttpResponse.Body as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.AttachBackingFieldToContentLength">
+            <summary>Attaches delegates to emulate StubHttpResponse.ContentLength as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.AttachBackingFieldToContentType">
+            <summary>Attaches delegates to emulate StubHttpResponse.ContentType as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.AttachBackingFieldToStatusCode">
+            <summary>Attaches delegates to emulate StubHttpResponse.StatusCode as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.Body">
+            <summary>Sets the stub of HttpResponse.get_Body()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.BodyGet">
+            <summary>Sets the stub of HttpResponse.get_Body()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.BodySetStream">
+            <summary>Sets the stub of HttpResponse.set_Body(Stream value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentLength">
+            <summary>Sets the stub of HttpResponse.get_ContentLength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentLengthGet">
+            <summary>Sets the stub of HttpResponse.get_ContentLength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentLengthSetNullableOfInt64">
+            <summary>Sets the stub of HttpResponse.set_ContentLength(Nullable`1&lt;Int64&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentType">
+            <summary>Sets the stub of HttpResponse.get_ContentType()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentTypeGet">
+            <summary>Sets the stub of HttpResponse.get_ContentType()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.ContentTypeSetString">
+            <summary>Sets the stub of HttpResponse.set_ContentType(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.Cookies">
+            <summary>Sets the stub of HttpResponse.get_Cookies()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.CookiesGet">
+            <summary>Sets the stub of HttpResponse.get_Cookies()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.HasStarted">
+            <summary>Sets the stub of HttpResponse.get_HasStarted()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.HasStartedGet">
+            <summary>Sets the stub of HttpResponse.get_HasStarted()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.Headers">
+            <summary>Sets the stub of HttpResponse.get_Headers()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.HeadersGet">
+            <summary>Sets the stub of HttpResponse.get_Headers()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.HttpContext">
+            <summary>Sets the stub of HttpResponse.get_HttpContext()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.HttpContextGet">
+            <summary>Sets the stub of HttpResponse.get_HttpContext()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubHttpResponse</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnCompleted(System.Func{System.Threading.Tasks.Task})">
+            <summary>Sets the stub of HttpResponse.OnCompleted(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnCompleted(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)">
+            <summary>Sets the stub of HttpResponse.OnCompleted(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnCompletedFuncOfObjectTaskObject">
+            <summary>Sets the stub of HttpResponse.OnCompleted(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnCompletedFuncOfTask">
+            <summary>Sets the stub of HttpResponse.OnCompleted(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnStarting(System.Func{System.Threading.Tasks.Task})">
+            <summary>Sets the stub of HttpResponse.OnStarting(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnStarting(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)">
+            <summary>Sets the stub of HttpResponse.OnStarting(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnStartingFuncOfObjectTaskObject">
+            <summary>Sets the stub of HttpResponse.OnStarting(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.OnStartingFuncOfTask">
+            <summary>Sets the stub of HttpResponse.OnStarting(Func`1&lt;Task&gt; callback)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.Redirect(System.String)">
+            <summary>Sets the stub of HttpResponse.Redirect(String location)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.Redirect(System.String,System.Boolean)">
+            <summary>Sets the stub of HttpResponse.Redirect(String location, Boolean permanent)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.RedirectString">
+            <summary>Sets the stub of HttpResponse.Redirect(String location)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.RedirectStringBoolean">
+            <summary>Sets the stub of HttpResponse.Redirect(String location, Boolean permanent)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.RegisterForDispose(System.IDisposable)">
+            <summary>Sets the stub of HttpResponse.RegisterForDispose(IDisposable disposable)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.RegisterForDisposeIDisposable">
+            <summary>Sets the stub of HttpResponse.RegisterForDispose(IDisposable disposable)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.StatusCode">
+            <summary>Sets the stub of HttpResponse.get_StatusCode()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.StatusCodeGet">
+            <summary>Sets the stub of HttpResponse.get_StatusCode()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubHttpResponse.StatusCodeSetInt32">
+            <summary>Sets the stub of HttpResponse.set_StatusCode(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor">
+            <summary>Stub type of Microsoft.AspNetCore.Http.IHttpContextAccessor</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIHttpContextAccessor</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor.AttachBackingFieldToHttpContext">
+            <summary>Attaches delegates to emulate StubIHttpContextAccessor.HttpContext as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor.Microsoft#AspNetCore#Http#IHttpContextAccessor#HttpContext">
+            <summary>Sets the stub of IHttpContextAccessor.get_HttpContext()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor.HttpContextGet">
+            <summary>Sets the stub of IHttpContextAccessor.get_HttpContext()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextAccessor.HttpContextSetHttpContext">
+            <summary>Sets the stub of IHttpContextAccessor.set_HttpContext(HttpContext value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory">
+            <summary>Stub type of Microsoft.AspNetCore.Http.IHttpContextFactory</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory.#ctor">
+            <summary>Initializes a new instance of type StubIHttpContextFactory</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory.CreateIFeatureCollection">
+            <summary>Sets the stub of IHttpContextFactory.Create(IFeatureCollection featureCollection)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory.DisposeHttpContext">
+            <summary>Sets the stub of IHttpContextFactory.Dispose(HttpContext httpContext)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory.Microsoft#AspNetCore#Http#IHttpContextFactory#Create(Microsoft.AspNetCore.Http.Features.IFeatureCollection)">
+            <summary>Sets the stub of IHttpContextFactory.Create(IFeatureCollection featureCollection)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIHttpContextFactory.Microsoft#AspNetCore#Http#IHttpContextFactory#Dispose(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Sets the stub of IHttpContextFactory.Dispose(HttpContext httpContext)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubIMiddleware">
+            <summary>Stub type of Microsoft.AspNetCore.Http.IMiddleware</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIMiddleware.#ctor">
+            <summary>Initializes a new instance of type StubIMiddleware</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIMiddleware.InvokeAsyncHttpContextRequestDelegate">
+            <summary>Sets the stub of IMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIMiddleware.Microsoft#AspNetCore#Http#IMiddleware#InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>Sets the stub of IMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory">
+            <summary>Stub type of Microsoft.AspNetCore.Http.IMiddlewareFactory</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory.#ctor">
+            <summary>Initializes a new instance of type StubIMiddlewareFactory</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory.CreateType">
+            <summary>Sets the stub of IMiddlewareFactory.Create(Type middlewareType)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory.Microsoft#AspNetCore#Http#IMiddlewareFactory#Create(System.Type)">
+            <summary>Sets the stub of IMiddlewareFactory.Create(Type middlewareType)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory.Microsoft#AspNetCore#Http#IMiddlewareFactory#Release(Microsoft.AspNetCore.Http.IMiddleware)">
+            <summary>Sets the stub of IMiddlewareFactory.Release(IMiddleware middleware)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubIMiddlewareFactory.ReleaseIMiddleware">
+            <summary>Sets the stub of IMiddlewareFactory.Release(IMiddleware middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager">
+            <summary>Stub type of Microsoft.AspNetCore.Http.WebSocketManager</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.AcceptWebSocketAsync">
+            <summary>Sets the stub of WebSocketManager.AcceptWebSocketAsync()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.AcceptWebSocketAsync(System.String)">
+            <summary>Sets the stub of WebSocketManager.AcceptWebSocketAsync(String subProtocol)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.AcceptWebSocketAsync01">
+            <summary>Sets the stub of WebSocketManager.AcceptWebSocketAsync()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.AcceptWebSocketAsyncString">
+            <summary>Sets the stub of WebSocketManager.AcceptWebSocketAsync(String subProtocol)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.InitializeStub">
+            <summary>Initializes a new instance of type StubWebSocketManager</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.IsWebSocketRequest">
+            <summary>Sets the stub of WebSocketManager.get_IsWebSocketRequest()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.IsWebSocketRequestGet">
+            <summary>Sets the stub of WebSocketManager.get_IsWebSocketRequest()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.WebSocketRequestedProtocols">
+            <summary>Sets the stub of WebSocketManager.get_WebSocketRequestedProtocols()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Http.Fakes.StubWebSocketManager.WebSocketRequestedProtocolsGet">
+            <summary>Sets the stub of WebSocketManager.get_WebSocketRequestedProtocols()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Internal.HeaderSegment</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.EqualityOpHeaderSegmentHeaderSegment">
+            <summary>Sets the shim of HeaderSegment.op_Equality(HeaderSegment left, HeaderSegment right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegment.InequalityOpHeaderSegmentHeaderSegment">
+            <summary>Sets the shim of HeaderSegment.op_Inequality(HeaderSegment left, HeaderSegment right)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Internal.HeaderSegmentCollection</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.EqualityOpHeaderSegmentCollectionHeaderSegmentCollection">
+            <summary>Sets the shim of HeaderSegmentCollection.op_Equality(HeaderSegmentCollection left, HeaderSegmentCollection right)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.InequalityOpHeaderSegmentCollectionHeaderSegmentCollection">
+            <summary>Sets the shim of HeaderSegmentCollection.op_Inequality(HeaderSegmentCollection left, HeaderSegmentCollection right)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Internal.HeaderSegmentCollection+Enumerator</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimHeaderSegmentCollection.ShimEnumerator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers">
+            <summary>Shim type of Microsoft.AspNetCore.Http.Internal.ParsingHelpers</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.AppendHeaderJoinedIHeaderDictionaryStringStringArray">
+            <summary>Sets the shim of ParsingHelpers.AppendHeaderJoined(IHeaderDictionary headers, String key, String[] values)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.AppendHeaderUnmodifiedIHeaderDictionaryStringStringValues">
+            <summary>Sets the shim of ParsingHelpers.AppendHeaderUnmodified(IHeaderDictionary headers, String key, StringValues values)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.DeQuoteString">
+            <summary>Sets the shim of ParsingHelpers.DeQuote(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.GetHeaderIHeaderDictionaryString">
+            <summary>Sets the shim of ParsingHelpers.GetHeader(IHeaderDictionary headers, String key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.GetHeaderSplitIHeaderDictionaryString">
+            <summary>Sets the shim of ParsingHelpers.GetHeaderSplit(IHeaderDictionary headers, String key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.GetHeaderSplitImplementationStringValues">
+            <summary>Sets the shim of ParsingHelpers.GetHeaderSplitImplementation(StringValues values)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.GetHeaderUnmodifiedIHeaderDictionaryString">
+            <summary>Sets the shim of ParsingHelpers.GetHeaderUnmodified(IHeaderDictionary headers, String key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.QuoteIfNeededString">
+            <summary>Sets the shim of ParsingHelpers.QuoteIfNeeded(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.SetHeaderJoinedIHeaderDictionaryStringStringValues">
+            <summary>Sets the shim of ParsingHelpers.SetHeaderJoined(IHeaderDictionary headers, String key, StringValues value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Http.Internal.Fakes.ShimParsingHelpers.SetHeaderUnmodifiedIHeaderDictionaryStringNullableOfStringValues">
+            <summary>Sets the shim of ParsingHelpers.SetHeaderUnmodified(IHeaderDictionary headers, String key, Nullable`1&lt;StringValues&gt; values)</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1610 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.Connections.Abstractions.3.1.2.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.AddressInUseException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.#ctor(Microsoft.AspNetCore.Connections.AddressInUseException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.ConstructorString">
+            <summary>Sets the shim of AddressInUseException.AddressInUseException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimAddressInUseException.ConstructorStringException">
+            <summary>Sets the shim of AddressInUseException.AddressInUseException(String message, Exception inner)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionAbortedException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.#ctor(Microsoft.AspNetCore.Connections.ConnectionAbortedException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.Constructor">
+            <summary>Sets the shim of ConnectionAbortedException.ConnectionAbortedException()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.ConstructorString">
+            <summary>Sets the shim of ConnectionAbortedException.ConnectionAbortedException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionAbortedException.ConstructorStringException">
+            <summary>Sets the shim of ConnectionAbortedException.ConnectionAbortedException(String message, Exception inner)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.#ctor(Microsoft.AspNetCore.Connections.ConnectionBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.AllInstances.ApplicationServicesGet">
+            <summary>Sets the shim of ConnectionBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.AllInstances.Build">
+            <summary>Sets the shim of ConnectionBuilder.Build()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.AllInstances.UseFuncOfConnectionDelegateConnectionDelegate">
+            <summary>Sets the shim of ConnectionBuilder.Use(Func`2&lt;ConnectionDelegate,ConnectionDelegate&gt; middleware)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.ApplicationServicesGet">
+            <summary>Sets the shim of ConnectionBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.Bind(Microsoft.AspNetCore.Connections.IConnectionBuilder)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.Build">
+            <summary>Sets the shim of ConnectionBuilder.Build()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.ConstructorIServiceProvider">
+            <summary>Sets the shim of ConnectionBuilder.ConnectionBuilder(IServiceProvider applicationServices)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilder.UseFuncOfConnectionDelegateConnectionDelegate">
+            <summary>Sets the shim of ConnectionBuilder.Use(Func`2&lt;ConnectionDelegate,ConnectionDelegate&gt; middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.RunIConnectionBuilderFuncOfConnectionContextTask">
+            <summary>Sets the shim of ConnectionBuilderExtensions.Run(IConnectionBuilder connectionBuilder, Func`2&lt;ConnectionContext,Task&gt; middleware)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.UseConnectionHandlerOf1IConnectionBuilder``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.AspNetCore.Connections.IConnectionBuilder,Microsoft.AspNetCore.Connections.IConnectionBuilder})">
+            <summary>Sets the shim of ConnectionBuilderExtensions.UseConnectionHandler(IConnectionBuilder connectionBuilder)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionBuilderExtensions.UseIConnectionBuilderFuncOfConnectionContextFuncOfTaskTask">
+            <summary>Sets the shim of ConnectionBuilderExtensions.Use(IConnectionBuilder connectionBuilder, Func`3&lt;ConnectionContext,Func`1&lt;Task&gt;,Task&gt; middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.#ctor(Microsoft.AspNetCore.Connections.ConnectionContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.Abort">
+            <summary>Sets the shim of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AbortConnectionAbortedException">
+            <summary>Sets the shim of ConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.Abort">
+            <summary>Sets the shim of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.AbortConnectionAbortedException">
+            <summary>Sets the shim of ConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.ConnectionClosedGet">
+            <summary>Sets the shim of ConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.ConnectionClosedSetCancellationToken">
+            <summary>Sets the shim of ConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.DisposeAsync">
+            <summary>Sets the shim of ConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.LocalEndPointGet">
+            <summary>Sets the shim of ConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.LocalEndPointSetEndPoint">
+            <summary>Sets the shim of ConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.RemoteEndPointGet">
+            <summary>Sets the shim of ConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.AllInstances.RemoteEndPointSetEndPoint">
+            <summary>Sets the shim of ConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.Bind(System.IAsyncDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.ConnectionClosedGet">
+            <summary>Sets the shim of ConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.ConnectionClosedSetCancellationToken">
+            <summary>Sets the shim of ConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.Constructor">
+            <summary>Sets the shim of ConnectionContext.ConnectionContext()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.DisposeAsync">
+            <summary>Sets the shim of ConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.LocalEndPointGet">
+            <summary>Sets the shim of ConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.LocalEndPointSetEndPoint">
+            <summary>Sets the shim of ConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.RemoteEndPointGet">
+            <summary>Sets the shim of ConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionContext.RemoteEndPointSetEndPoint">
+            <summary>Sets the shim of ConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionHandler</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.#ctor(Microsoft.AspNetCore.Connections.ConnectionHandler)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionHandler.Constructor">
+            <summary>Sets the shim of ConnectionHandler.ConnectionHandler()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionItems</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.#ctor(Microsoft.AspNetCore.Connections.ConnectionItems)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.CountSystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.get_Count()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.IsReadOnlySystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.ItemSystemCollectionsGenericIDictionarySystemObjectSystemObjectgetObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Item(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.ItemSystemCollectionsGenericIDictionarySystemObjectSystemObjectsetObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.set_Item(Object key, Object value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.ItemsGet">
+            <summary>Sets the shim of ConnectionItems.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.KeysSystemCollectionsGenericIDictionarySystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Keys()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectAddKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Add(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectClear">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Clear()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectContainsKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Contains(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectCopyToKeyValuePairOfObjectObjectArrayInt32">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.CopyTo(KeyValuePair`2&lt;Object,Object&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectRemoveKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Remove(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericIDictionarySystemObjectSystemObjectAddObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.Add(Object key, Object value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericIDictionarySystemObjectSystemObjectContainsKeyObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.ContainsKey(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericIDictionarySystemObjectSystemObjectRemoveObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.Remove(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericIDictionarySystemObjectSystemObjectTryGetValueObjectObjectOut">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.TryGetValue(Object key, Object&amp; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsGenericIEnumerableSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectGetEnumerator">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.GetEnumerator()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ConnectionItems.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.AllInstances.ValuesSystemCollectionsGenericIDictionarySystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Values()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Bind(System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.Constructor">
+            <summary>Sets the shim of ConnectionItems.ConnectionItems()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.ConstructorIDictionaryOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.ConnectionItems(IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.CountSystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.get_Count()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.IsReadOnlySystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.ItemSystemCollectionsGenericIDictionarySystemObjectSystemObjectgetObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Item(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.ItemSystemCollectionsGenericIDictionarySystemObjectSystemObjectsetObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.set_Item(Object key, Object value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.ItemsGet">
+            <summary>Sets the shim of ConnectionItems.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.KeysSystemCollectionsGenericIDictionarySystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Keys()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectAddKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Add(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectClear">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Clear()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectContainsKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Contains(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectCopyToKeyValuePairOfObjectObjectArrayInt32">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.CopyTo(KeyValuePair`2&lt;Object,Object&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericICollectionSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectRemoveKeyValuePairOfObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.Remove(KeyValuePair`2&lt;Object,Object&gt; item)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericIDictionarySystemObjectSystemObjectAddObjectObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.Add(Object key, Object value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericIDictionarySystemObjectSystemObjectContainsKeyObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.ContainsKey(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericIDictionarySystemObjectSystemObjectRemoveObject">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.Remove(Object key)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericIDictionarySystemObjectSystemObjectTryGetValueObjectObjectOut">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.TryGetValue(Object key, Object&amp; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsGenericIEnumerableSystemCollectionsGenericKeyValuePairSystemObjectSystemObjectGetEnumerator">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Object,System.Object&gt;&gt;.GetEnumerator()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ConnectionItems.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionItems.ValuesSystemCollectionsGenericIDictionarySystemObjectSystemObjectget">
+            <summary>Sets the shim of ConnectionItems.System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;.get_Values()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.ConnectionResetException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.#ctor(Microsoft.AspNetCore.Connections.ConnectionResetException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.ConstructorString">
+            <summary>Sets the shim of ConnectionResetException.ConnectionResetException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimConnectionResetException.ConstructorStringException">
+            <summary>Sets the shim of ConnectionResetException.ConnectionResetException(String message, Exception inner)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.DefaultConnectionContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.#ctor(Microsoft.AspNetCore.Connections.DefaultConnectionContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AbortConnectionAbortedException">
+            <summary>Sets the shim of DefaultConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.AbortConnectionAbortedException">
+            <summary>Sets the shim of DefaultConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ApplicationGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Application()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ApplicationSetIDuplexPipe">
+            <summary>Sets the shim of DefaultConnectionContext.set_Application(IDuplexPipe value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ConnectionClosedGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ConnectionClosedSetCancellationToken">
+            <summary>Sets the shim of DefaultConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ConnectionIdGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ConnectionIdSetString">
+            <summary>Sets the shim of DefaultConnectionContext.set_ConnectionId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.DisposeAsync">
+            <summary>Sets the shim of DefaultConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.FeaturesGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Features()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ItemsGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the shim of DefaultConnectionContext.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.LocalEndPointGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.LocalEndPointSetEndPoint">
+            <summary>Sets the shim of DefaultConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.RemoteEndPointGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.RemoteEndPointSetEndPoint">
+            <summary>Sets the shim of DefaultConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.TransportGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.TransportSetIDuplexPipe">
+            <summary>Sets the shim of DefaultConnectionContext.set_Transport(IDuplexPipe value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.UserGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_User()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.AllInstances.UserSetClaimsPrincipal">
+            <summary>Sets the shim of DefaultConnectionContext.set_User(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ApplicationGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Application()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ApplicationSetIDuplexPipe">
+            <summary>Sets the shim of DefaultConnectionContext.set_Application(IDuplexPipe value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Bind(System.IAsyncDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConnectionClosedGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConnectionClosedSetCancellationToken">
+            <summary>Sets the shim of DefaultConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConnectionIdGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConnectionIdSetString">
+            <summary>Sets the shim of DefaultConnectionContext.set_ConnectionId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.Constructor">
+            <summary>Sets the shim of DefaultConnectionContext.DefaultConnectionContext()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConstructorString">
+            <summary>Sets the shim of DefaultConnectionContext.DefaultConnectionContext(String id)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ConstructorStringIDuplexPipeIDuplexPipe">
+            <summary>Sets the shim of DefaultConnectionContext.DefaultConnectionContext(String id, IDuplexPipe transport, IDuplexPipe application)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.DisposeAsync">
+            <summary>Sets the shim of DefaultConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.FeaturesGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Features()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ItemsGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the shim of DefaultConnectionContext.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.LocalEndPointGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.LocalEndPointSetEndPoint">
+            <summary>Sets the shim of DefaultConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.RemoteEndPointGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.RemoteEndPointSetEndPoint">
+            <summary>Sets the shim of DefaultConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.TransportGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.TransportSetIDuplexPipe">
+            <summary>Sets the shim of DefaultConnectionContext.set_Transport(IDuplexPipe value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.UserGet">
+            <summary>Sets the shim of DefaultConnectionContext.get_User()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimDefaultConnectionContext.UserSetClaimsPrincipal">
+            <summary>Sets the shim of DefaultConnectionContext.set_User(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.FileHandleEndPoint</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.#ctor(Microsoft.AspNetCore.Connections.FileHandleEndPoint)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.AllInstances.FileHandleGet">
+            <summary>Sets the shim of FileHandleEndPoint.get_FileHandle()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.AllInstances.FileHandleTypeGet">
+            <summary>Sets the shim of FileHandleEndPoint.get_FileHandleType()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.ConstructorUInt64FileHandleType">
+            <summary>Sets the shim of FileHandleEndPoint.FileHandleEndPoint(UInt64 fileHandle, FileHandleType fileHandleType)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.FileHandleGet">
+            <summary>Sets the shim of FileHandleEndPoint.get_FileHandle()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimFileHandleEndPoint.FileHandleTypeGet">
+            <summary>Sets the shim of FileHandleEndPoint.get_FileHandleType()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint">
+            <summary>Shim type of Microsoft.AspNetCore.Connections.UriEndPoint</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.#ctor(Microsoft.AspNetCore.Connections.UriEndPoint)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.AllInstances.UriGet">
+            <summary>Sets the shim of UriEndPoint.get_Uri()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.ConstructorUri">
+            <summary>Sets the shim of UriEndPoint.UriEndPoint(Uri uri)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.ShimUriEndPoint.UriGet">
+            <summary>Sets the shim of UriEndPoint.get_Uri()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.AddressInUseException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAddressInUseException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAddressInUseException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.InitializeStub">
+            <summary>Initializes a new instance of type StubAddressInUseException</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubAddressInUseException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionAbortedException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubConnectionAbortedException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubConnectionAbortedException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionAbortedException</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionAbortedException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder.#ctor(System.IServiceProvider)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionBuilder</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionBuilder.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Abort">
+            <summary>Sets the stub of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException)">
+            <summary>Sets the stub of ConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Abort01">
+            <summary>Sets the stub of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AbortConnectionAbortedException">
+            <summary>Sets the stub of ConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToConnectionClosed">
+            <summary>Attaches delegates to emulate StubConnectionContext.ConnectionClosed as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToConnectionId">
+            <summary>Attaches delegates to emulate StubConnectionContext.ConnectionId as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToItems">
+            <summary>Attaches delegates to emulate StubConnectionContext.Items as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToLocalEndPoint">
+            <summary>Attaches delegates to emulate StubConnectionContext.LocalEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToRemoteEndPoint">
+            <summary>Attaches delegates to emulate StubConnectionContext.RemoteEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.AttachBackingFieldToTransport">
+            <summary>Attaches delegates to emulate StubConnectionContext.Transport as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionClosed">
+            <summary>Sets the stub of ConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionClosedGet">
+            <summary>Sets the stub of ConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionClosedSetCancellationToken">
+            <summary>Sets the stub of ConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionId">
+            <summary>Sets the stub of ConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionIdGet">
+            <summary>Sets the stub of ConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ConnectionIdSetString">
+            <summary>Sets the stub of ConnectionContext.set_ConnectionId(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.DisposeAsync">
+            <summary>Sets the stub of ConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.DisposeAsync01">
+            <summary>Sets the stub of ConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Features">
+            <summary>Sets the stub of ConnectionContext.get_Features()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.FeaturesGet">
+            <summary>Sets the stub of ConnectionContext.get_Features()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionContext</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Items">
+            <summary>Sets the stub of ConnectionContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ItemsGet">
+            <summary>Sets the stub of ConnectionContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the stub of ConnectionContext.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.LocalEndPoint">
+            <summary>Sets the stub of ConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.LocalEndPointGet">
+            <summary>Sets the stub of ConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.LocalEndPointSetEndPoint">
+            <summary>Sets the stub of ConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.RemoteEndPoint">
+            <summary>Sets the stub of ConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.RemoteEndPointGet">
+            <summary>Sets the stub of ConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.RemoteEndPointSetEndPoint">
+            <summary>Sets the stub of ConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.Transport">
+            <summary>Sets the stub of ConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.TransportGet">
+            <summary>Sets the stub of ConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionContext.TransportSetIDuplexPipe">
+            <summary>Sets the stub of ConnectionContext.set_Transport(IDuplexPipe value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionHandler</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionHandler</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext)">
+            <summary>Sets the stub of ConnectionHandler.OnConnectedAsync(ConnectionContext connection)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionHandler.OnConnectedAsyncConnectionContext">
+            <summary>Sets the stub of ConnectionHandler.OnConnectedAsync(ConnectionContext connection)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionItems</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionItems</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionItems.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.ConnectionResetException</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubConnectionResetException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubConnectionResetException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionResetException</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubConnectionResetException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.DefaultConnectionContext</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.#ctor(System.String,System.IO.Pipelines.IDuplexPipe,System.IO.Pipelines.IDuplexPipe)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Abort">
+            <summary>Sets the stub of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException)">
+            <summary>Sets the stub of DefaultConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Abort01">
+            <summary>Sets the stub of ConnectionContext.Abort()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AbortConnectionAbortedException">
+            <summary>Sets the stub of DefaultConnectionContext.Abort(ConnectionAbortedException abortReason)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToConnectionClosed">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.ConnectionClosed as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToConnectionId">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.ConnectionId as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToItems">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.Items as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToLocalEndPoint">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.LocalEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToRemoteEndPoint">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.RemoteEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.AttachBackingFieldToTransport">
+            <summary>Attaches delegates to emulate StubDefaultConnectionContext.Transport as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionClosed">
+            <summary>Sets the stub of DefaultConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionClosedGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionClosedSetCancellationToken">
+            <summary>Sets the stub of DefaultConnectionContext.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionId">
+            <summary>Sets the stub of DefaultConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionIdGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ConnectionIdSetString">
+            <summary>Sets the stub of DefaultConnectionContext.set_ConnectionId(String value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.DisposeAsync">
+            <summary>Sets the stub of DefaultConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.DisposeAsync01">
+            <summary>Sets the stub of DefaultConnectionContext.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Features">
+            <summary>Sets the stub of DefaultConnectionContext.get_Features()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.FeaturesGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_Features()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.InitializeStub">
+            <summary>Initializes a new instance of type StubDefaultConnectionContext</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Items">
+            <summary>Sets the stub of DefaultConnectionContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ItemsGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the stub of DefaultConnectionContext.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.LocalEndPoint">
+            <summary>Sets the stub of DefaultConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.LocalEndPointGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.LocalEndPointSetEndPoint">
+            <summary>Sets the stub of DefaultConnectionContext.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.RemoteEndPoint">
+            <summary>Sets the stub of DefaultConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.RemoteEndPointGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.RemoteEndPointSetEndPoint">
+            <summary>Sets the stub of DefaultConnectionContext.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.Transport">
+            <summary>Sets the stub of DefaultConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.TransportGet">
+            <summary>Sets the stub of DefaultConnectionContext.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubDefaultConnectionContext.TransportSetIDuplexPipe">
+            <summary>Sets the stub of DefaultConnectionContext.set_Transport(IDuplexPipe value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.FileHandleEndPoint</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.#ctor(System.UInt64,Microsoft.AspNetCore.Connections.FileHandleType)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.AddressFamily">
+            <summary>Sets the stub of EndPoint.get_AddressFamily()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.AddressFamilyGet">
+            <summary>Sets the stub of EndPoint.get_AddressFamily()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.Create(System.Net.SocketAddress)">
+            <summary>Sets the stub of EndPoint.Create(SocketAddress socketAddress)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.CreateSocketAddress">
+            <summary>Sets the stub of EndPoint.Create(SocketAddress socketAddress)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.InitializeStub">
+            <summary>Initializes a new instance of type StubFileHandleEndPoint</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.Serialize">
+            <summary>Sets the stub of EndPoint.Serialize()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubFileHandleEndPoint.Serialize01">
+            <summary>Sets the stub of EndPoint.Serialize()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.IConnectionBuilder</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionBuilder</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.Microsoft#AspNetCore#Connections#IConnectionBuilder#ApplicationServices">
+            <summary>Sets the stub of IConnectionBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.ApplicationServicesGet">
+            <summary>Sets the stub of IConnectionBuilder.get_ApplicationServices()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.Build">
+            <summary>Sets the stub of IConnectionBuilder.Build()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.Microsoft#AspNetCore#Connections#IConnectionBuilder#Build">
+            <summary>Sets the stub of IConnectionBuilder.Build()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.Microsoft#AspNetCore#Connections#IConnectionBuilder#Use(System.Func{Microsoft.AspNetCore.Connections.ConnectionDelegate,Microsoft.AspNetCore.Connections.ConnectionDelegate})">
+            <summary>Sets the stub of IConnectionBuilder.Use(Func`2&lt;ConnectionDelegate,ConnectionDelegate&gt; middleware)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionBuilder.UseFuncOfConnectionDelegateConnectionDelegate">
+            <summary>Sets the stub of IConnectionBuilder.Use(Func`2&lt;ConnectionDelegate,ConnectionDelegate&gt; middleware)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionFactory">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.IConnectionFactory</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionFactory.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionFactory</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionFactory.ConnectAsyncEndPointCancellationToken">
+            <summary>Sets the stub of IConnectionFactory.ConnectAsync(EndPoint endpoint, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionFactory.Microsoft#AspNetCore#Connections#IConnectionFactory#ConnectAsync(System.Net.EndPoint,System.Threading.CancellationToken)">
+            <summary>Sets the stub of IConnectionFactory.ConnectAsync(EndPoint endpoint, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.IConnectionListener</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionListener</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.AcceptAsyncCancellationToken">
+            <summary>Sets the stub of IConnectionListener.AcceptAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.DisposeAsync">
+            <summary>Sets the stub of IAsyncDisposable.DisposeAsync()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.Microsoft#AspNetCore#Connections#IConnectionListener#EndPoint">
+            <summary>Sets the stub of IConnectionListener.get_EndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.EndPointGet">
+            <summary>Sets the stub of IConnectionListener.get_EndPoint()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.Microsoft#AspNetCore#Connections#IConnectionListener#AcceptAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of IConnectionListener.AcceptAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.Microsoft#AspNetCore#Connections#IConnectionListener#UnbindAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of IConnectionListener.UnbindAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.System#IAsyncDisposable#DisposeAsync">
+            <summary>Sets the stub of IAsyncDisposable.DisposeAsync()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListener.UnbindAsyncCancellationToken">
+            <summary>Sets the stub of IConnectionListener.UnbindAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListenerFactory">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.IConnectionListenerFactory</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListenerFactory.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionListenerFactory</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListenerFactory.BindAsyncEndPointCancellationToken">
+            <summary>Sets the stub of IConnectionListenerFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubIConnectionListenerFactory.Microsoft#AspNetCore#Connections#IConnectionListenerFactory#BindAsync(System.Net.EndPoint,System.Threading.CancellationToken)">
+            <summary>Sets the stub of IConnectionListenerFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.UriEndPoint</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.#ctor(System.Uri)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.AddressFamily">
+            <summary>Sets the stub of EndPoint.get_AddressFamily()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.AddressFamilyGet">
+            <summary>Sets the stub of EndPoint.get_AddressFamily()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.Create(System.Net.SocketAddress)">
+            <summary>Sets the stub of EndPoint.Create(SocketAddress socketAddress)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.CreateSocketAddress">
+            <summary>Sets the stub of EndPoint.Create(SocketAddress socketAddress)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.InitializeStub">
+            <summary>Initializes a new instance of type StubUriEndPoint</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.Serialize">
+            <summary>Sets the stub of EndPoint.Serialize()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Fakes.StubUriEndPoint.Serialize01">
+            <summary>Sets the stub of EndPoint.Serialize()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionCompleteFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionCompleteFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionCompleteFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionCompleteFeature.Microsoft#AspNetCore#Connections#Features#IConnectionCompleteFeature#OnCompleted(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)">
+            <summary>Sets the stub of IConnectionCompleteFeature.OnCompleted(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionCompleteFeature.OnCompletedFuncOfObjectTaskObject">
+            <summary>Sets the stub of IConnectionCompleteFeature.OnCompleted(Func`2&lt;Object,Task&gt; callback, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionEndPointFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.AttachBackingFieldToLocalEndPoint">
+            <summary>Attaches delegates to emulate StubIConnectionEndPointFeature.LocalEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.AttachBackingFieldToRemoteEndPoint">
+            <summary>Attaches delegates to emulate StubIConnectionEndPointFeature.RemoteEndPoint as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.Microsoft#AspNetCore#Connections#Features#IConnectionEndPointFeature#LocalEndPoint">
+            <summary>Sets the stub of IConnectionEndPointFeature.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.LocalEndPointGet">
+            <summary>Sets the stub of IConnectionEndPointFeature.get_LocalEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.LocalEndPointSetEndPoint">
+            <summary>Sets the stub of IConnectionEndPointFeature.set_LocalEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.Microsoft#AspNetCore#Connections#Features#IConnectionEndPointFeature#RemoteEndPoint">
+            <summary>Sets the stub of IConnectionEndPointFeature.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.RemoteEndPointGet">
+            <summary>Sets the stub of IConnectionEndPointFeature.get_RemoteEndPoint()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionEndPointFeature.RemoteEndPointSetEndPoint">
+            <summary>Sets the stub of IConnectionEndPointFeature.set_RemoteEndPoint(EndPoint value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionHeartbeatFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionHeartbeatFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionHeartbeatFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionHeartbeatFeature.Microsoft#AspNetCore#Connections#Features#IConnectionHeartbeatFeature#OnHeartbeat(System.Action{System.Object},System.Object)">
+            <summary>Sets the stub of IConnectionHeartbeatFeature.OnHeartbeat(Action`1&lt;Object&gt; action, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionHeartbeatFeature.OnHeartbeatActionOfObjectObject">
+            <summary>Sets the stub of IConnectionHeartbeatFeature.OnHeartbeat(Action`1&lt;Object&gt; action, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionIdFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature.AttachBackingFieldToConnectionId">
+            <summary>Attaches delegates to emulate StubIConnectionIdFeature.ConnectionId as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature.Microsoft#AspNetCore#Connections#Features#IConnectionIdFeature#ConnectionId">
+            <summary>Sets the stub of IConnectionIdFeature.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature.ConnectionIdGet">
+            <summary>Sets the stub of IConnectionIdFeature.get_ConnectionId()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionIdFeature.ConnectionIdSetString">
+            <summary>Sets the stub of IConnectionIdFeature.set_ConnectionId(String value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionInherentKeepAliveFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionInherentKeepAliveFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionInherentKeepAliveFeature</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionInherentKeepAliveFeature.Microsoft#AspNetCore#Connections#Features#IConnectionInherentKeepAliveFeature#HasInherentKeepAlive">
+            <summary>Sets the stub of IConnectionInherentKeepAliveFeature.get_HasInherentKeepAlive()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionInherentKeepAliveFeature.HasInherentKeepAliveGet">
+            <summary>Sets the stub of IConnectionInherentKeepAliveFeature.get_HasInherentKeepAlive()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionItemsFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature.AttachBackingFieldToItems">
+            <summary>Attaches delegates to emulate StubIConnectionItemsFeature.Items as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature.Microsoft#AspNetCore#Connections#Features#IConnectionItemsFeature#Items">
+            <summary>Sets the stub of IConnectionItemsFeature.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature.ItemsGet">
+            <summary>Sets the stub of IConnectionItemsFeature.get_Items()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionItemsFeature.ItemsSetIDictionaryOfObjectObject">
+            <summary>Sets the stub of IConnectionItemsFeature.set_Items(IDictionary`2&lt;Object,Object&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionLifetimeFeature</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.Abort">
+            <summary>Sets the stub of IConnectionLifetimeFeature.Abort()</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.AttachBackingFieldToConnectionClosed">
+            <summary>Attaches delegates to emulate StubIConnectionLifetimeFeature.ConnectionClosed as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.Microsoft#AspNetCore#Connections#Features#IConnectionLifetimeFeature#ConnectionClosed">
+            <summary>Sets the stub of IConnectionLifetimeFeature.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.ConnectionClosedGet">
+            <summary>Sets the stub of IConnectionLifetimeFeature.get_ConnectionClosed()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.ConnectionClosedSetCancellationToken">
+            <summary>Sets the stub of IConnectionLifetimeFeature.set_ConnectionClosed(CancellationToken value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeFeature.Microsoft#AspNetCore#Connections#Features#IConnectionLifetimeFeature#Abort">
+            <summary>Sets the stub of IConnectionLifetimeFeature.Abort()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionLifetimeNotificationFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.AttachBackingFieldToConnectionClosedRequested">
+            <summary>Attaches delegates to emulate StubIConnectionLifetimeNotificationFeature.ConnectionClosedRequested as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.Microsoft#AspNetCore#Connections#Features#IConnectionLifetimeNotificationFeature#ConnectionClosedRequested">
+            <summary>Sets the stub of IConnectionLifetimeNotificationFeature.get_ConnectionClosedRequested()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.ConnectionClosedRequestedGet">
+            <summary>Sets the stub of IConnectionLifetimeNotificationFeature.get_ConnectionClosedRequested()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.ConnectionClosedRequestedSetCancellationToken">
+            <summary>Sets the stub of IConnectionLifetimeNotificationFeature.set_ConnectionClosedRequested(CancellationToken value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.Microsoft#AspNetCore#Connections#Features#IConnectionLifetimeNotificationFeature#RequestClose">
+            <summary>Sets the stub of IConnectionLifetimeNotificationFeature.RequestClose()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionLifetimeNotificationFeature.RequestClose">
+            <summary>Sets the stub of IConnectionLifetimeNotificationFeature.RequestClose()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionTransportFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature.AttachBackingFieldToTransport">
+            <summary>Attaches delegates to emulate StubIConnectionTransportFeature.Transport as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature.Microsoft#AspNetCore#Connections#Features#IConnectionTransportFeature#Transport">
+            <summary>Sets the stub of IConnectionTransportFeature.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature.TransportGet">
+            <summary>Sets the stub of IConnectionTransportFeature.get_Transport()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionTransportFeature.TransportSetIDuplexPipe">
+            <summary>Sets the stub of IConnectionTransportFeature.set_Transport(IDuplexPipe value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature.#ctor">
+            <summary>Initializes a new instance of type StubIConnectionUserFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature.AttachBackingFieldToUser">
+            <summary>Attaches delegates to emulate StubIConnectionUserFeature.User as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature.Microsoft#AspNetCore#Connections#Features#IConnectionUserFeature#User">
+            <summary>Sets the stub of IConnectionUserFeature.get_User()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature.UserGet">
+            <summary>Sets the stub of IConnectionUserFeature.get_User()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIConnectionUserFeature.UserSetClaimsPrincipal">
+            <summary>Sets the stub of IConnectionUserFeature.set_User(ClaimsPrincipal value)</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubIMemoryPoolFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubIMemoryPoolFeature.#ctor">
+            <summary>Initializes a new instance of type StubIMemoryPoolFeature</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubIMemoryPoolFeature.Microsoft#AspNetCore#Connections#Features#IMemoryPoolFeature#MemoryPool">
+            <summary>Sets the stub of IMemoryPoolFeature.get_MemoryPool()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubIMemoryPoolFeature.MemoryPoolGet">
+            <summary>Sets the stub of IMemoryPoolFeature.get_MemoryPool()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.#ctor">
+            <summary>Initializes a new instance of type StubITlsHandshakeFeature</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#CipherAlgorithm">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_CipherAlgorithm()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.CipherAlgorithmGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_CipherAlgorithm()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#CipherStrength">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_CipherStrength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.CipherStrengthGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_CipherStrength()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#HashAlgorithm">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_HashAlgorithm()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.HashAlgorithmGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_HashAlgorithm()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#HashStrength">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_HashStrength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.HashStrengthGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_HashStrength()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#KeyExchangeAlgorithm">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_KeyExchangeAlgorithm()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.KeyExchangeAlgorithmGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_KeyExchangeAlgorithm()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#KeyExchangeStrength">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_KeyExchangeStrength()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.KeyExchangeStrengthGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_KeyExchangeStrength()</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.Microsoft#AspNetCore#Connections#Features#ITlsHandshakeFeature#Protocol">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_Protocol()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITlsHandshakeFeature.ProtocolGet">
+            <summary>Sets the stub of ITlsHandshakeFeature.get_Protocol()</summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature">
+            <summary>Stub type of Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.#ctor">
+            <summary>Initializes a new instance of type StubITransferFormatFeature</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.Microsoft#AspNetCore#Connections#Features#ITransferFormatFeature#ActiveFormat">
+            <summary>Sets the stub of ITransferFormatFeature.get_ActiveFormat()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.ActiveFormatGet">
+            <summary>Sets the stub of ITransferFormatFeature.get_ActiveFormat()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.ActiveFormatSetTransferFormat">
+            <summary>Sets the stub of ITransferFormatFeature.set_ActiveFormat(TransferFormat value)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.AttachBackingFieldToActiveFormat">
+            <summary>Attaches delegates to emulate StubITransferFormatFeature.ActiveFormat as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.Microsoft#AspNetCore#Connections#Features#ITransferFormatFeature#SupportedFormats">
+            <summary>Sets the stub of ITransferFormatFeature.get_SupportedFormats()</summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Connections.Features.Fakes.StubITransferFormatFeature.SupportedFormatsGet">
+            <summary>Sets the stub of ITransferFormatFeature.get_SupportedFormats()</summary>
+        </member>
+    </members>
+</doc>
