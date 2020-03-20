@@ -5,7 +5,7 @@
 
 The Wake On Lan Mesh helper (WOLMesh from here on in) is designed to help with managing the power of Remote Computers via Wake on Lan. With all the mayhem of COVID-19, many administrators find themselves supporting far more users remotely than ever before. Some have elected to allow their users to logon via Citrix CVAD / VMware Horizon / Microsoft RDP technologies that allow remote pc access.
 
-This usecase really falls down when the user accidentally or intentionally shutdown their PC. Or perhaps the PC is powered down due to power policies. Wake on Lan can help here if you happen to be on the same subnet, are able to broadcast and know the mac address of the PC.
+This use case really falls down when the user accidentally or intentionally shutdown their PC. Or perhaps the PC is powered down due to power policies. Wake on Lan can help here if you happen to be on the same subnet, are able to broadcast and know the mac address of the PC.
 
 WOLMesh aims to help people who have limitations around Wake on Lan today by providing a Web Portal and REST API to allow administrators to view power status of remote machines and power them on via other machines on the same subnet should they need to.
 
@@ -85,11 +85,13 @@ https://github.com/andyjmorgan/WOLMesh/tree/master/Publish/Agent
 
 This is my "I gotta do these things next" list. I welcome all suggestions.
 
-1. Implement Authentication (p-2)
-2. Allow specifying another ssl cert.
+1. Implement Authentication.
+2. Allow server to use another ssl cert.
 3. Allow wake up of unknown devices.
 4. Networks view.
 5. Online devices view.
 6. Search.
 7. Run as Service for web service. Stupid .Net Core 3.0 changed everything.
-8. Create an agent for Linux / Raspberry Pi.
+8. Test agent for Linux / Raspberry Pi.
+9. Add Swagger and test REST API.
+10. Make the agent a little easier to deploy.
