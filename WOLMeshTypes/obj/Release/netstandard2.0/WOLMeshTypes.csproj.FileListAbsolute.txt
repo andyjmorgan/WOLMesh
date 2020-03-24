@@ -5,3 +5,4 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netstandard2.0\WOLMe
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netstandard2.0\WOLMeshTypes.AssemblyInfo.cs
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netstandard2.0\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netstandard2.0\WOLMeshTypes.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netstandard2.0\WOLMeshTypes.csprojAssemblyReference.cache

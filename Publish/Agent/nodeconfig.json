@@ -1,5 +1,0 @@
-{
-  "serveraddress": "https://recording.lab.local:7443",
-  "ignoreSSLErrors": true,
-  "timerInterval": 30
-}

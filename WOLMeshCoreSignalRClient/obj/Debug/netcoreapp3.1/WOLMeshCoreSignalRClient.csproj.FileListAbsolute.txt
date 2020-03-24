@@ -1,0 +1,12 @@
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.deps.json
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshTypes.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshTypes.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.AssemblyInfoInputs.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.AssemblyInfo.cs
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.csproj.CopyComplete
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.pdb

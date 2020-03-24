@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WOLMeshFrameworkHelpers;
+using WOLMeshTypes;
 using static WOLMeshTypes.Models;
 //using NLog;
 namespace WOLMeshClientService
@@ -31,8 +32,22 @@ namespace WOLMeshClientService
         static DeviceIdentifier GetMachineDetails()
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Pulling Machine Details");
-           DeviceIdentifier di = new DeviceIdentifier();
+            DeviceIdentifier di = new DeviceIdentifier();
             NetworkDetails nd = new NetworkDetails();
+
+            try
+            {
+                WTSUnsafeMethods.Structures.WTS_SESSION_INFO consoleSession = WTSUnsafeMethods.Helpers.ListSessions().Where(x => x.pWinStationName == "Console").FirstOrDefault();
+                var sessionDetails =  WTSUnsafeMethods.Helpers.GetSessionDetails(consoleSession.SessionID);
+                di.CurrentUser = sessionDetails.Username;
+            }
+            catch(Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Debug("Exception caught listing console sessions: {0}", ex.ToString());
+                di.CurrentUser = null;
+            }
+
+
             var globalProperties = System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties();
             di.HostName = globalProperties.HostName;
             try
@@ -44,6 +59,7 @@ namespace WOLMeshClientService
             {
                 di.DomainName = "Unknown";
             }
+            
             di.WindowsVersion = RegistryHelpers.GetMachineDetails();
             di.IsNetworkAvailable = NetworkInterface.GetIsNetworkAvailable();
             di.id = RegistryHelpers.GetMachineID();
@@ -95,13 +111,20 @@ namespace WOLMeshClientService
 
             //NLog.LogManager.GetCurrentClassLogger().Info(JsonConvert.SerializeObject(machineDetails, Formatting.Indented));
 
-            if(machineDetails.AccessibleNetworks.Count > 0)
+            try
             {
-                if (_mc.isConnected)
+                if (machineDetails.AccessibleNetworks.Count > 0)
                 {
-                    _mc.RegisterSelf(machineDetails);
+                    if (_mc.isConnected)
+                    {
+                        _mc.RegisterSelf(machineDetails);
+                    }
                 }
-            }        
+            }
+            catch (Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Failed to update via the address callback: " + ex.ToString());
+            }       
         }
 
         public void SinkSSLErrors()
@@ -173,6 +196,7 @@ namespace WOLMeshClientService
                     if (registrationResult)
                     {
                         NLog.LogManager.GetCurrentClassLogger().Info("Registered");
+                        
                         _mc.ConnectionClosed += OnDisconnect;
                         _mc.ConnectionReconnected += onReconnected;
                         _mc.ConnectionReconnecting += OnReconnecting;
@@ -214,6 +238,12 @@ namespace WOLMeshClientService
 
         private void _reconnectTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            var sessions = WTSUnsafeMethods.Helpers.ListSessions();
+            foreach(var session in sessions)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Debug("Session: {0} - Winstation {1} - State {2}",session.SessionID, session.pWinStationName, session.State);
+                
+            }
             NLog.LogManager.GetCurrentClassLogger().Debug("Timer Ticking");
 
             if (_mc == null)
@@ -262,16 +292,48 @@ namespace WOLMeshClientService
 
             return base.OnPowerEvent(powerStatus);
         }
+
+        private void UpdateUser(int sessionID)
+        {
+            try
+            {
+                if (_mc.isConnected)
+                {
+                    var sessionInfo = WTSUnsafeMethods.Helpers.GetSessionDetails(sessionID);
+                    _mc.UpdateUser(sessionInfo.Username).Wait();
+                }
+                else
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Warn("Failed up Update Logged on User as the mesh connection is down.");
+                }
+            }
+            catch (Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Warn("Failed up Update Logged on User: " + ex.ToString());
+
+            }
+        }
         protected override void OnSessionChange(SessionChangeDescription changeDescription)
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Session Change: {0}", JsonConvert.SerializeObject(changeDescription, Formatting.Indented));
+
+            switch (changeDescription.Reason)
+            {
+                case SessionChangeReason.SessionLogon:
+                case SessionChangeReason.SessionUnlock:
+                    UpdateUser(changeDescription.SessionId);
+                    break;
+                default: break;
+            }
+            
+            
             base.OnSessionChange(changeDescription);
         }
 
         public static async void WakeUpCallReceived(object sender, WakeUpCall wakeup)
         {
              NLog.LogManager.GetCurrentClassLogger().Info("Awaking: " + Newtonsoft.Json.JsonConvert.SerializeObject(wakeup, Formatting.Indented));
-            await WOLMeshFrameworkSignalRClient.WOL.WakeOnLan(wakeup, machineDetails);
+            await WOL.WakeOnLan(wakeup, machineDetails.AccessibleNetworks);
         }
         public static void OnDisconnect(object sender, string error)
         {

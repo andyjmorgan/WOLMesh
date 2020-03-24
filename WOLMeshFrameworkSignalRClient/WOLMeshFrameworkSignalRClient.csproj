@@ -142,7 +142,6 @@
   <ItemGroup>
     <Compile Include="ManagedClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WOL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

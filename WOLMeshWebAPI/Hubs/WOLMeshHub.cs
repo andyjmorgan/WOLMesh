@@ -24,7 +24,7 @@ namespace WOLMeshWebAPI.Hubs
 
         public override Task OnConnectedAsync()
         {
-
+            NLog.LogManager.GetCurrentClassLogger().Debug("New Connection, {0}", Context.ConnectionId);
             return base.OnConnectedAsync();
         }
 
@@ -52,6 +52,20 @@ namespace WOLMeshWebAPI.Hubs
             }
         }
 
+        public void UpdateUser(string UserName)
+        {
+            var MachineID = Runtime.SharedObjects.GetMachineIDFromSessionID(Context.ConnectionId);
+            if (!string.IsNullOrEmpty(MachineID))
+            {
+                var device = _context.Machines.Where(x => x.ID == MachineID).FirstOrDefault();
+                if (device != null)
+                {
+                    device.CurrentUser = UserName;
+                    _context.SaveChangesAsync();
+                }
+            }
+        }
+
         public void RegisterMachine(WOLMeshTypes.Models.DeviceIdentifier details)
         {
 
@@ -66,7 +80,10 @@ namespace WOLMeshWebAPI.Hubs
                 _context.SaveChangesAsync();
             }
             machine.HostName = details.HostName;
-            machine.CurrentUser = details.CurrentUser;
+            if (!string.IsNullOrEmpty(details.CurrentUser))
+            {
+                machine.CurrentUser = details.CurrentUser;
+            }
             machine.DomainName = details.DomainName;
             machine.LastHeardFrom = DateTime.Now;
             machine.WindowsVersion = details.WindowsVersion;
@@ -86,7 +103,6 @@ namespace WOLMeshWebAPI.Hubs
                     };
                     _context.Networks.Add(newNet);
                 }
-
             }
 
             if (details.AccessibleNetworks.Count == 1)

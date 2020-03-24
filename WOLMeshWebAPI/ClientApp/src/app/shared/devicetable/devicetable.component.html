@@ -9,19 +9,19 @@
             <h3>Registered Devices: {{machines.length}}  </h3>
           </div>
         </td>
-      
+
         <td>
           <div>
-            <button type="button" class="btn btn-icon btn-sm" aria-label="home" style="margin-left:12px;">
-              <clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon>
-            </button>
+            <button type="button" class="btn btn-icon btn-sm" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon></button>
+            <!--<button class="btn btn-success btn-icon btn-sm" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()"><clr-icon shape="power"></clr-icon></button>
+            <button class="btn btn-danger btn-icon btn-sm" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()"><clr-icon shape="delete"></clr-icon></button>-->
           </div>
         </td>
       </tr>
     </table>
   </div>
 
-  <clr-datagrid [(clrDgSelected)]="selected"  class="datagrid-compact">
+  <clr-datagrid [(clrDgSelected)]="selected" class="datagrid-compact">
     <clr-dg-column style="min-width: 35px; width:35px;" [clrDgSortBy]="'machineSummary.isOnline'"></clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'machineSummary.hostname'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name</ng-container></clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'machineSummary.hostname'"><ng-container *clrDgHideableColumn="{hidden: false}">State</ng-container></clr-dg-column>
@@ -52,12 +52,14 @@
     </clr-dg-footer>
   </clr-datagrid>
   <button class="btn btn-success" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()">Wake</button>
+  <button class="btn btn-danger" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()">Delete</button>
+
 </div>
 
 
 <div *ngIf="wakeUpResults && wakeUpResults.length > 0">
   <h3>Wake Results:</h3>
-  <clr-datagrid  class="datagrid-compact">
+  <clr-datagrid class="datagrid-compact">
     <clr-dg-column [clrDgSortBy]="'sent'">Result</clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'machineName'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name:</ng-container></clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address:</ng-container></clr-dg-column>
@@ -82,3 +84,23 @@
   </clr-datagrid>
 </div>
 
+
+<clr-modal [(clrModalOpen)]="showDeleteModal">
+  <h3 class="modal-title">Confirm Delete</h3>
+  <div class="modal-body">
+    <p>Are you really sure you want to delete these devices?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="ReallyDelete(false)">Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="ReallyDelete(true)">Ok</button>
+  </div>
+</clr-modal>
+<clr-modal [(clrModalOpen)]="showDeleteErrorOnline">
+  <h3 class="modal-title">Failed to delete</h3>
+  <div class="modal-body">
+    <p>You can only Delete devices that are in an offline state.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn" (click)="showDeleteErrorOnline = false">Ok</button>
+  </div>
+</clr-modal>

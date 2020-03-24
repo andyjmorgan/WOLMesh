@@ -1,0 +1,5 @@
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\bin\Release\WOLMeshFrameworkHelpers.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\bin\Release\WOLMeshFrameworkHelpers.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Release\WOLMeshFrameworkHelpers.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Release\WOLMeshFrameworkHelpers.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Release\WOLMeshFrameworkHelpers.pdb

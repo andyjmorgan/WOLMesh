@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B7D2EF15-90E6-4346-B361-F25A2640522F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WakeOnLanNetworkDiscoveryService</RootNamespace>
-    <AssemblyName>WakeOnLanNetworkDiscoveryService</AssemblyName>
+    <RootNamespace>WOLMeshClientService</RootNamespace>
+    <AssemblyName>WOLMeshClientService</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -64,7 +64,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WOL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,6 +87,10 @@
     <ProjectReference Include="..\WOLMeshTypes\WOLMeshTypes.csproj">
       <Project>{05d233b2-9683-44ba-a702-bc7d6005fb58}</Project>
       <Name>WOLMeshTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WTSUnsafeMethods\WTSUnsafeMethods.csproj">
+      <Project>{14a8dc53-77a8-41bf-81be-059739f1049b}</Project>
+      <Name>WTSUnsafeMethods</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

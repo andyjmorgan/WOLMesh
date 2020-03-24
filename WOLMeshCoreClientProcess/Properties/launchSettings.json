@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WOLMeshCoreClientProcess": {
+      "commandName": "Project",
+      "commandLineArgs": "--URL=https://recording.lab.local:7443 --ignoressl"
+    }
+  }
+}

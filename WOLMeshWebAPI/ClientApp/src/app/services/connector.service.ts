@@ -17,6 +17,10 @@ export class ConnectorService {
   GetMachines(): Observable<MachineDetailView[]> {
     return this.http.get<MachineDetailView[]>('api/machines');
   }
+  DeleteMachine(id: string): Observable<boolean> {
+    return this.http.delete<boolean>('api/machines/' + id);
+  }
+
   WakeMachines(machines: string[]): Observable<WakeUpCallResult[]> {
     return this.http.post<WakeUpCallResult[]>('api/wakeup',machines);
   }

@@ -3,11 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static WOLMeshTypes.Models;
 
 namespace WOLMeshWebAPI.Controllers
 {
     public class Helpers
     {
+
+       
         public static List<WOLMeshTypes.Models.WakeUpCallResult> WakeMachine(DB.MachineItems machine, DB.AppDBContext _context, IHubContext<Hubs.WOLMeshHub> _hub, List<Hubs.ConnectionList.Connection> activeDevices)
         {
             List<WOLMeshTypes.Models.WakeUpCallResult> wucResult = new List<WOLMeshTypes.Models.WakeUpCallResult>();
@@ -22,8 +25,33 @@ namespace WOLMeshWebAPI.Controllers
                         var relayHubs = activeDevices.Where(x => x.AccessibleNetworks.Contains(network.NetworkID)).ToList();
                         if (relayHubs.Count > 0)
                         {
+                            var relays = relayHubs.Take(Runtime.SharedObjects.ServiceConfiguration.relayCount).ToList();
                             
-                            foreach (var relayhub in relayHubs.Take(Runtime.SharedObjects.ServiceConfiguration.relayCount))
+                            //if count is low, try the server
+                            if(relays.Count < Runtime.SharedObjects.ServiceConfiguration.relayCount)
+                            {
+                                var localNetwork = Runtime.SharedObjects.localNetworks.Where(x => x.BroadcastAddress == networkObject.BroadcastAddress && x.SubnetMask == networkObject.SubnetMask).FirstOrDefault();
+                                if (localNetwork != null)
+                                {
+                                    WOLMeshTypes.WOL.WakeOnLan(new WakeUpCall
+                                    {
+                                        BroadcastAddress = networkObject.BroadcastAddress,
+                                        MacAddress = network.MacAddress,
+                                        SubnetMask = networkObject.SubnetMask
+                                    }, Runtime.SharedObjects.localNetworks);
+                                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                                    {
+                                        MachineName = machine.HostName,
+                                        Sent = true,
+                                        MacAddress = network.MacAddress,
+                                        ViaMachine = Environment.MachineName,
+                                        FailureReason = "No Failure"
+                                    });
+                                }
+                            }
+
+                            //use the relays
+                            foreach (var relayhub in relays)
                             {
                                 try
                                 {
@@ -57,29 +85,65 @@ namespace WOLMeshWebAPI.Controllers
                         }
                         else
                         {
-                            wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                            //no relays available, try the local server
+                            var localNetwork = Runtime.SharedObjects.localNetworks.Where(x => x.BroadcastAddress == networkObject.BroadcastAddress && x.SubnetMask == networkObject.SubnetMask).FirstOrDefault();
+                            if(localNetwork != null)
                             {
-                                MachineName = machine.HostName,
-                                Sent = false,
-                                MacAddress = network.MacAddress,
-                                ViaMachine = "none available",
-                                FailureReason = "No relay devices associated with network: " + networkObject.BroadcastAddress
-                            });
+                                try
+                                {
+                                    WOLMeshTypes.WOL.WakeOnLan(new WakeUpCall
+                                    {
+                                        BroadcastAddress = networkObject.BroadcastAddress,
+                                        MacAddress = network.MacAddress,
+                                        SubnetMask = networkObject.SubnetMask
+                                    }, Runtime.SharedObjects.localNetworks);
+                                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                                    {
+                                        MachineName = machine.HostName,
+                                        Sent = true,
+                                        MacAddress = network.MacAddress,
+                                        ViaMachine = Environment.MachineName,
+                                        FailureReason = "No Failure"
+                                    });
+                                }
+                               
+                                 catch (Exception ex)
+                                {
+                                    NLog.LogManager.GetCurrentClassLogger().Error("Failed to relay a wakeup to {0} from the server: {2}", network.MacAddress, ex.ToString());
+                                }
+                            }
+
+                            else
+                            {
+                                wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                                {
+                                    MachineName = machine.HostName,
+                                    Sent = false,
+                                    MacAddress = network.MacAddress,
+                                    ViaMachine = "none available",
+                                    FailureReason = "No relay devices associated with network: " + networkObject.BroadcastAddress
+                                });
+                            }
+                           
                         }
                     }
                     else
                     {
+                        
                         wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                         {
                             MachineName = machine.HostName,
                             Sent = false,
                             FailureReason = "No Matching Networks found for device"
                         });
+                        
+                       
                     }
                 }
             }
             else
             {
+                
                 wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                 {
                     MachineName = machine.HostName,
@@ -96,6 +160,33 @@ namespace WOLMeshWebAPI.Controllers
             var allnetworks = _context.Networks.ToList();
             foreach(var network in allnetworks)
             {
+                var localNetwork = Runtime.SharedObjects.localNetworks.Where(x => x.BroadcastAddress == network.BroadcastAddress && x.SubnetMask == network.SubnetMask).FirstOrDefault();
+                if (localNetwork != null)
+                {
+                    try
+                    {
+                        WOLMeshTypes.WOL.WakeOnLan(new WakeUpCall
+                        {
+                            BroadcastAddress = network.BroadcastAddress,
+                            MacAddress = macaddress,
+                            SubnetMask = network.SubnetMask
+                        }, Runtime.SharedObjects.localNetworks);
+                        wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                        {
+                            MachineName = macaddress,
+                            Sent = true,
+                            MacAddress = macaddress,
+                            ViaMachine = Environment.MachineName,
+                            FailureReason = "No Failure"
+                        });
+                    }
+                    catch(Exception ex)
+                    {
+                        NLog.LogManager.GetCurrentClassLogger().Error("Failed to relay a wakeup to {0} from the server: {2}",macaddress, ex.ToString());
+                    }
+                  
+                }
+
                 var devices = activeDevices.Where(X => X.AccessibleNetworks.Contains(network.NetworkID));
                 if(devices.Count() > 0)
                 {
@@ -132,18 +223,17 @@ namespace WOLMeshWebAPI.Controllers
                     }
                 }
                 else
-                {
-                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                    {
-                        MachineName = macaddress,
-                        Sent = false,
-                        MacAddress = macaddress,
-                        ViaMachine = "none available",
-                        FailureReason = "Could not find a suitable device for network: " + network.BroadcastAddress
-                    });
-                }
-
-                
+                {                  
+                    
+                        wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                        {
+                            MachineName = macaddress,
+                            Sent = false,
+                            MacAddress = macaddress,
+                            ViaMachine = "none available",
+                            FailureReason = "Could not find a suitable device for network: " + network.BroadcastAddress
+                        });                 
+                }               
             }
             return wucResult;
         }

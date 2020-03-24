@@ -5,3 +5,4 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMes
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.AssemblyInfo.cs
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\netcoreapp3.1\WOLMeshTypes.csprojAssemblyReference.cache

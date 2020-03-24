@@ -25,9 +25,9 @@ namespace WOLMeshWebAPI.Controllers
         {
             var returnList = new List<WOLMeshTypes.Models.MachineDetails>();
             var machines = _context.Machines.ToList();
-            foreach(var machine in machines)
+            foreach (var machine in machines)
             {
-                
+
                 returnList.Add(Helpers.GetMachineDetailView(_context, machine));
             }
             return returnList;
@@ -38,16 +38,16 @@ namespace WOLMeshWebAPI.Controllers
         public WOLMeshTypes.Models.MachineDetails Get(string id)
         {
 
-            DB.MachineItems machine =  _context.Machines.Where(x => x.HostName.ToLower() == id.ToLower()).FirstOrDefault();
-            if(machine == null)
+            DB.MachineItems machine = _context.Machines.Where(x => x.HostName.ToLower() == id.ToLower()).FirstOrDefault();
+            if (machine == null)
             {
                 var machineByMac = _context.MachineNetworkDetails.Where(x => x.MacAddress.ToLower() == id.ToLower()).FirstOrDefault();
-                if(machineByMac != null)
+                if (machineByMac != null)
                 {
-                   machine =  _context.Machines.Where(x => x.ID == machineByMac.DeviceID).FirstOrDefault();
-                  return Helpers.GetMachineDetailView(_context, machine);
+                    machine = _context.Machines.Where(x => x.ID == machineByMac.DeviceID).FirstOrDefault();
+                    return Helpers.GetMachineDetailView(_context, machine);
                 }
-                return null;              
+                return null;
             }
             else
             {
@@ -55,6 +55,14 @@ namespace WOLMeshWebAPI.Controllers
             }
         }
 
-        // POST: api/Machines
+       
+        [HttpDelete("{id}", Name = "DeleteMachine")]
+        public bool Delete(string id)
+        {
+            var removeList = _context.Machines.Where(x => id.Contains(x.ID)).ToList();
+            _context.Machines.RemoveRange(removeList);
+            _context.SaveChanges();
+            return true;
+        }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\bin\Release\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\bin\Release\WTSUnsafeMethods.pdb
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\obj\Release\WTSUnsafeMethods.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\obj\Release\WTSUnsafeMethods.dll
+C:\Users\andy\source\repos\WOLMesh\WTSUnsafeMethods\obj\Release\WTSUnsafeMethods.pdb

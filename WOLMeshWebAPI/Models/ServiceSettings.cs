@@ -17,5 +17,7 @@ namespace WOLMeshWebAPI.Models
             httpsPort = 7443;
             relayCount = 3;
         }
+
+
     }
 }

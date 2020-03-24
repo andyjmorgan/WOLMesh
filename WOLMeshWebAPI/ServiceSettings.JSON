@@ -1,0 +1,6 @@
+{
+  "httpsPort": 7443,
+  "relayCount": 3,
+  "SSLCertificatePFXFilePath": "C:\\Users\\andy\\source\\repos\\WOLMesh\\WOLMeshWebAPI\\selfsigned.pfx",
+  "SSLCertificatePFXPassword": "WOLMeshSSLCertPassword123!£$"
+}

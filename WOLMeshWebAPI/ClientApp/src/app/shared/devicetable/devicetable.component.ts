@@ -10,9 +10,11 @@ import { MachineItems, WakeUpCallResult, MachineDetailView } from '../../classes
 export class DevicetableComponent implements OnInit {
 
   public wakeLoading: boolean = false;
+  public showDeleteModal: boolean = false;
   public selected: MachineDetailView[]=[];
   public machines: MachineDetailView[];
-
+  public showDeleteErrorOnline: boolean;
+  public itemsToDelete: string[];
   public wakeRunning: boolean = false;
   public wakeUpResults: WakeUpCallResult[];
   constructor(private connector: ConnectorService) { }
@@ -41,7 +43,39 @@ export class DevicetableComponent implements OnInit {
         _results => {
           this.wakeUpResults = _results;
           this.wakeLoading = false;
-        })
+        });
+    }
+  }
+
+  Delete() {
+    this.itemsToDelete = [];
+    if (this.selected.length > 0) {
+      this.selected.forEach(item => {
+        if (item.Online) {
+          this.showDeleteErrorOnline = true;
+          
+        }
+        this.itemsToDelete.push(item.machineSummary.id);
+      })
+    }
+
+    if (this.itemsToDelete.length > 0 && !this.showDeleteErrorOnline) {
+      this.showDeleteModal = true;
+    }
+
+  }
+
+  ReallyDelete(result: boolean) {
+    this.showDeleteModal = false;
+    if (result) {
+      
+      this.itemsToDelete.forEach(item => {
+        this.connector.DeleteMachine(item).subscribe(_result => {
+          console.log("Delete Result = " + _result);
+        });
+
+      });
+      this.ReloadMachines();
     }
   }
 }

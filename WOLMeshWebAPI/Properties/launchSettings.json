@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -17,11 +17,12 @@
     },
     "WOLMeshWebAPI": {
       "commandName": "Project",
+      "commandLineArgs": "--console",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7443",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:7443"
     }
   }
 }

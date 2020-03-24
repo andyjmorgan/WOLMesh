@@ -145,6 +145,33 @@ namespace WOLMeshFrameworkSignalRClient
                 return false;
             }
         }
+        public async Task<bool> UpdateUser(string userName)
+        {
+            try
+            {
+                await _connection.SendAsync("UpdateUser", userName);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return false;
+            }
+        }
+
+        public async Task<bool> SetMachineState(string userName)
+        {
+            try
+            {
+                await _connection.SendAsync("UpdateUser", userName);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return false;
+            }
+        }
 
         public async void SendHeartBeat()
         {

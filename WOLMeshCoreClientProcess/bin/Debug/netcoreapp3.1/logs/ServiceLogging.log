@@ -1,0 +1,271 @@
+2020-03-23 22:18:03.3902|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:18:03.4405|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:18:03.4529|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:18:03.4578|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:18:03.4578|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:18:03.4578|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:18:03.4743|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:18:03.4743|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:18:03.4743|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:18:03.4888|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:18:04.1173|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "fc2e9b65-b2ad-41d0-84b1-01aa402ef2f5"
+}
+2020-03-23 22:18:28.9570|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:18:28.9876|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:18:29.0001|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:18:29.0059|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:18:29.0059|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:18:29.0059|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:18:29.0228|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:18:29.0228|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:18:29.0228|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:18:29.0398|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:18:29.5119|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "fc2e9b65-b2ad-41d0-84b1-01aa402ef2f5"
+}
+2020-03-23 22:22:00.4047|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:22:00.5812|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:22:00.7342|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:22:01.2377|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:22:01.4499|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:22:01.6461|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:22:01.7998|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:22:01.9935|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:22:02.7879|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:22:58.3958|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:22:58.6263|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:22:58.7903|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:22:58.9423|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:22:59.0995|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:22:59.2873|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:22:59.4558|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:22:59.6351|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:22:59.8232|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:22:59.9956|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:23:00.6548|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "1bcb85ce-f03a-488a-8960-119b6dd491bf"
+}
+2020-03-23 22:23:02.6088|INFO|WOLMeshCoreClientProcess.Program|Managed Connection null, opening a connection
+2020-03-23 22:23:02.6088|INFO|WOLMeshCoreClientProcess.Program|Opening Connection
+2020-03-23 22:23:02.6088|INFO|WOLMeshCoreClientProcess.Program|Attempting to connect to: 
+2020-03-23 22:23:03.1906|WARN|WOLMeshCoreSignalRClient.ManagedClient|Failed to open a SignalR connection to: /WOLMeshHub. With Exception: System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SignalR.Client.HubConnectionBuilderHttpExtensions.WithUrl(IHubConnectionBuilder hubConnectionBuilder, String url)
+   at WOLMeshCoreSignalRClient.ManagedClient.OpenConnection() in C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\ManagedClient.cs:line 70
+2020-03-23 22:23:03.1906|WARN|WOLMeshCoreClientProcess.Program|Failed To Connect
+2020-03-23 22:23:52.7017|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:23:52.7322|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:23:52.7322|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:23:52.7516|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:23:52.7516|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:23:52.7641|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:23:52.7641|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:23:52.7641|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:23:52.7822|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:23:52.7822|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:23:53.2468|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "1bcb85ce-f03a-488a-8960-119b6dd491bf"
+}
+2020-03-23 22:23:56.9663|INFO|WOLMeshCoreClientProcess.Program|Managed Connection null, opening a connection
+2020-03-23 22:23:59.0836|INFO|WOLMeshCoreClientProcess.Program|Opening Connection
+2020-03-23 22:24:02.2037|INFO|WOLMeshCoreClientProcess.Program|Attempting to connect to: https://recording.lab.local:7443
+2020-03-23 22:24:20.2378|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443/WOLMeshHub
+2020-03-23 22:24:28.5428|WARN|WOLMeshCoreSignalRClient.ManagedClient|Failed to open a SignalR connection to: https://recording.lab.local:7443/WOLMeshHub. With Exception: System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsClient(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsClientAsync>b__65_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.Internal.AccessTokenHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.Internal.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.NegotiateAsync(Uri url, HttpClient httpClient, ILogger logger, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.GetNegotiationResponseAsync(Uri uri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.SelectAndStartTransport(TransferFormat transferFormat, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.StartAsyncCore(TransferFormat transferFormat, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ForceAsyncAwaiter.GetResult()
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.StartAsync(TransferFormat transferFormat, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnectionFactory.ConnectAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Connections.Client.HttpConnectionFactory.ConnectAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsyncCore(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsyncInner(CancellationToken cancellationToken)
+   at System.Threading.Tasks.ForceAsyncAwaiter.GetResult()
+   at Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsync(CancellationToken cancellationToken)
+   at WOLMeshCoreSignalRClient.ManagedClient.OpenConnection() in C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\ManagedClient.cs:line 79
+2020-03-23 22:25:10.1532|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:25:10.3455|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:25:11.4157|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:25:11.4229|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:25:11.4229|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:25:11.4375|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:25:11.4375|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:25:11.4505|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:25:11.4505|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:25:11.4505|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:25:11.9217|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "1bcb85ce-f03a-488a-8960-119b6dd491bf"
+}
+2020-03-23 22:25:16.8824|INFO|WOLMeshCoreClientProcess.Program|Managed Connection null, opening a connection
+2020-03-23 22:25:18.9142|INFO|WOLMeshCoreClientProcess.Program|Opening Connection
+2020-03-23 22:25:27.6889|INFO|WOLMeshCoreClientProcess.Program|Attempting to connect to: https://recording.lab.local:7443
+2020-03-23 22:25:32.2161|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443/WOLMeshHub
+2020-03-23 22:27:08.3216|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:27:08.3542|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:27:08.3542|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:27:08.3744|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:27:08.3744|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:27:08.3883|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:27:08.3883|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:27:08.4011|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:27:08.4011|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:27:08.4011|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:27:08.8641|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "1bcb85ce-f03a-488a-8960-119b6dd491bf"
+}
+2020-03-23 22:27:11.5556|INFO|WOLMeshCoreClientProcess.Program|Managed Connection null, opening a connection
+2020-03-23 22:27:12.2161|INFO|WOLMeshCoreClientProcess.Program|Opening Connection
+2020-03-23 22:27:14.8545|INFO|WOLMeshCoreClientProcess.Program|Attempting to connect to: https://recording.lab.local:7443
+2020-03-23 22:27:31.9097|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443/WOLMeshHub
+2020-03-23 22:28:56.6354|INFO|WOLMeshCoreClientProcess.Program|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreClientProcess\bin\Debug\netcoreapp3.1
+2020-03-23 22:28:56.6672|INFO|WOLMeshCoreClientProcess.Program|Framework: .NET Core 3.1.0
+2020-03-23 22:28:56.6803|INFO|WOLMeshCoreClientProcess.Program|Architecture: X64
+2020-03-23 22:28:56.6803|INFO|WOLMeshCoreClientProcess.Program|ProcessArchitecture: X64
+2020-03-23 22:28:56.6803|INFO|WOLMeshCoreClientProcess.Program|OSDescription: Microsoft Windows 10.0.18363
+2020-03-23 22:28:56.7006|INFO|WOLMeshCoreClientProcess.Program|Is FreeBSD: False
+2020-03-23 22:28:56.7006|INFO|WOLMeshCoreClientProcess.Program|Is Linux: False
+2020-03-23 22:28:56.7131|INFO|WOLMeshCoreClientProcess.Program|Is OSX: False
+2020-03-23 22:28:56.7131|INFO|WOLMeshCoreClientProcess.Program|Is Windows: True
+2020-03-23 22:28:56.7131|INFO|WOLMeshCoreClientProcess.Program|OS Description: Microsoft Windows 10.0.18363
+2020-03-23 22:28:59.0213|INFO|WOLMeshCoreClientProcess.Program|{
+  "HostName": "officepcv4",
+  "DomainName": "N/A",
+  "WindowsVersion": "Windows (Core)",
+  "IsNetworkAvailable": true,
+  "CurrentUser": null,
+  "AccessibleNetworks": [
+    {
+      "IPAddress": "192.168.0.57",
+      "SubnetMask": "255.255.255.0",
+      "BroadcastAddress": "192.168.0.255",
+      "MacAddress": "049226D94338"
+    }
+  ],
+  "id": "1bcb85ce-f03a-488a-8960-119b6dd491bf"
+}
+2020-03-23 22:29:03.9666|INFO|WOLMeshCoreClientProcess.Program|Managed Connection null, opening a connection
+2020-03-23 22:29:07.6400|INFO|WOLMeshCoreClientProcess.Program|Opening Connection
+2020-03-23 22:29:20.7181|INFO|WOLMeshCoreClientProcess.Program|Attempting to connect to: https://recording.lab.local:7443
+2020-03-23 22:29:34.4439|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443
+2020-03-23 22:29:38.7086|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalR connection state: Connected
+2020-03-23 22:29:38.7171|INFO|WOLMeshCoreClientProcess.Program|Connected
+2020-03-23 22:29:38.7561|INFO|WOLMeshCoreClientProcess.Program|Registering
+2020-03-23 22:29:38.7724|INFO|WOLMeshCoreClientProcess.Program|Registered
+2020-03-23 22:29:49.1333|INFO|WOLMeshCoreClientProcess.Program|Awaking: {
+  "MacAddress": "C03FD56406B5",
+  "BroadcastAddress": "192.168.0.255",
+  "SubnetMask": "255.255.255.0"
+}
