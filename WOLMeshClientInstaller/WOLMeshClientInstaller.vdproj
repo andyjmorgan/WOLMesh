@@ -3123,7 +3123,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:..\\Publish\\Agent\\Windows\\WOLMeshClientInstaller.msi"
+        "OutputFilename" = "8:..\\Publish\\WOLMeshClientWindowsInstaller.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -7849,7 +7849,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WOL Mesh Client"
         "ProductCode" = "8:{19977014-8A0E-4249-A47F-3A65F42FBFB3}"
-        "PackageCode" = "8:{265EEA1F-B7B9-4727-AB28-DF792B4325D5}"
+        "PackageCode" = "8:{49768820-870E-4B11-AACD-98CEF0346059}"
         "UpgradeCode" = "8:{8E4821D1-7782-4A54-8BFD-EA799B91E3EA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -8328,7 +8328,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5A0B14F069B348F2A186014EC7846BFE"
             {
-            "SourcePath" = "8:..\\WOLMeshClientService\\obj\\Release\\WOLMeshClientService.exe"
+            "SourcePath" = "8:..\\WOLMeshClientService\\obj\\Debug\\WOLMeshClientService.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_09482CB25F0E4527B8FE945A34EDFBFE"
@@ -8356,7 +8356,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_84018C8D521146619F64CEE505F49DEC"
             {
-            "SourcePath" = "8:..\\WOLMeshFrameworkSignalRClient\\obj\\Release\\WOLMeshFrameworkSignalRClient.dll"
+            "SourcePath" = "8:..\\WOLMeshFrameworkSignalRClient\\obj\\Debug\\WOLMeshFrameworkSignalRClient.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_09482CB25F0E4527B8FE945A34EDFBFE"
