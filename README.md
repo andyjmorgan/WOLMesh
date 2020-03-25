@@ -47,25 +47,37 @@ Once connected, the device can be leveraged to wake up other devices on the same
 
 When a wake request is sent for a known device, from the Web App or REST API, WOLMesh check's its active connections, if devices are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
 
+If the server is on the same subnet as the target device, the server will attempt to also send a wake up.
+
+If not devices are online in the target subnet, and the server is not on the same subnet. It will attempt to perform a directed broadcast to the subnet. This will most likely be blocked by most networks, but it never hurts to try ;)
+
 # How to install:
 
 In the publish folder above, you'll find both the agent and server zip file:
 
 ## Web Server:
 
-https://github.com/andyjmorgan/WOLMesh/raw/master/Publish/WebServer/WebServer.zip
+https://github.com/andyjmorgan/WOLMesh/raw/master/Publish
 
-Download the above zip file and extract it on a machine (tested on windows 10 / Server 2016). Once extracted, run the following executable to start the web service: 
+Download the above web service zip file and extract it on a machine (tested on windows 10 / Server 2016). Once extracted, run the following executable with administrator priveledges to start the web service: 
 
 WOLMeshWebAPI.exe
 
 Once started, the webservice will begin listening on the default port of 7443. A self signed certificate will be created on demand. you can then browse to https://server:7443 to begin using the webapp.
 
-Note: Please ensure the user running the application can write to the directory the files are extracted to, as log files and config files will be written to the directory.
+**Note:** Please ensure to run the process as administrator to ensure it can bind to the local ip address, for remote access.
+
+### Run as service:
+
+If you would prefer to run this as a service: here's an example command:
+
+```json
+New-Service -Name "WOLMeshWebAPI" -DisplayName "Wake on Lan Mesh Web API" -BinaryPathName C:\wolmesh\WOLMeshWebAPI.exe -Description "This Web Application will wake Remote PC's leveraging Wake On Lan" -StartupType Automatic
+```
 
 ## Agent:
 
-https://github.com/andyjmorgan/WOLMesh/tree/master/Publish/Agent
+https://github.com/andyjmorgan/WOLMesh/tree/master/Publish
 
 1. On a target machine, install the agent msi file. 
 2. Download the nodeconfig.json file and modify the server address
@@ -78,22 +90,81 @@ https://github.com/andyjmorgan/WOLMesh/tree/master/Publish/Agent
 4. Start the Wake On Lan Mesh Agent service.
 5. Your device should now appear in the console.
 
+## Linux / Raspberry Pi:
+
+https://github.com/andyjmorgan/WOLMesh/raw/master/Publish
+
+1. Download the correct version for your build (linux x64, ARM for raspberry pi) above.
+2. Extract the contents to /usr/bin/wolmeshclient or another directory in the linux file system.
+3. Download the daemon-nodeconfig.json file, modify the serveradddress field and store it in the same directory as the installation.
+4. Make the file executable:
+
+```bash
+sudo chmod +x /usr/bin/wolmeshclient/WOLMeshClientDaemon
+```
+
+5. once it's executable, run:
+
+```bash
+sudo /usr/bin/wolmeshclient/./WOLMeshClientDaemon
+```
+
+6. The Device should now appear in the console.
+
+### Running as a Daemon:
+
+1. Run the following command to create the service reference:
+
+```bash
+sudo nano /etc/systemd/system/WOLMeshDaemon.service
+```
+
+2. Add the following text to the config file:
+
+```bash
+[Unit]
+Description=WOL Mesh Daemon Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/wolmeshclient/WOLMeshClientDaemon
+
+[Install]
+WantedBy=multi-user.target
+```
+
+3: reload the daemon, enable the service and start it:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable WOLMeshDaemon
+sudo systemctl start WOLMeshDaemon
+```
+
+
+### Troubleshooting:
+
+Check /var/log/WOLMeshCoreClientDaemon.log
+
 # Known issues:
 
 1. Machines need to be configured to enable Wake on Lan (bios and driver settings). This guide covers it well: https://www.partitionwizard.com/partitionmanager/enable-wake-on-lan.html
-2. Current user is currently not reporting.
 
 # To Do:
 
 This is my "I gotta do these things next" list. I welcome all suggestions.
 
 1. Implement Authentication.
-2. Allow server to use another ssl cert.
-3. Allow wake up of unknown devices.
+2.  ~~Allow server to use another ssl cert.~~
+3.  ~~Allow wake up of unknown devices.~~
 4. Networks view.
 5. Online devices view.
 6. Search.
-7. Run as Service for web service. Stupid .Net Core 3.0 changed everything.
-8. Test agent for Linux / Raspberry Pi.
+7.  ~~Run as Service for web service. Stupid .Net Core 3.0 changed everything.~~
+8.  ~~Test agent for Linux / Raspberry Pi.~~
 9. Add Swagger and test REST API.
 10. Make the agent a little easier to deploy.
