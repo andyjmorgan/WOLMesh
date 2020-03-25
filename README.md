@@ -116,7 +116,7 @@ sudo /usr/bin/wolmeshclient/./WOLMeshClientDaemon
 1. Run the following command to create the service reference:
 
 ```bash
-sudo nano /etc/systemd/system/WOLMeshClient.service
+sudo nano /etc/systemd/system/WOLMeshDaemon.service
 ```
 
 2. Add the following text to the config file:
