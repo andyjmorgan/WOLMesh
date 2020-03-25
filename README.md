@@ -154,6 +154,21 @@ Check /var/log/WOLMeshCoreClientDaemon.log
 
 1. Machines need to be configured to enable Wake on Lan (bios and driver settings). This guide covers it well: https://www.partitionwizard.com/partitionmanager/enable-wake-on-lan.html
 
+
+# Change Log:
+
+# 1.1 release:
+
+1. Added support for Linux (x64)
+2. Added support for Mac OS
+3. Added support for Arm (raspberry pi)
+4. Added the ability to run web service as service.
+5. Added the ability to run the agent / client on linux / arm as a Daemon.
+6. Changed the core logic to allow the server to send the Wake On Lan message if on the same subnet.
+7. Changed the logic to try a directed broadcast if all else fails.
+8. Added Swagger and Swagger UI.
+9. Added the ability to change the default ssl certificate for the web service.
+
 # To Do:
 
 This is my "I gotta do these things next" list. I welcome all suggestions.
