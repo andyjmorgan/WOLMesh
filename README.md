@@ -166,7 +166,7 @@ Check /var/log/WOLMeshCoreClientDaemon.log
 5. Added the ability to run the agent / client on linux / arm as a Daemon.
 6. Changed the core logic to allow the server to send the Wake On Lan message if on the same subnet.
 7. Changed the logic to try a directed broadcast if all else fails.
-8. Added Swagger and Swagger UI.
+8. Added Swagger and Swagger UI. (/swagger/index.html)
 9. Added the ability to change the default ssl certificate for the web service.
 
 # To Do:
