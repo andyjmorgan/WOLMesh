@@ -1,5 +1,5 @@
 {
-  "serveraddress": null,
+  "serveraddress": "https://example.domain.local:7443",
   "ignoreSSLErrors": true,
   "timerInterval": 30,
   "UUID": null
