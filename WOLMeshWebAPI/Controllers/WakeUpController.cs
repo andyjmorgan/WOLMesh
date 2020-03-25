@@ -92,7 +92,7 @@ namespace WOLMeshWebAPI.Controllers
                         FailureReason = "Could not find machine details",
                         Sent = false,
                         MacAddress = machine.MacAddress,
-                        MachineName = machineDetails.HostName,
+                        MachineName = machine.MacAddress,
                     });
                 }              
             }

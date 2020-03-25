@@ -21,11 +21,11 @@ if(test-path $publishpath){
     
 
     if(test-path $CoreClientProjectPath){
-        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreClientProjectPath --output ""$publishPath\Agent\OSX"" --runtime osx-x64 --framework netcoreapp3.1 --interactive /nodeReuse:false" -Wait -PassThru
+        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreClientProjectPath --output ""$publishPath\Agent\OSX"" --runtime osx-x64 --framework netcoreapp3.1 --interactive -nodeReuse:false" -Wait -PassThru
         write-host "OSX Exit code: $($process.ExitCode)"
-        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreDaemonProjectPath --output ""$publishPath\Agent\ARM"" --runtime linux-arm --framework netcoreapp3.1 --interactive /nodeReuse:false" -Wait -PassThru
+        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreDaemonProjectPath --output ""$publishPath\Agent\ARM"" --runtime linux-arm --framework netcoreapp3.1 --interactive -nodeReuse:false" -Wait -PassThru
         write-host "ARM Exit code: $($process.ExitCode)"
-        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreDaemonProjectPath --output ""$publishPath\Agent\Linux-x64"" --runtime linux-x64 --framework netcoreapp3.1 --interactive /nodeReuse:false" -Wait -PassThru
+        $process = Start-Process -file "dotnet" -ArgumentList " publish $CoreDaemonProjectPath --output ""$publishPath\Agent\Linux-x64"" --runtime linux-x64 --framework netcoreapp3.1 --interactive -nodeReuse:false" -Wait -PassThru
         write-host "Linux (x64) Exit code: $($process.ExitCode)"
         start-process "C:\Program Files\7-Zip\7z.exe" -ArgumentList "a -tzip ""$publishPath\Arm-Daemon.zip"" ""$publishPath\Agent\ARM"""
         start-process "C:\Program Files\7-Zip\7z.exe" -ArgumentList "a -tzip ""$publishPath\Linux-x64-Daemon.zip"" ""$publishPath\Agent\Linux-x64"""

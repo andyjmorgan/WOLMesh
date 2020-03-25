@@ -41,6 +41,28 @@ namespace WOLMeshTypes
                 Console.WriteLine("Failed to send wake on lan to network with Exception: " + ex.ToString());
             }
        }
+        public static async Task SUbnetDirectedWakeOnLan(string mac, NetworkDetails network)
+        {
+            try
+            {
+                byte[] magicPacket = BuildMagicPacket(mac);
+                
+                                  
+                        try
+                        {
+                            await SendWakeOnLan(network.IPAddress, network.BroadcastAddress, magicPacket);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Failed to send subnet directed wake on lan to network: " + network.BroadcastAddress + " with Exception: " + ex.ToString());
+                        }                 
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Failed to send wake on lan to network with Exception: " + ex.ToString());
+            }
+        }
 
         static byte[] BuildMagicPacket(string macAddress) // MacAddress in any standard HEX format
         {
@@ -70,7 +92,17 @@ namespace WOLMeshTypes
 
         static async Task SendWakeOnLan(string localIpAddress, string broadcastAddress, byte[] magicPacket)
         {
-            IPAddress localip = IPAddress.Parse(localIpAddress);
+
+            IPAddress localip = null;
+
+            if (string.IsNullOrEmpty(localIpAddress))
+            {
+                localip = IPAddress.Any;
+            }
+            else
+            {
+               localip = IPAddress.Parse(localIpAddress);
+            }
             using (UdpClient client = new UdpClient(new IPEndPoint(localip, 0)))
             {
                 client.EnableBroadcast = true;

@@ -24,7 +24,5 @@ namespace WOLMeshWebAPI.Controllers
         {
             return _context.Networks.ToList();
         }
-
-
     }
 }

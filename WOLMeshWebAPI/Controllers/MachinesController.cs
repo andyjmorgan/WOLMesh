@@ -59,8 +59,10 @@ namespace WOLMeshWebAPI.Controllers
         [HttpDelete("{id}", Name = "DeleteMachine")]
         public bool Delete(string id)
         {
-            var removeList = _context.Machines.Where(x => id.Contains(x.ID)).ToList();
+            var removeList = _context.Machines.Where(x => x.ID == id).ToList();
             _context.Machines.RemoveRange(removeList);
+            var networkDetailsRemoveList = _context.MachineNetworkDetails.Where(x => x.DeviceID == id).ToList();
+            _context.MachineNetworkDetails.RemoveRange(networkDetailsRemoveList);
             _context.SaveChanges();
             return true;
         }
