@@ -106,7 +106,7 @@ sudo chmod +x /usr/bin/wolmeshclient/WOLMeshClientDaemon
 5. once it's executable, run:
 
 ```bash
-sudo ./usr/bin/wolmeshclient/WOLMeshClientDaemon
+sudo /usr/bin/wolmeshclient/./WOLMeshClientDaemon
 ```
 
 6. The Device should now appear in the console.
