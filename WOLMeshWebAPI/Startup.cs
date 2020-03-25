@@ -33,7 +33,12 @@ namespace WOLMeshWebAPI
             });
             services.AddDbContext<DB.AppDBContext>();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc(name: "v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Wake On Lan Mesh", Version = "v1" });
+            }
 
+            );
             services.AddSignalR();
             //services.AddCors(options =>
             //{
@@ -62,6 +67,11 @@ namespace WOLMeshWebAPI
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint(url: "/swagger/v1/swagger.json", name: "Wake On Lan Mesh");
+            });
             if (!env.IsDevelopment())
             {
                 app.UseSpaStaticFiles();
