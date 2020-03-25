@@ -12,18 +12,4 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <None Include="$(NuGetPackageRoot)nlog.config\4.7.0\contentFiles\any\any\NLog.config" Condition="Exists('$(NuGetPackageRoot)nlog.config\4.7.0\contentFiles\any\any\NLog.config')">
-      <NuGetPackageId>NLog.Config</NuGetPackageId>
-      <NuGetPackageVersion>4.7.0</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>NLog.config</TargetPath>
-      <Private>True</Private>
-      <Link>NLog.config</Link>
-    </None>
-  </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNLog_Config Condition=" '$(PkgNLog_Config)' == '' ">C:\Users\andy\.nuget\packages\nlog.config\4.7.0</PkgNLog_Config>
-  </PropertyGroup>
 </Project>

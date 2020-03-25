@@ -68,7 +68,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Content Include="NLog.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>

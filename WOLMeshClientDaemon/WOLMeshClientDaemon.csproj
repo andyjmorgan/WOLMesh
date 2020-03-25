@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-WOLMeshClientDaemon-CE8E20F2-D1D6-4B36-A16F-1808D28CAB37</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="NLog.Config" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WOLMeshCoreSignalRClient\WOLMeshCoreSignalRClient.csproj" />
+  </ItemGroup>
+</Project>

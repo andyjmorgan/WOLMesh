@@ -1,4 +1,3 @@
-C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkSignalRClient\bin\Debug\NLog.config
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkSignalRClient\bin\Debug\WOLMeshFrameworkSignalRClient.dll.config
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkSignalRClient\bin\Debug\WOLMeshFrameworkSignalRClient.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkSignalRClient\bin\Debug\WOLMeshFrameworkSignalRClient.pdb

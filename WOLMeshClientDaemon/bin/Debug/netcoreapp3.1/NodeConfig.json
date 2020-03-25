@@ -1,0 +1,6 @@
+{
+  "serveraddress": "https://recording.lab.local:7443",
+  "ignoreSSLErrors": true,
+  "timerInterval": 30,
+  "UUID": "4897d44e-37f3-4c7f-bc30-4fb6bdae8dcc"
+}

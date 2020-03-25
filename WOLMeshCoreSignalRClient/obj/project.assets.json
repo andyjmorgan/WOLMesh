@@ -211,6 +211,15 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NLog/4.7.0": {
         "type": "package",
         "compile": {
@@ -218,31 +227,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {}
-        }
-      },
-      "NLog.Config/4.7.0": {
-        "type": "package",
-        "dependencies": {
-          "NLog": "4.7.0",
-          "NLog.Schema": "4.7.0"
-        },
-        "contentFiles": {
-          "contentFiles/any/any/NLog.config": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": true,
-            "outputPath": "NLog.config"
-          }
-        }
-      },
-      "NLog.Schema/4.7.0": {
-        "type": "package",
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
         }
       },
       "System.IO.Pipelines/4.7.0": {
@@ -548,6 +532,37 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "NLog/4.7.0": {
       "sha512": "ch4piF/ifV6ZapFx5Vj8MGaiCZkztHwTMFghJJSOkA/LeWcNdvqW8VzRw7ZMvS8anUmsH81FV334Vay6+ja4Kg==",
       "type": "package",
@@ -579,34 +594,6 @@
         "lib/xamarinios10/NLog.xml",
         "nlog.4.7.0.nupkg.sha512",
         "nlog.nuspec"
-      ]
-    },
-    "NLog.Config/4.7.0": {
-      "sha512": "cNNAdC96/l6xsIwmlIV4TiNl6Rq8ETiI9sYjNLj8psgAVVv51FqPnylFQ/9Gd/N+ubvaQuiA+9+50XysD/n8pQ==",
-      "type": "package",
-      "path": "nlog.config/4.7.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/NLog.config",
-        "contentFiles/any/any/NLog.config",
-        "nlog.config.4.7.0.nupkg.sha512",
-        "nlog.config.nuspec",
-        "tools/Install.ps1"
-      ]
-    },
-    "NLog.Schema/4.7.0": {
-      "sha512": "wNPtswvUtwQMqvUDUMij0AP5NeXYcWgcI+GLAS2cZOi+EMi60l0f/Azaa0zgyliHQBMeveTSgkRtEaipyvHV/g==",
-      "type": "package",
-      "path": "nlog.schema/4.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/NLog.xsd",
-        "contentFiles/any/any/NLog.xsd",
-        "nlog.schema.4.7.0.nupkg.sha512",
-        "nlog.schema.nuspec"
       ]
     },
     "System.IO.Pipelines/4.7.0": {
@@ -663,7 +650,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.AspNetCore.SignalR.Client >= 3.1.2",
       "NLog >= 4.7.0",
-      "NLog.Config >= 4.7.0",
+      "Newtonsoft.Json >= 12.0.3",
       "WOLMeshTypes >= 1.0.0"
     ]
   },
@@ -724,9 +711,9 @@
             "target": "Package",
             "version": "[4.7.0, )"
           },
-          "NLog.Config": {
+          "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[12.0.3, )"
           }
         },
         "imports": [

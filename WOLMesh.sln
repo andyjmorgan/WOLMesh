@@ -21,13 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net Libraries", ".Net Libr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTSUnsafeMethods", "WTSUnsafeMethods\WTSUnsafeMethods.csproj", "{14A8DC53-77A8-41BF-81BE-059739F1049B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOLMeshCoreSignalRClient", "WOLMeshCoreSignalRClient\WOLMeshCoreSignalRClient.csproj", "{05762242-A1C0-4815-ADE9-CD380DE88945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WOLMeshCoreSignalRClient", "WOLMeshCoreSignalRClient\WOLMeshCoreSignalRClient.csproj", "{05762242-A1C0-4815-ADE9-CD380DE88945}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Client", "Windows Client", "{E8C39A71-F658-44C3-8F5F-C9C539019ECB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linux - Mac", "Linux - Mac", "{B31E8596-7EB6-493F-A3C7-843E3EBC80E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WOLMeshCoreClientProcess", "WOLMeshCoreClientProcess\WOLMeshCoreClientProcess.csproj", "{7B27180F-D23F-450E-A93D-A4C746B1F06F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOLMeshClientDaemon", "WOLMeshClientDaemon\WOLMeshClientDaemon.csproj", "{BEC7BFFC-47D0-48D4-8639-49F06289E542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{7B27180F-D23F-450E-A93D-A4C746B1F06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B27180F-D23F-450E-A93D-A4C746B1F06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B27180F-D23F-450E-A93D-A4C746B1F06F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC7BFFC-47D0-48D4-8639-49F06289E542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC7BFFC-47D0-48D4-8639-49F06289E542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC7BFFC-47D0-48D4-8639-49F06289E542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC7BFFC-47D0-48D4-8639-49F06289E542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{14A8DC53-77A8-41BF-81BE-059739F1049B} = {8726B4EA-79DF-48E4-B4DC-1BF002F4A7FD}
 		{05762242-A1C0-4815-ADE9-CD380DE88945} = {49F19D69-B588-46BF-961C-9F7D2A32B3F0}
 		{7B27180F-D23F-450E-A93D-A4C746B1F06F} = {B31E8596-7EB6-493F-A3C7-843E3EBC80E5}
+		{BEC7BFFC-47D0-48D4-8639-49F06289E542} = {B31E8596-7EB6-493F-A3C7-843E3EBC80E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4584ADE7-DC82-476F-B661-8792E592C5FA}

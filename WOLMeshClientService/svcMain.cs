@@ -66,7 +66,8 @@ namespace WOLMeshClientService
             NetworkInterface[] nics = System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces();
             NLog.LogManager.GetCurrentClassLogger().Debug("All Nics: {0}", nics.Count());
            var trimmedNics = nics.Where(x => x.OperationalStatus == OperationalStatus.Up && x.NetworkInterfaceType == NetworkInterfaceType.Ethernet).ToList();
-            NLog.LogManager.GetCurrentClassLogger().Debug("Trimmed Nics: {0}", trimmedNics.Count());
+            NLog.LogManager.GetCurrentClassLogger().Debug("Trimmed Nics: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(trimmedNics, Formatting.Indented));
+
             foreach (var nic in trimmedNics)
             {
                 var physicalAddress = nic.GetPhysicalAddress();
@@ -78,11 +79,14 @@ namespace WOLMeshClientService
                     {
                         if (nicprops.UnicastAddresses?.Count > 0)
                         {
-                            System.Collections.Generic.IEnumerable<UnicastIPAddressInformation> count = nicprops.UnicastAddresses.Where(x => x.IsDnsEligible && (!x.Address.IsIPv6LinkLocal && !x.Address.IsIPv6Multicast && !x.Address.IsIPv6SiteLocal && !x.Address.IsIPv6Teredo));
+                            System.Collections.Generic.IEnumerable<UnicastIPAddressInformation> count = nicprops.UnicastAddresses.Where(x => x.IsDnsEligible && x.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork && (!x.Address.IsIPv6LinkLocal && !x.Address.IsIPv6Multicast && !x.Address.IsIPv6SiteLocal && !x.Address.IsIPv6Teredo));
                             if (count.Count() > 0)
                             {
+                                
                                 foreach (var c in count)
                                 {
+                                    NLog.LogManager.GetCurrentClassLogger().Debug("IP: {0} - Subnet: {1}", c.Address.ToString(), c.IPv4Mask.ToString());
+
                                     var ips = new IPSegment(c.Address.ToString(), c.IPv4Mask.ToString());
 
                                     di.AccessibleNetworks.Add(new NetworkDetails

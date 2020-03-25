@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Client": "3.1.2",
           "NLog": "4.7.0",
-          "NLog.Config": "4.7.0",
+          "Newtonsoft.Json": "12.0.3",
           "WOLMeshTypes": "1.0.0"
         },
         "runtime": {
@@ -209,6 +209,14 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "NLog/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
@@ -217,13 +225,6 @@
           }
         }
       },
-      "NLog.Config/4.7.0": {
-        "dependencies": {
-          "NLog": "4.7.0",
-          "NLog.Schema": "4.7.0"
-        }
-      },
-      "NLog.Schema/4.7.0": {},
       "System.IO.Pipelines/4.7.0": {
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
@@ -365,26 +366,19 @@
       "path": "microsoft.extensions.primitives/3.1.2",
       "hashPath": "microsoft.extensions.primitives.3.1.2.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "NLog/4.7.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ch4piF/ifV6ZapFx5Vj8MGaiCZkztHwTMFghJJSOkA/LeWcNdvqW8VzRw7ZMvS8anUmsH81FV334Vay6+ja4Kg==",
       "path": "nlog/4.7.0",
       "hashPath": "nlog.4.7.0.nupkg.sha512"
-    },
-    "NLog.Config/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cNNAdC96/l6xsIwmlIV4TiNl6Rq8ETiI9sYjNLj8psgAVVv51FqPnylFQ/9Gd/N+ubvaQuiA+9+50XysD/n8pQ==",
-      "path": "nlog.config/4.7.0",
-      "hashPath": "nlog.config.4.7.0.nupkg.sha512"
-    },
-    "NLog.Schema/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wNPtswvUtwQMqvUDUMij0AP5NeXYcWgcI+GLAS2cZOi+EMi60l0f/Azaa0zgyliHQBMeveTSgkRtEaipyvHV/g==",
-      "path": "nlog.schema/4.7.0",
-      "hashPath": "nlog.schema.4.7.0.nupkg.sha512"
     },
     "System.IO.Pipelines/4.7.0": {
       "type": "package",

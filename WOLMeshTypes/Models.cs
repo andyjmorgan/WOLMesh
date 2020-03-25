@@ -26,6 +26,20 @@ namespace WOLMeshTypes
             }
 
         }
+        public class DaemonNodeConfig
+        {
+            public string serveraddress { get; set; }
+            public bool ignoreSSLErrors { get; set; }
+            public int timerInterval { get; set; }
+            public string UUID { get; set; }
+            public DaemonNodeConfig()
+            {
+                timerInterval = 30;
+                ignoreSSLErrors = true;
+                UUID = Guid.NewGuid().ToString();
+            }
+
+        }
         public class DeviceIdentifier
         {
             public string HostName { get; set; }

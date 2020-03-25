@@ -1,0 +1,401 @@
+2020-03-25 09:45:03.1354|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:45:12.0109|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:47:42.5407|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:47:42.5754|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:47:42.5808|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:47:42.5808|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:47:42.5808|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 09:47:42.5961|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 09:47:42.5961|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 09:47:42.5961|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 09:47:42.6130|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 09:47:42.6130|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 09:47:42.6130|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 09:47:42.6288|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 09:47:42.6288|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 09:47:45.3529|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:45 +00:00
+2020-03-25 09:47:46.3719|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:46 +00:00
+2020-03-25 09:47:47.3906|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:47 +00:00
+2020-03-25 09:47:48.3983|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:48 +00:00
+2020-03-25 09:47:49.4110|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:49 +00:00
+2020-03-25 09:47:50.4280|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:47:50 +00:00
+2020-03-25 09:48:02.6068|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:48:02.6404|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:48:02.6404|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:48:02.6404|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:48:02.6579|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 09:48:02.6579|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 09:48:02.6707|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 09:48:02.6707|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 09:48:02.6707|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 09:48:02.6885|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 09:48:02.6885|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 09:48:02.6885|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 09:48:02.7058|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 09:48:03.0899|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:03 +00:00
+2020-03-25 09:48:04.1061|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:04 +00:00
+2020-03-25 09:48:05.1211|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:05 +00:00
+2020-03-25 09:48:06.1288|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:06 +00:00
+2020-03-25 09:48:07.1364|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:07 +00:00
+2020-03-25 09:48:08.1436|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:08 +00:00
+2020-03-25 09:48:09.1617|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:09 +00:00
+2020-03-25 09:48:10.1688|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:10 +00:00
+2020-03-25 09:48:11.1764|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:11 +00:00
+2020-03-25 09:48:12.1835|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:12 +00:00
+2020-03-25 09:48:13.1903|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:13 +00:00
+2020-03-25 09:48:14.1975|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:14 +00:00
+2020-03-25 09:48:15.2045|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:15 +00:00
+2020-03-25 09:48:16.2113|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:16 +00:00
+2020-03-25 09:48:24.0713|INFO|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 09:48:24 +00:00
+2020-03-25 09:49:16.1675|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:49:16.2046|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:49:16.2046|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:49:16.2165|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:49:16.2165|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 09:49:16.2291|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 09:49:16.2291|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 09:49:16.2291|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 09:49:16.2492|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 09:49:16.2492|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 09:49:16.2620|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 09:49:16.2620|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 09:49:16.2620|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 09:49:30.6116|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:49:30.6467|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:49:30.6530|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:49:30.6530|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:49:30.6530|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 09:49:30.6711|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 09:49:30.6711|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 09:49:30.6842|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 09:49:30.6842|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 09:49:30.6842|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 09:49:30.7024|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 09:49:30.7024|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 09:49:30.7145|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 09:50:47.8741|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 09:50:47.9095|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 09:50:47.9152|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:50:47.9152|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 09:50:47.9152|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 09:50:47.9351|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 09:50:47.9351|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 09:50:47.9492|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 09:50:47.9492|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 09:50:47.9630|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 09:50:47.9630|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 09:50:47.9761|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 09:50:47.9761|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:01:47.1374|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:01:47.1717|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:01:47.1717|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:01:47.1846|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:01:47.1846|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:01:47.1846|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:01:47.2051|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:01:47.2051|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:01:47.2183|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:01:47.2183|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:01:47.2313|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:01:47.2313|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:01:47.2313|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:01:48.3317|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\ID.json
+2020-03-25 10:10:11.9553|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:10:11.9907|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:10:11.9963|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:10:11.9963|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:10:11.9963|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:10:12.0160|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:10:12.0160|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:10:12.0302|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:10:12.0302|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:10:12.0436|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:10:12.0436|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:10:12.0436|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:10:12.0614|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:10:16.0792|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:10:26.6799|INFO|WOLMeshClientDaemon.Worker|Managed Connection null, opening a connection
+2020-03-25 10:10:26.6880|INFO|WOLMeshClientDaemon.Worker|Opening Connection
+2020-03-25 10:10:26.6880|INFO|WOLMeshClientDaemon.Worker|Attempting to connect to: https://serverhost.domain.local:7443
+2020-03-25 10:10:30.3327|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://serverhost.domain.local:7443
+2020-03-25 10:10:39.6233|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:10:39 +00:00
+2020-03-25 10:11:18.8149|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:11:18.8511|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:11:18.8580|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:11:18.8580|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:11:18.8715|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:11:18.8715|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:11:18.8854|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:11:18.8854|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:11:18.8854|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:11:18.9048|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:11:18.9048|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:11:18.9166|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:11:18.9166|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:11:20.8748|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:12:06.4662|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:12:06.5020|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:12:06.5020|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:12:06.5147|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:12:06.5147|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:12:06.5281|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:12:06.5281|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:12:06.5426|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:12:06.5426|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:12:06.5426|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:12:06.5625|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:12:06.5625|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:12:06.5751|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:12:07.6913|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:12:14.8188|INFO|WOLMeshClientDaemon.Worker|Managed Connection null, opening a connection
+2020-03-25 10:12:14.8271|INFO|WOLMeshClientDaemon.Worker|Opening Connection
+2020-03-25 10:12:14.8271|INFO|WOLMeshClientDaemon.Worker|Attempting to connect to: https://recording.lab.local:7443
+2020-03-25 10:12:18.4575|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443
+2020-03-25 10:12:19.0468|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:19 +00:00
+2020-03-25 10:12:19.5735|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalR connection state: Connected
+2020-03-25 10:12:19.5735|INFO|WOLMeshClientDaemon.Worker|Connected
+2020-03-25 10:12:19.6159|INFO|WOLMeshClientDaemon.Worker|Registering
+2020-03-25 10:12:19.6300|INFO|WOLMeshClientDaemon.Worker|Registered
+2020-03-25 10:12:20.0743|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:20 +00:00
+2020-03-25 10:12:21.0914|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:21 +00:00
+2020-03-25 10:12:22.1057|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:22 +00:00
+2020-03-25 10:12:23.1198|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:23 +00:00
+2020-03-25 10:12:24.1290|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:24 +00:00
+2020-03-25 10:12:25.1367|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:25 +00:00
+2020-03-25 10:12:26.1530|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:26 +00:00
+2020-03-25 10:12:27.1683|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:27 +00:00
+2020-03-25 10:12:28.1857|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:28 +00:00
+2020-03-25 10:12:29.2051|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:29 +00:00
+2020-03-25 10:12:30.2134|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:30 +00:00
+2020-03-25 10:12:31.2287|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:31 +00:00
+2020-03-25 10:12:32.2485|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:32 +00:00
+2020-03-25 10:12:33.2665|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:33 +00:00
+2020-03-25 10:12:34.2757|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:34 +00:00
+2020-03-25 10:12:35.2958|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:35 +00:00
+2020-03-25 10:12:36.3084|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:36 +00:00
+2020-03-25 10:12:37.3235|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:37 +00:00
+2020-03-25 10:12:38.3377|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:38 +00:00
+2020-03-25 10:12:39.3582|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:39 +00:00
+2020-03-25 10:12:40.3741|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:40 +00:00
+2020-03-25 10:12:41.3868|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:41 +00:00
+2020-03-25 10:12:42.4007|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:42 +00:00
+2020-03-25 10:12:43.4176|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:43 +00:00
+2020-03-25 10:12:44.4334|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:44 +00:00
+2020-03-25 10:12:45.4478|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:45 +00:00
+2020-03-25 10:12:46.4662|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:46 +00:00
+2020-03-25 10:12:47.4795|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:47 +00:00
+2020-03-25 10:12:48.4969|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:48 +00:00
+2020-03-25 10:12:49.0604|DEBUG|WOLMeshClientDaemon.Worker|Managed Connection connected, sending heartbeat
+2020-03-25 10:12:49.5101|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:49 +00:00
+2020-03-25 10:12:50.5279|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:12:50 +00:00
+2020-03-25 10:13:00.4372|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:00 +00:00
+2020-03-25 10:13:01.4587|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:01 +00:00
+2020-03-25 10:13:05.3575|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:05 +00:00
+2020-03-25 10:13:06.3713|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:06 +00:00
+2020-03-25 10:13:07.3845|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:07 +00:00
+2020-03-25 10:13:08.4048|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:08 +00:00
+2020-03-25 10:13:09.4202|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:09 +00:00
+2020-03-25 10:13:10.4364|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:10 +00:00
+2020-03-25 10:13:11.4498|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:11 +00:00
+2020-03-25 10:13:12.4631|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:12 +00:00
+2020-03-25 10:13:13.4795|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:13 +00:00
+2020-03-25 10:13:14.4999|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:14 +00:00
+2020-03-25 10:13:15.5112|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:15 +00:00
+2020-03-25 10:13:16.5272|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:16 +00:00
+2020-03-25 10:13:17.5425|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:17 +00:00
+2020-03-25 10:13:18.5568|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:18 +00:00
+2020-03-25 10:13:19.0444|DEBUG|WOLMeshClientDaemon.Worker|Managed Connection connected, sending heartbeat
+2020-03-25 10:13:19.5732|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:19 +00:00
+2020-03-25 10:13:20.5885|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:20 +00:00
+2020-03-25 10:13:21.5938|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:13:21 +00:00
+2020-03-25 10:14:08.1222|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:14:08.1573|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:14:08.1573|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:14:08.1688|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:14:08.1688|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:14:08.1814|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:14:08.1814|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:14:08.1814|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:14:08.2005|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:14:08.2005|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:14:08.2128|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:14:08.2128|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:14:08.2128|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:14:52.4657|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:14:53.6086|INFO|WOLMeshClientDaemon.Program|Node Config: {
+  "serveraddress": "https://recording.lab.local:7443",
+  "ignoreSSLErrors": true,
+  "timerInterval": 30,
+  "UUID": "4897d44e-37f3-4c7f-bc30-4fb6bdae8dcc"
+}
+2020-03-25 10:15:22.5513|INFO|WOLMeshClientDaemon.Worker|Managed Connection null, opening a connection
+2020-03-25 10:15:25.4382|INFO|WOLMeshClientDaemon.Worker|Opening Connection
+2020-03-25 10:15:37.2542|INFO|WOLMeshClientDaemon.Worker|Attempting to connect to: https://recording.lab.local:7443
+2020-03-25 10:16:04.3373|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443
+2020-03-25 10:16:09.7788|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:09 +00:00
+2020-03-25 10:16:11.6378|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:11 +00:00
+2020-03-25 10:16:11.6378|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalR connection state: Connected
+2020-03-25 10:16:14.0452|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:14 +00:00
+2020-03-25 10:16:16.4081|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:15 +00:00
+2020-03-25 10:16:19.5203|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:19 +00:00
+2020-03-25 10:16:21.9505|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:21 +00:00
+2020-03-25 10:16:21.9505|INFO|WOLMeshClientDaemon.Worker|Connected
+2020-03-25 10:16:23.7741|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:23 +00:00
+2020-03-25 10:16:28.6353|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:28 +00:00
+2020-03-25 10:16:30.3757|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:30 +00:00
+2020-03-25 10:16:30.3757|INFO|WOLMeshClientDaemon.Worker|Registering
+2020-03-25 10:16:31.9473|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:31 +00:00
+2020-03-25 10:16:32.7444|INFO|WOLMeshClientDaemon.Worker|Registered
+2020-03-25 10:16:34.0907|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:34 +00:00
+2020-03-25 10:16:35.3183|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:35 +00:00
+2020-03-25 10:16:49.9401|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:49 +00:00
+2020-03-25 10:16:49.9523|DEBUG|WOLMeshClientDaemon.Worker|Managed Connection connected, sending heartbeat
+2020-03-25 10:16:50.9609|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:50 +00:00
+2020-03-25 10:16:51.9811|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:51 +00:00
+2020-03-25 10:16:52.9971|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:52 +00:00
+2020-03-25 10:16:54.0105|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:54 +00:00
+2020-03-25 10:16:55.0192|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:55 +00:00
+2020-03-25 10:16:56.0265|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:56 +00:00
+2020-03-25 10:16:57.0403|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:57 +00:00
+2020-03-25 10:16:58.0588|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:58 +00:00
+2020-03-25 10:16:59.0655|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:16:59 +00:00
+2020-03-25 10:17:00.0716|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:00 +00:00
+2020-03-25 10:17:01.0784|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:01 +00:00
+2020-03-25 10:17:02.0877|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:02 +00:00
+2020-03-25 10:17:03.0939|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:03 +00:00
+2020-03-25 10:17:04.1102|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:04 +00:00
+2020-03-25 10:17:05.1219|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:05 +00:00
+2020-03-25 10:17:06.1379|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:06 +00:00
+2020-03-25 10:17:07.1452|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:07 +00:00
+2020-03-25 10:17:08.1524|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:08 +00:00
+2020-03-25 10:17:09.1604|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:17:09 +00:00
+2020-03-25 10:18:02.8691|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:18:02.9039|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:18:02.9039|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:18:02.9154|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:18:02.9154|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:18:02.9154|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:18:02.9336|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:18:02.9336|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:18:02.9336|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:18:02.9510|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:18:02.9510|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:18:02.9623|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:18:02.9623|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:18:04.7018|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:18:05.5339|INFO|WOLMeshClientDaemon.Program|Node Config: {
+  "serveraddress": "https://recording.lab.local:7443",
+  "ignoreSSLErrors": true,
+  "timerInterval": 30,
+  "UUID": "4897d44e-37f3-4c7f-bc30-4fb6bdae8dcc"
+}
+2020-03-25 10:18:07.6346|INFO|WOLMeshClientDaemon.Worker|Managed Connection null, opening a connection
+2020-03-25 10:18:07.6346|INFO|WOLMeshClientDaemon.Worker|Opening Connection
+2020-03-25 10:18:07.6496|INFO|WOLMeshClientDaemon.Worker|Attempting to connect to: https://recording.lab.local:7443
+2020-03-25 10:18:09.1216|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443
+2020-03-25 10:18:09.8964|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:09 +00:00
+2020-03-25 10:18:10.3081|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalR connection state: Connected
+2020-03-25 10:18:10.3081|INFO|WOLMeshClientDaemon.Worker|Connected
+2020-03-25 10:18:10.3604|INFO|WOLMeshClientDaemon.Worker|Registering
+2020-03-25 10:18:10.3604|INFO|WOLMeshClientDaemon.Worker|Registered
+2020-03-25 10:18:10.9169|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:10 +00:00
+2020-03-25 10:18:11.9328|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:11 +00:00
+2020-03-25 10:18:12.9501|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:12 +00:00
+2020-03-25 10:18:13.9672|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:13 +00:00
+2020-03-25 10:18:14.9838|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:14 +00:00
+2020-03-25 10:18:15.9962|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:15 +00:00
+2020-03-25 10:18:17.0153|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:17 +00:00
+2020-03-25 10:18:18.0264|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:18 +00:00
+2020-03-25 10:18:19.0402|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:19 +00:00
+2020-03-25 10:18:20.0558|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:20 +00:00
+2020-03-25 10:18:21.0700|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:21 +00:00
+2020-03-25 10:18:22.0760|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:22 +00:00
+2020-03-25 10:18:23.0946|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:23 +00:00
+2020-03-25 10:18:24.1007|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:24 +00:00
+2020-03-25 10:18:25.1189|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:25 +00:00
+2020-03-25 10:18:26.1334|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:26 +00:00
+2020-03-25 10:18:27.1485|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:27 +00:00
+2020-03-25 10:18:28.1690|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:28 +00:00
+2020-03-25 10:18:29.1801|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:29 +00:00
+2020-03-25 10:18:30.1982|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:30 +00:00
+2020-03-25 10:18:31.2110|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:31 +00:00
+2020-03-25 10:18:32.2160|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:32 +00:00
+2020-03-25 10:18:33.2357|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:33 +00:00
+2020-03-25 10:18:34.2438|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:34 +00:00
+2020-03-25 10:18:35.2599|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:35 +00:00
+2020-03-25 10:18:36.2741|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:36 +00:00
+2020-03-25 10:18:37.2898|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:37 +00:00
+2020-03-25 10:18:38.3048|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:38 +00:00
+2020-03-25 10:18:39.3183|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:18:39 +00:00
+2020-03-25 10:19:35.6065|INFO|WOLMeshCoreSignalRClient.CoreHelpers|AppDomain Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\
+2020-03-25 10:19:35.6425|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon
+2020-03-25 10:19:35.6425|INFO|WOLMeshCoreSignalRClient.CoreHelpers|New Current Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:19:35.6425|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Working Directory: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1
+2020-03-25 10:19:35.6603|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Framework: .NET Core 3.1.0
+2020-03-25 10:19:35.6603|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Architecture: X64
+2020-03-25 10:19:35.6731|INFO|WOLMeshCoreSignalRClient.CoreHelpers|ProcessArchitecture: X64
+2020-03-25 10:19:35.6731|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OSDescription: Microsoft Windows 10.0.18363
+2020-03-25 10:19:35.6731|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is FreeBSD: False
+2020-03-25 10:19:35.6926|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Linux: False
+2020-03-25 10:19:35.6926|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is OSX: False
+2020-03-25 10:19:35.7042|INFO|WOLMeshCoreSignalRClient.CoreHelpers|Is Windows: True
+2020-03-25 10:19:35.7042|INFO|WOLMeshCoreSignalRClient.CoreHelpers|OS Description: Microsoft Windows 10.0.18363
+2020-03-25 10:19:37.6867|INFO|WOLMeshClientDaemon.Program|Looking for machine config here: C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\NodeConfig.json
+2020-03-25 10:19:39.4577|INFO|WOLMeshClientDaemon.Program|Node Config: {
+  "serveraddress": "https://recording.lab.local:7443",
+  "ignoreSSLErrors": true,
+  "timerInterval": 30,
+  "UUID": "4897d44e-37f3-4c7f-bc30-4fb6bdae8dcc"
+}
+2020-03-25 10:19:43.5664|INFO|WOLMeshClientDaemon.Worker|Managed Connection null, opening a connection
+2020-03-25 10:19:43.5664|INFO|WOLMeshClientDaemon.Worker|Opening Connection
+2020-03-25 10:19:43.5802|INFO|WOLMeshClientDaemon.Worker|Attempting to connect to: https://recording.lab.local:7443
+2020-03-25 10:19:45.1447|INFO|WOLMeshCoreSignalRClient.ManagedClient|Attempting to open a SignalR connection to: https://recording.lab.local:7443
+2020-03-25 10:19:45.8999|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:45 +00:00
+2020-03-25 10:19:46.3276|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalR connection state: Connected
+2020-03-25 10:19:46.3276|INFO|WOLMeshClientDaemon.Worker|Connected
+2020-03-25 10:19:46.3691|INFO|WOLMeshClientDaemon.Worker|Registering
+2020-03-25 10:19:46.3859|INFO|WOLMeshClientDaemon.Worker|Registered
+2020-03-25 10:19:46.9242|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:46 +00:00
+2020-03-25 10:19:47.9406|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:47 +00:00
+2020-03-25 10:19:48.9567|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:48 +00:00
+2020-03-25 10:19:49.9748|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:49 +00:00
+2020-03-25 10:19:50.9929|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:50 +00:00
+2020-03-25 10:19:52.0001|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:52 +00:00
+2020-03-25 10:19:53.0167|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:53 +00:00
+2020-03-25 10:19:54.0313|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:54 +00:00
+2020-03-25 10:19:55.0506|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:55 +00:00
+2020-03-25 10:19:56.0627|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:56 +00:00
+2020-03-25 10:19:56.2935|INFO|WOLMeshClientDaemon.Worker|Awaking: {
+  "MacAddress": "C03FD56406B5",
+  "BroadcastAddress": "192.168.0.255",
+  "SubnetMask": "255.255.255.0"
+}
+2020-03-25 10:19:57.0778|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:57 +00:00
+2020-03-25 10:19:58.0984|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:58 +00:00
+2020-03-25 10:19:59.1152|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:19:59 +00:00
+2020-03-25 10:20:00.1225|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:00 +00:00
+2020-03-25 10:20:01.1306|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:01 +00:00
+2020-03-25 10:20:02.1397|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:02 +00:00
+2020-03-25 10:20:03.1449|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:03 +00:00
+2020-03-25 10:20:04.1529|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:04 +00:00
+2020-03-25 10:20:05.1611|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:05 +00:00
+2020-03-25 10:20:06.1686|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:06 +00:00
+2020-03-25 10:20:07.1773|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:07 +00:00
+2020-03-25 10:20:08.1904|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:08 +00:00
+2020-03-25 10:20:09.2005|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:09 +00:00
+2020-03-25 10:20:10.2076|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:10 +00:00
+2020-03-25 10:20:11.2238|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:11 +00:00
+2020-03-25 10:20:12.2388|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:12 +00:00
+2020-03-25 10:20:13.2446|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:13 +00:00
+2020-03-25 10:20:14.2515|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:14 +00:00
+2020-03-25 10:20:15.2624|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:15 +00:00
+2020-03-25 10:20:50.8653|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:50 +00:00
+2020-03-25 10:20:50.8752|DEBUG|WOLMeshClientDaemon.Worker|Managed Connection connected, sending heartbeat
+2020-03-25 10:20:50.8752|DEBUG|WOLMeshClientDaemon.Worker|Managed Connection connected, sending heartbeat
+2020-03-25 10:20:50.9529|INFO|WOLMeshCoreSignalRClient.ManagedClient|SignalRClient - [https://recording.lab.local:7443] Closed Event: System.TimeoutException: Server timeout (30000.00ms) elapsed without receiving a message from the server.
+2020-03-25 10:20:50.9626|INFO|WOLMeshClientDaemon.Worker|OnDisconnect
+2020-03-25 10:20:50.9626|INFO|WOLMeshClientDaemon.Worker|Disposing Connection
+2020-03-25 10:20:51.9051|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:51 +00:00
+2020-03-25 10:20:52.9116|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:52 +00:00
+2020-03-25 10:20:53.9176|TRACE|WOLMeshClientDaemon.Worker|Worker running at: 25/03/2020 10:20:53 +00:00

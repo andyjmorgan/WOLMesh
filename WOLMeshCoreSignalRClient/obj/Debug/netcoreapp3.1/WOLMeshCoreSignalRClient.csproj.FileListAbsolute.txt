@@ -1,4 +1,3 @@
-C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\NLog.config
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.deps.json
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\bin\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.pdb

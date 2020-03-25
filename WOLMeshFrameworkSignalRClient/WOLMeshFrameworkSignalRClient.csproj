@@ -145,9 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <Content Include="NLog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="NLog.config" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
