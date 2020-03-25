@@ -1,6 +1,8 @@
 $CurrentPath = $PSScriptRoot
 $publishPath = "$CurrentPath\Publish"
 
+$sourceFilePath = "$PSScriptRoot\ExampleFiles"
+
 $WebServiceProjectPath = "$CurrentPath\WOLMeshWebAPI\WOLMeshWebAPI.csproj"
 $CoreDaemonProjectPath = "$CurrentPath\WOLMeshClientDaemon\WOLMeshClientDaemon.csproj"
 $CoreClientProjectPath = "$CurrentPath\WOLMeshCoreClientProcess\WOLMeshCoreClientProcess.csproj"
@@ -50,6 +52,10 @@ if(test-path $publishpath){
 }
 else{
     Write-Warning "Could not find publish path"
+}
+
+Get-ChildItem $sourceFilePath | %{
+    Copy-Item $_.fullname -Destination $publishPath
 }
 
 write-host "Upgrading Test Environment"

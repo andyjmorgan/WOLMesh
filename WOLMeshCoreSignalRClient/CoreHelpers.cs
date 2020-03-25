@@ -33,6 +33,7 @@ namespace WOLMeshCoreSignalRClient
             {
                 NLog.LogManager.GetCurrentClassLogger().Warn("Setting new UUID as it's empty");
                 _nc.UUID = Guid.NewGuid().ToString();
+                System.IO.File.WriteAllText(ConfigPath, JsonConvert.SerializeObject(_nc, Formatting.Indented));
             }
             NLog.LogManager.GetCurrentClassLogger().Info("Node Config: {0}", JsonConvert.SerializeObject(_nc, Formatting.Indented));
             return _nc;
