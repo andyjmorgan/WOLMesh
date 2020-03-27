@@ -1,7 +1,9 @@
+using FluentScheduler;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,7 +27,10 @@ namespace WOLMeshWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddNewtonsoftJson(opts => {
+                opts.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+                }
+            );
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -33,6 +38,7 @@ namespace WOLMeshWebAPI
             });
             services.AddDbContext<DB.AppDBContext>();
 
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc(name: "v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Wake On Lan Mesh", Version = "v1" });
@@ -40,6 +46,7 @@ namespace WOLMeshWebAPI
 
             );
             services.AddSignalR();
+
             //services.AddCors(options =>
             //{
             //    options.AddPolicy("CorsPolicy", builder => builder
@@ -62,16 +69,22 @@ namespace WOLMeshWebAPI
             {
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();              
+                app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSwagger();
+            
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint(url: "/swagger/v1/swagger.json", name: "Wake On Lan Mesh");
             });
+
+             var hub = app.ApplicationServices.GetRequiredService<IHubContext<Hubs.WOLMeshHub>>();
+            IServiceScopeFactory serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            JobManager.Initialize(new Scheduler.SchedulerCore.MyRegistry(serviceScopeFactory, hub));
+
             if (!env.IsDevelopment())
             {
                 app.UseSpaStaticFiles();
@@ -91,10 +104,10 @@ namespace WOLMeshWebAPI
 
             app.UseSpa(spa =>
             {
-                    // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                    // see https://go.microsoft.com/fwlink/?linkid=864501
+                // To learn more about options for serving an Angular SPA from ASP.NET Core,
+                // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                    spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
                 {
@@ -105,8 +118,14 @@ namespace WOLMeshWebAPI
                 {
 
                     endpoints.MapHub<WOLMeshHub>("/WOLMeshHub");
+
+
                 });
-            });
+
+
+            }) ;
+
+
         }
     }
 }

@@ -1,0 +1,43 @@
+<div *ngIf="networks">
+  <clr-datagrid [(clrDgSelected)]="selected" class="datagrid-compact">
+    <clr-dg-column [clrDgSortBy]="'broadcastAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Broadcast Address</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'subnetMask'"><ng-container *clrDgHideableColumn="{hidden: false}">Subnet Mask</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'registeredDevices'"><ng-container *clrDgHideableColumn="{hidden: false}">Registered Devices</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'onlineDevices'"><ng-container *clrDgHideableColumn="{hidden: false}">Online Devices</ng-container></clr-dg-column>
+    <clr-dg-row *clrDgItems="let network of networks" [clrDgItem]="network">
+      <clr-dg-cell>{{network.broadcastAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{network.subnetMask}}</clr-dg-cell>
+      <clr-dg-cell>{{network.registeredDevices}}</clr-dg-cell>
+      <clr-dg-cell>{{network.onlineDevices}}</clr-dg-cell>
+    </clr-dg-row>
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+  <button class="btn btn-icon" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadNetworks()"></clr-icon></button>
+  <button class="btn btn-danger" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()">Delete</button>
+</div>
+
+<clr-modal [(clrModalOpen)]="showDeleteModal">
+  <h3 class="modal-title">Confirm Delete</h3>
+  <div class="modal-body">
+    <p>Are you really sure you want to delete these networks?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="ReallyDelete(false)">Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="ReallyDelete(true)">Ok</button>
+  </div>
+</clr-modal>
+<clr-modal [(clrModalOpen)]="showDeleteErrorOnline">
+  <h3 class="modal-title">Failed to delete</h3>
+  <div class="modal-body">
+    <p>You can only Delete networks when all devices on that network are offline.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn" (click)="showDeleteErrorOnline = false">Ok</button>
+  </div>
+</clr-modal>

@@ -5,3 +5,5 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\net472\WOLMeshTypes.
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\net472\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\net472\WOLMeshTypes.pdb
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\net472\WOLMeshTypes.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Release\net472\NLog.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Release\net472\WOLMeshTypes.csproj.CopyComplete

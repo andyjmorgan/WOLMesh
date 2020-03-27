@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>dotnet-WOLMeshClientDaemon-CE8E20F2-D1D6-4B36-A16F-1808D28CAB37</UserSecretsId>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>

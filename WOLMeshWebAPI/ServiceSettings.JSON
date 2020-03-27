@@ -1,6 +1,16 @@
 {
+  "DBVersion": 1,
   "httpsPort": 7443,
   "relayCount": 3,
   "SSLCertificatePFXFilePath": "C:\\Users\\andy\\source\\repos\\WOLMesh\\WOLMeshWebAPI\\selfsigned.pfx",
-  "SSLCertificatePFXPassword": "WOLMeshSSLCertPassword123!£$"
+  "SSLCertificatePFXPassword": "WOLMeshSSLCertPassword123!£$",
+  "HeartBeatIntervalSeconds": 150,
+  "KeepDevicesOnline": true,
+  "KeepDevicesOnlineAtWeekend": true,
+  "KeepDevicesOnlineStartHour": 1,
+  "KeepDevicesOnlineEndHour": 23,
+  "MaxWakeRetries": 11,
+  "UseDirectedBroadcasts": false,
+  "MaxStoredActivities": 201,
+  "PacketsToSend": 4
 }

@@ -63,5 +63,11 @@ Get-Service -ComputerName recording.lab.local -Name "WOLMeshWebAPI" | Stop-Servi
 Copy-Item -Recurse -Path "$publishPath\WebService\*" -Destination '\\recording.lab.local\c$\wolmesh\' -Force
 Get-Service -ComputerName recording.lab.local -Name "WOLMeshWebAPI" | Start-Service
 
+
+write-host "SCP Files to PI"
+pscp -pw "P@ssw0rd10" "$publishPath\Agent\ARM\*"  "pi@192.168.0.62:/home/pi/Downloads/"
+write-host "Updating Version"
+plink pi@192.168.0.62 -batch -pw "P@ssw0rd10" /home/pi/updateagent.sh
+
 remove-item -Recurse "$publishPath\WebService" -force
 remove-item -Recurse "$publishPath\Agent" -force

@@ -1,1 +1,27 @@
-<app-devicetable></app-devicetable>
+<clr-tabs>
+  <clr-tab>
+    <button clrTabLink>Registered Devices</button>
+    <clr-tab-content *clrIfActive>
+      <app-devicetable></app-devicetable>
+    </clr-tab-content>
+  </clr-tab>
+
+  <clr-tab>
+    <button clrTabLink>Registered Networks</button>
+    <clr-tab-content *clrIfActive>
+      <app-networktable></app-networktable>
+    </clr-tab-content>
+  </clr-tab>
+  <clr-tab>
+    <button clrTabLink>Recent Activity</button>
+    <clr-tab-content *clrIfActive>
+      <app-recentevents></app-recentevents>
+    </clr-tab-content>
+  </clr-tab>
+  <clr-tab>
+    <button clrTabLink>Settings</button>
+    <clr-tab-content *clrIfActive>
+      <app-settings></app-settings>
+    </clr-tab-content>
+  </clr-tab>
+</clr-tabs>

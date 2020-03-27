@@ -1,0 +1,47 @@
+<div *ngIf="events">
+  <clr-datagrid class="datagrid-compact">
+    <clr-dg-column style="min-width: 35px; width:35px;" [clrDgSortBy]="'result'"></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'time'"><ng-container *clrDgHideableColumn="{hidden: false}">Time:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'type'"><ng-container *clrDgHideableColumn="{hidden: true}">Type:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'result'"><ng-container *clrDgHideableColumn="{hidden: true}">Result:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'device'"><ng-container *clrDgHideableColumn="{hidden: false}">Object:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'message'"><ng-container *clrDgHideableColumn="{hidden: false}">Message:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'errorReason'"><ng-container *clrDgHideableColumn="{hidden: !hasErrors}">Error:</ng-container></clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let event of events" [clrDgItem]="event">
+      <clr-dg-cell style="min-width: 35px; width:35px;">
+        <clr-icon shape="success-standard" class="is-success" *ngIf="event.result"></clr-icon>
+        <clr-icon shape="warning-standard" class="is-error" *ngIf="!event.result"></clr-icon>
+
+      </clr-dg-cell>
+      <clr-dg-cell>{{event.time | date:'short'}}</clr-dg-cell>
+      <clr-dg-cell>{{event.type}}</clr-dg-cell>
+      <clr-dg-cell>{{event.result}}</clr-dg-cell>
+      <clr-dg-cell>{{event.device}}</clr-dg-cell>
+      <clr-dg-cell>{{event.message}}</clr-dg-cell>
+      <clr-dg-cell>{{event.errorReason}}</clr-dg-cell>
+
+
+    </clr-dg-row>
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+  <button class="btn btn-icon" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadEvents()"></clr-icon></button>
+  <button class="btn btn-danger" [clrLoading]="wakeLoading"  (click)="Delete()" [disabled]="events?.length == 0">Clear</button>
+</div>
+
+<clr-modal [(clrModalOpen)]="showDeleteModal">
+  <h3 class="modal-title">Confirm Delete</h3>
+  <div class="modal-body">
+    <p>Are you really sure you want to clear all activity?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="ReallyDelete(false)">Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="ReallyDelete(true)">Ok</button>
+  </div>
+</clr-modal>

@@ -1,7 +1,8 @@
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Debug\net472\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Debug\net472\WOLMeshTypes.pdb
-C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.csprojAssemblyReference.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.AssemblyInfoInputs.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.AssemblyInfo.cs
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\bin\Debug\net472\NLog.dll
+C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\net472\WOLMeshTypes.csproj.CopyComplete

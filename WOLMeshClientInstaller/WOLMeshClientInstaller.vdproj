@@ -11,6 +11,7 @@
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
 "SccProvider" = "8:"
+"BackwardsCompatibleGUIDGeneration" = "8:TRUE"
     "Hierarchy"
     {
         "Entry"
@@ -1457,6 +1458,12 @@
         {
         "MsmKey" = "8:_A807148905DE73AB76BDD04CD104CB83"
         "OwnerKey" = "8:_84018C8D521146619F64CEE505F49DEC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A807148905DE73AB76BDD04CD104CB83"
+        "OwnerKey" = "8:_15CD7CF189D514541FCC20615E05C5C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -7848,15 +7855,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WOL Mesh Client"
-        "ProductCode" = "8:{19977014-8A0E-4249-A47F-3A65F42FBFB3}"
-        "PackageCode" = "8:{49768820-870E-4B11-AACD-98CEF0346059}"
+        "ProductCode" = "8:{6E403B02-3D07-4DBD-A242-CA842AE0F374}"
+        "PackageCode" = "8:{DD5F1C23-4414-4BED-9433-C72B8BF283A0}"
         "UpgradeCode" = "8:{8E4821D1-7782-4A54-8BFD-EA799B91E3EA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:Andrew Morgan"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

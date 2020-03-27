@@ -6,7 +6,7 @@ import { SignalRService } from '../services/signal-r.service';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  
+
   constructor(public signalR: SignalRService) { }
 
   ngOnInit() {
@@ -17,5 +17,6 @@ export class HomeComponent implements OnInit {
   sendMessage() {
     this.signalR.sendHeartBeatMessage();
   }
+
 
 }

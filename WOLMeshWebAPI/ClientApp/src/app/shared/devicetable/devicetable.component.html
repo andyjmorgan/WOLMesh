@@ -1,26 +1,6 @@
 <div *ngIf="machines">
 
 
-  <div style="display: flex; align-items: center;  height:40px;">
-    <table>
-      <tr>
-        <td>
-          <div>
-            <h3>Registered Devices: {{machines.length}}  </h3>
-          </div>
-        </td>
-
-        <td>
-          <div>
-            <button type="button" class="btn btn-icon btn-sm" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon></button>
-            <!--<button class="btn btn-success btn-icon btn-sm" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()"><clr-icon shape="power"></clr-icon></button>
-            <button class="btn btn-danger btn-icon btn-sm" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()"><clr-icon shape="delete"></clr-icon></button>-->
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-
   <clr-datagrid [(clrDgSelected)]="selected" class="datagrid-compact">
     <clr-dg-column style="min-width: 35px; width:35px;" [clrDgSortBy]="'machineSummary.isOnline'"></clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'machineSummary.hostname'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name</ng-container></clr-dg-column>
@@ -29,7 +9,7 @@
     <clr-dg-column [clrDgField]="'machineSummary.domainName'"><ng-container *clrDgHideableColumn="{hidden: false}">Domain Name</ng-container></clr-dg-column>
     <clr-dg-column [clrDgField]="'machineSummary.ipAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Last IP</ng-container></clr-dg-column>
     <clr-dg-column [clrDgField]="'machineSummary.macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address</ng-container></clr-dg-column>
-    <clr-dg-column [clrDgField]="'machineSummary.windowsVersion'"><ng-container *clrDgHideableColumn="{hidden: false}">Windows Version</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'machineSummary.windowsVersion'"><ng-container *clrDgHideableColumn="{hidden: false}">Operating System</ng-container></clr-dg-column>
     <clr-dg-column [clrDgField]="'machineSummary.lastHeardFrom'"><ng-container *clrDgHideableColumn="{hidden: false}">Last Heard From</ng-container></clr-dg-column>
     <clr-dg-row *clrDgItems="let machine of machines" [clrDgItem]="machine">
       <clr-dg-cell style="min-width: 35px; width:35px;"><clr-icon shape="computer" [ngClass]="{'is-success' : machine.machineSummary.isOnline}"></clr-icon></clr-dg-cell>
@@ -51,6 +31,7 @@
       </clr-dg-pagination>
     </clr-dg-footer>
   </clr-datagrid>
+  <button class="btn btn-icon" aria-label="refresh" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon></button>
   <button class="btn btn-success" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()">Wake</button>
   <button class="btn btn-danger" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()">Delete</button>
 

@@ -1,0 +1,70 @@
+<div *ngIf="settings">
+  <h4>Service Settings:</h4>
+  <form clrForm [formGroup]="SettingsForm">
+    <section class="form-block">
+      <div class="form-group">
+        <clr-input-container>
+          <label>HeartBeat Interval:</label>
+          <input clrInput type="number" formControlName="HeartBeatInterval" [value]="settings.heartBeatIntervalSeconds" [(ngModel)]="settings.heartBeatIntervalSeconds" />
+          <clr-control-helper>The frequency clients will send heart beats (Seconds)</clr-control-helper>
+          <clr-control-error>(Min 30, Max 300)</clr-control-error>
+        </clr-input-container>
+        <clr-input-container>
+          <label>Packets Count from clients:</label>
+          <input clrInput type="number" formControlName="PacketsToSend" [value]="settings.packetsToSend" [(ngModel)]="settings.packetsToSend" />
+          <clr-control-helper>The number of packets the client will attempt to send (with a 200ms delay) each time it wakes a device.</clr-control-helper>
+          <clr-control-error>(min 1, max 10)</clr-control-error>
+        </clr-input-container>
+        <clr-input-container>
+          <label>Limit Activity messages:</label>
+          <input clrInput type="number" formControlName="MaxStoredActivities" [value]="settings.maxStoredActivities" [(ngModel)]="settings.maxStoredActivities" />
+          <clr-control-helper>The activity items stored in memory.</clr-control-helper>
+          <clr-control-error>(min 0, max 500)</clr-control-error>
+        </clr-input-container>
+        <clr-toggle-container>
+          <label>Use subnet directed broadcasts:</label>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle formControlName="UseDirectedBroadcasts" [value]="settings.useDirectedBroadcasts" [(ngModel)]="settings.useDirectedBroadcasts" />
+            <label>Allow or disallow the server to send subnet directed broadcasts.</label>
+          </clr-checkbox-wrapper>
+        </clr-toggle-container>
+        <clr-toggle-container>
+          <label>Keep Registered Devices online:</label>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle formControlName="AutoWakeUp" [value]="settings.keepDevicesAwake" [(ngModel)]="settings.keepDevicesAwake" />
+            <label>Keep registered devices online during this time period.</label>
+          </clr-checkbox-wrapper>
+        </clr-toggle-container>
+        <clr-input-container>
+          <label>Power policy wake attempts:</label>
+          <input clrInput type="number" formControlName="MaxWakeRetries" [value]="settings.maxWakeRetries" [(ngModel)]="settings.maxWakeRetries"  [disabled]="settings.keepDevicesAwake" />
+          <clr-control-helper>The Maximum ammount of time a the server will try to wake a device during a power policy operation.</clr-control-helper>
+          <clr-control-error>(min 3, max 10)</clr-control-error>
+        </clr-input-container>
+        <clr-toggle-container>
+          <label>Include Weekends:</label>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle formControlName="AutoWakeUpAtWeekend" [value]="settings.includeWeekends" [(ngModel)]="settings.includeWeekends" [disabled]="settings.keepDevicesAwake"/>
+            <label>Keep registered devices online at weekends, too.</label>
+          </clr-checkbox-wrapper>
+        </clr-toggle-container>
+      </div>
+    </section>
+  </form>
+  <div>
+    <table>
+      <tr>
+        <td style="width:312px; font-weight:600; font-size: .541667rem;">Online Range:</td>
+        <td style="width:600px; height: 110px"><ng5-slider [(value)]="settings.startTime" [(highValue)]="settings.endTime" [options]="sliderOptions"></ng5-slider></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div>
+    <button class="btn btn-primary" [clrLoading]="settingsBtnState" (click)="save()" [disabled]="!SettingsForm.valid">Save</button>
+  </div>
+
+</div>
+
+

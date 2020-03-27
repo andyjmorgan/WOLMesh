@@ -38,6 +38,14 @@ namespace WOLMeshCoreSignalRClient
             NLog.LogManager.GetCurrentClassLogger().Info("Node Config: {0}", JsonConvert.SerializeObject(_nc, Formatting.Indented));
             return _nc;
         }
+        public static void SaveNodeConfig(DaemonNodeConfig _nc)
+        {
+
+           // DaemonNodeConfig _nc = new DaemonNodeConfig();
+            var ConfigPath = Directory.GetCurrentDirectory() + System.IO.Path.DirectorySeparatorChar + @"NodeConfig.json";
+            NLog.LogManager.GetCurrentClassLogger().Info("Saving machine config here: {0}", ConfigPath);
+            System.IO.File.WriteAllText(ConfigPath, JsonConvert.SerializeObject(_nc, Formatting.Indented));     
+        }
         public static DeviceIdentifier GetMachineDetails(string ID)
         {
 
@@ -45,8 +53,10 @@ namespace WOLMeshCoreSignalRClient
             NetworkDetails nd = new NetworkDetails();
             var globalProperties = System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties();
             di.HostName = globalProperties.HostName;
+            di.DeviceType = WOLMeshTypes.Models.DeviceType.Relay;
             di.id = ID;
             di.DomainName = "N/A";
+            di.CurrentUser = "N/A";
             di.WindowsVersion = "Unknown";
             if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.FreeBSD)) { di.WindowsVersion = "FreeBSD"; }
             if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Linux)) { di.WindowsVersion = "Linux"; }

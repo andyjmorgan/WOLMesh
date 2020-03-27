@@ -26,6 +26,38 @@ export class MachineDetailView {
 
 export class DeviceNetworkDetails {
   public DeviceID: string;
-  public   NetworkID: number;
-  public   MacAddress: string;
+  public NetworkID: number;
+  public MacAddress: string;
+}
+export class NetworkDetailView {
+  public id: number;
+  public broadcastAddress: string;
+  public subnetMask: string;
+  public registeredDevices: number;
+  public onlineDevices: number;
+}
+export class ServiceSettings {
+  public keepDevicesAwake: boolean;
+  public includeWeekends: boolean;
+  public startTime: number;
+  public endTime: number;
+  public heartBeatIntervalSeconds: number;
+  public maxWakeRetries: number;
+  public packetsToSend: number;
+  public useDirectedBroadcasts: boolean;
+  public maxStoredActivities: number;
+}
+
+
+
+
+export class RecentActivity {
+
+
+  public time: Date;
+  public type: string;
+  public device: string;
+  public message: string;
+  public result: boolean;
+  public errorReason: string;
 }

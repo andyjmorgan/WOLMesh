@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -11,6 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DevicetableComponent } from './shared/devicetable/devicetable.component';
 import { BooltoonlinePipe } from './shared/booltoonline.pipe';
 import { BooltoresultPipe } from './shared/booltoresult.pipe';
+import { NetworktableComponent } from './shared/networktable/networktable.component';
+import { SettingsComponent } from './shared/settings/settings.component';
+import { Ng5SliderModule } from 'ng5-slider';
+import { RecenteventsComponent } from './shared/recentevents/recentevents.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +23,16 @@ import { BooltoresultPipe } from './shared/booltoresult.pipe';
     DevicetableComponent,
     BooltoonlinePipe,
     BooltoresultPipe,
+    NetworktableComponent,
+    SettingsComponent,
+    RecenteventsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+    Ng5SliderModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
     ]),

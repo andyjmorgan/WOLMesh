@@ -13,9 +13,9 @@
         </label>
       </form>-->
       <div class="header-actions">
-        <!--<a href="..." class="nav-link nav-icon" aria-label="settings">
-          <clr-icon shape="cog"></clr-icon>
-        </a>-->
+        <a class="nav-link nav-icon" aria-label="settings" (click)="showAbout = true">
+          <clr-icon shape="help"></clr-icon>
+        </a>
       </div>
     </header>
     <div class="content-container">
@@ -27,4 +27,16 @@
       </nav>-->
     </div>
   </div>
+  <clr-modal [(clrModalOpen)]="showAbout">
+    <h3 class="modal-title">About:</h3>
+    <div class="modal-body">
+      <img [src]="aboutLogo" style="display: block; margin-left:auto; margin-right: auto;" />
+      <p>Wake On Lan Mesh Service by Andrew Morgan @ VMware EUC OCTO</p>
+      <p>GitHub: <a target="_blank" href="https://github.com/andyjmorgan/WOLMesh">https://github.com/andyjmorgan/WOLMesh</a></p>
+      <p>API: <a target="_blank" href="/swagger/index.html">Swagger</a></p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="showAbout = false">Ok</button>
+    </div>
+  </clr-modal>
 </body>

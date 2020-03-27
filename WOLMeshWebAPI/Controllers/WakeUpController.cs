@@ -37,7 +37,7 @@ namespace WOLMeshWebAPI.Controllers
 
             foreach (DB.MachineItems machine in AllMachines)
             {
-                if(activeDevices.Where(x=> x.ID == machine.ID).Count() > 0)
+                if (activeDevices.Where(x => x.ID == machine.ID).Count() > 0)
                 {
                     wcrList.Add(new WOLMeshTypes.Models.WakeUpCallResult
                     {
@@ -48,8 +48,34 @@ namespace WOLMeshWebAPI.Controllers
                 }
                 else
                 {
-                   wcrList.AddRange(Helpers.WakeMachine(machine, _context, _hub, activeDevices));
+                    wcrList.AddRange(Helpers.WakeMachine(machine, _context, _hub, activeDevices));
+
+                    var results = wcrList.Where(x => x.Sent).ToList();
+                    if (results.Count > 0)
+                    {
+                        var activity = new ViewModels.RecentActivity
+                        {
+                            device = machine.HostName,
+                            result = true,
+                            type = ViewModels.RecentActivity.activityType.WakeUpCall,
+                        };
+                        activity.GetActivityDescriptionByType();
+                        Runtime.SharedObjects.AddActivity(activity);
+                    }
+                    else
+                    {
+                        var activity = new ViewModels.RecentActivity
+                        {
+                            device = machine.HostName,
+                            result = false,
+                            type = ViewModels.RecentActivity.activityType.WakeUpCall,
+                            errorReason = "All Attempts made to wake device failed."
+                        };
+                        activity.GetActivityDescriptionByType();
+                        Runtime.SharedObjects.AddActivity(activity);
+                    }
                 }
+
 
             }
             return wcrList;
@@ -64,7 +90,7 @@ namespace WOLMeshWebAPI.Controllers
             var machine = _context.MachineNetworkDetails.Where(x => x.MacAddress.ToLower() == mac.ToLower()).FirstOrDefault();
             List<Hubs.ConnectionList.Connection> activeDevices = Runtime.SharedObjects.GetOnlineSessions();
 
-           
+
             if (machine != null)
             {
                 var machineDetails = _context.Machines.Where(x => x.ID == machine.DeviceID).FirstOrDefault();
@@ -72,7 +98,7 @@ namespace WOLMeshWebAPI.Controllers
                 {
                     if (activeDevices.Where(x => x.ID == machine.DeviceID).Count() <= 0)
                     {
-                       wucResults.AddRange(Helpers.WakeMachine(machineDetails, _context, _hub, activeDevices));
+                        wucResults.AddRange(Helpers.WakeMachine(machineDetails, _context, _hub, activeDevices));
                     }
                     else
                     {
@@ -94,12 +120,36 @@ namespace WOLMeshWebAPI.Controllers
                         MacAddress = machine.MacAddress,
                         MachineName = machine.MacAddress,
                     });
-                }              
+                }
             }
             else
             {
                 //no machine details, we'll try to wake with a global call:
                 wucResults.AddRange(Helpers.WakeUnknownMachine(_context, _hub, activeDevices, mac));
+            }
+            var results = wucResults.Where(x => x.Sent).ToList();
+            if (results.Count > 0)
+            {
+                var activity = new ViewModels.RecentActivity
+                {
+                    device = mac,
+                    result = true,
+                    type = ViewModels.RecentActivity.activityType.UnknownDeviceWakeupCall,
+                };
+                activity.GetActivityDescriptionByType();
+                Runtime.SharedObjects.AddActivity(activity);
+            }
+            else
+            {
+                var activity = new ViewModels.RecentActivity
+                {
+                    device = mac,
+                    result = false,
+                    type = ViewModels.RecentActivity.activityType.UnknownDeviceWakeupCall,
+                    errorReason = "All Attempts made to wake device failed."
+                };
+                activity.GetActivityDescriptionByType();
+                Runtime.SharedObjects.AddActivity(activity);
             }
             return wucResults;
         }

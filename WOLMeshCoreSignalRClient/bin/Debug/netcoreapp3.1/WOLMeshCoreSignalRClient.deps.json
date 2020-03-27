@@ -235,6 +235,9 @@
       },
       "System.Threading.Channels/4.7.0": {},
       "WOLMeshTypes/1.0.0": {
+        "dependencies": {
+          "NLog": "4.7.0"
+        },
         "runtime": {
           "WOLMeshTypes.dll": {}
         }

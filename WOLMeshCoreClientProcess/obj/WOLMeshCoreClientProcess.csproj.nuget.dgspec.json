@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\andy\\source\\repos\\WOLMesh\\WOLMeshCoreClientProcess\\WOLMeshCoreClientProcess.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\andy\\source\\repos\\WOLMesh\\WOLMeshCoreClientProcess\\WOLMeshCoreClientProcess.csproj",
         "projectName": "WOLMeshCoreClientProcess",
@@ -79,12 +79,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.osx-x64",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-x64": {
+          "#import": []
         }
       }
     },
@@ -163,6 +182,11 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "osx-x64": {
+          "#import": []
+        }
       }
     },
     "C:\\Users\\andy\\source\\repos\\WOLMesh\\WOLMeshTypes\\WOLMeshTypes.csproj": {
@@ -214,6 +238,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -232,6 +262,12 @@
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         },
         "net472": {
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         },
         "netstandard2.0": {
@@ -241,6 +277,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -254,6 +294,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-x64": {
+          "#import": []
         }
       }
     }

@@ -31,14 +31,14 @@ namespace WOLMeshTypes
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine("Failed to send wake on lan to network: " + network.BroadcastAddress + " with Exception: " + ex.ToString());
+                           NLog.LogManager.GetCurrentClassLogger().Error("Failed to send wake on lan to network: " + network.BroadcastAddress + " with Exception: " + ex.ToString());
                         }
                     }
                 }
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Failed to send wake on lan to network with Exception: " + ex.ToString());
+               NLog.LogManager.GetCurrentClassLogger().Error("Failed to send wake on lan to network with Exception: " + ex.ToString());
             }
        }
         public static async Task SUbnetDirectedWakeOnLan(string mac, NetworkDetails network)
@@ -54,13 +54,13 @@ namespace WOLMeshTypes
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine("Failed to send subnet directed wake on lan to network: " + network.BroadcastAddress + " with Exception: " + ex.ToString());
+                           NLog.LogManager.GetCurrentClassLogger().Error("Failed to send subnet directed wake on lan to network: " + network.BroadcastAddress + " with Exception: " + ex.ToString());
                         }                 
                 
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Failed to send wake on lan to network with Exception: " + ex.ToString());
+               NLog.LogManager.GetCurrentClassLogger().Error("Failed to send wake on lan to network with Exception: " + ex.ToString());
             }
         }
 
@@ -108,27 +108,8 @@ namespace WOLMeshTypes
                 client.EnableBroadcast = true;
                 await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 9);
                 await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 7);
-                //await client.SendAsync(magicPacket, magicPacket.Length, "255.255.255.255", 7);
-                //await client.SendAsync(magicPacket, magicPacket.Length, "255.255.255.255", 9);
-
-
-
             }
         }
-
-        //static async Task SendWakeOnLan(IPAddress localIpAddress, IPAddress multicastIpAddress, byte[] magicPacket)
-        //{
-        //    using (UdpClient client = new UdpClient(new IPEndPoint(localIpAddress, 0)))
-        //    {
-        //        await client.SendAsync(magicPacket, magicPacket.Length, multicastIpAddress.ToString(), 9);
-        //        await client.SendAsync(magicPacket, magicPacket.Length, multicastIpAddress.ToString(), 7);
-        //        await client.SendAsync(magicPacket, magicPacket.Length, "255.255.255.255", 7);
-        //        await client.SendAsync(magicPacket, magicPacket.Length, "255.255.255.255", 9);
-
-
-
-        //    }
-        //}
 
     }
 }

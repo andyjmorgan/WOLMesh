@@ -22,6 +22,7 @@ namespace WOLMeshCoreSignalRClient
 
         public event EventHandler<string> MessageReceived;
         public event EventHandler<WOLMeshTypes.Models.WakeUpCall> WakeUp;
+        public event EventHandler<WOLMeshTypes.Models.MachineConfig> MachineConfigChange;
 
         public bool isConnected = false;
         public bool isConnecting = false;
@@ -72,6 +73,8 @@ namespace WOLMeshCoreSignalRClient
                 NLog.LogManager.GetCurrentClassLogger().Info("Attempting to open a SignalR connection to: {0}", URL);
                 _connection.On<string, string>("ReceiveMessage", OnMessageReceived);
                 _connection.On<WOLMeshTypes.Models.WakeUpCall>("WakeUp", OnWakeUpCall);
+
+                _connection.On<WOLMeshTypes.Models.MachineConfig>("MachineSettings", OnMachineSettings);
                 _connection.Reconnecting += _connection_Reconnecting;
                 _connection.Reconnected += _connection_Reconnected;
                 await _connection.StartAsync();
@@ -220,6 +223,10 @@ namespace WOLMeshCoreSignalRClient
         {
             WakeUp?.Invoke(this, deviceDetails);
             //Console.WriteLine(deviceDetails.MacAddress);
+        }
+        private void OnMachineSettings(WOLMeshTypes.Models.MachineConfig mc)
+        {
+            MachineConfigChange?.Invoke(this, mc);
         }
 
     }

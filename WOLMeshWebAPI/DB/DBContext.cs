@@ -20,6 +20,16 @@ namespace WOLMeshWebAPI.DB
         public string MacAddress { get; set; }
         public string BroadcastAddress { get; set; }
         public string IPAddress { get; set; }
+        public WOLMeshTypes.Models.DeviceType DeviceType { get; set; }
+        public int LastWakeCount { get; set; }
+    }
+    public class ManualMachineItems
+    {
+        [Key]
+        public string id { get; set; }
+        public string MachineName { get; set; }
+        public string MacAddress { get; set; }
+
     }
     public class Networks
     {
@@ -44,14 +54,22 @@ namespace WOLMeshWebAPI.DB
         public DbSet<Networks> Networks { get; set; }
         public DbSet<DeviceNetworkDetails> MachineNetworkDetails { get; set; }
 
+        public DbSet<ManualMachineItems> ManualMachines { get; set; }
+
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
             var migrations = this.Database.GetPendingMigrations();
             if (migrations.Count() > 0)
             {
-                this.Database.Migrate();
-            }
+                NLog.LogManager.GetCurrentClassLogger().Info("Performing Database Migrations: {0}", migrations.Count());
 
+                foreach (var migration in migrations)
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Info("Migration Pending: {0}", migration);
+                }
+                this.Database.Migrate();
+                NLog.LogManager.GetCurrentClassLogger().Info("{0} Migrations Complete.", migrations.Count());
+            }
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

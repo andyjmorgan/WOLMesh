@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WOLMeshWebAPI.Migrations
 {
-    public partial class _1st : Migration
+    public partial class _12Base : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,8 @@ namespace WOLMeshWebAPI.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     DeviceID = table.Column<string>(nullable: true),
                     NetworkID = table.Column<int>(nullable: false),
-                    MacAddress = table.Column<string>(nullable: true)
+                    MacAddress = table.Column<string>(nullable: true),
+                    IPAddress = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -31,11 +32,29 @@ namespace WOLMeshWebAPI.Migrations
                     CurrentUser = table.Column<string>(nullable: true),
                     DomainName = table.Column<string>(nullable: true),
                     WindowsVersion = table.Column<string>(nullable: true),
-                    LastHeardFrom = table.Column<DateTime>(nullable: false)
+                    LastHeardFrom = table.Column<DateTime>(nullable: false),
+                    MacAddress = table.Column<string>(nullable: true),
+                    BroadcastAddress = table.Column<string>(nullable: true),
+                    IPAddress = table.Column<string>(nullable: true),
+                    DeviceType = table.Column<int>(nullable: false),
+                    LastWakeCount = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Machines", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ManualMachines",
+                columns: table => new
+                {
+                    id = table.Column<string>(nullable: false),
+                    MachineName = table.Column<string>(nullable: true),
+                    MacAddress = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ManualMachines", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -60,6 +79,9 @@ namespace WOLMeshWebAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "Machines");
+
+            migrationBuilder.DropTable(
+                name: "ManualMachines");
 
             migrationBuilder.DropTable(
                 name: "Networks");

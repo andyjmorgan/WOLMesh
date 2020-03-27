@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "WOLMeshCoreClientProcess/1.0.0": {
+      "WOLMeshCoreClientProcess/1.0.5": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Client": "3.1.2",
           "NLog": "4.7.0",
@@ -255,6 +255,9 @@
         }
       },
       "WOLMeshTypes/1.0.0": {
+        "dependencies": {
+          "NLog": "4.7.0"
+        },
         "runtime": {
           "WOLMeshTypes.dll": {}
         }
@@ -262,7 +265,7 @@
     }
   },
   "libraries": {
-    "WOLMeshCoreClientProcess/1.0.0": {
+    "WOLMeshCoreClientProcess/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

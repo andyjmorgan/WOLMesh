@@ -50,6 +50,7 @@ namespace WOLMeshClientService
 
             var globalProperties = System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties();
             di.HostName = globalProperties.HostName;
+            di.DeviceType = WOLMeshTypes.Models.DeviceType.RegisteredMachine;
             try
             {
                 di.DomainName = System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain()?.Name ?? "unknown";
@@ -142,15 +143,11 @@ namespace WOLMeshClientService
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls | SecurityProtocolType.Ssl3;
         }
         
-
-        protected override void OnStart(string[] args)
+        private static void GetConfig()
         {
-            NLog.LogManager.GetCurrentClassLogger().Info("---Service Starting---");
-            NetworkChange.NetworkAddressChanged += new NetworkAddressChangedEventHandler(AddressChangedCallback);
-            NLog.LogManager.GetCurrentClassLogger().Info("Args: {0}", JsonConvert.SerializeObject(args, Formatting.Indented));
             System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
             var cd = System.IO.Directory.GetCurrentDirectory();
-            
+
             NLog.LogManager.GetCurrentClassLogger().Info("Current Directory: {0}", cd);
 
             var configFile = cd + "\\" + "nodeconfig.json";
@@ -164,9 +161,37 @@ namespace WOLMeshClientService
             {
                 NLog.LogManager.GetCurrentClassLogger().Error("Service configuration json file missing");
                 WOLMeshTypes.Models.NodeConfig nc = new WOLMeshTypes.Models.NodeConfig();
-                System.IO.File.WriteAllText(configFile,JsonConvert.SerializeObject(nc, Formatting.Indented));
+                System.IO.File.WriteAllText(configFile, JsonConvert.SerializeObject(nc, Formatting.Indented));
                 throw new Exception("Configuration file missing or empty");
             }
+        }
+
+        private static void SaveConfig()
+        {
+            try
+            {
+                System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
+                var cd = System.IO.Directory.GetCurrentDirectory();
+
+                NLog.LogManager.GetCurrentClassLogger().Info("Saving config to current Directory: {0}", cd);
+
+                var configFile = cd + "\\" + "nodeconfig.json";
+                System.IO.File.WriteAllText(configFile, JsonConvert.SerializeObject(_config, Formatting.Indented));
+                NLog.LogManager.GetCurrentClassLogger().Info("Saved config to {0}", configFile);
+            }
+            catch(Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Failed to save config: {0}", ex.ToString());
+            }
+           
+        }
+        protected override void OnStart(string[] args)
+        {
+            NLog.LogManager.GetCurrentClassLogger().Info("---Service Starting---");
+            NetworkChange.NetworkAddressChanged += new NetworkAddressChangedEventHandler(AddressChangedCallback);
+            NLog.LogManager.GetCurrentClassLogger().Info("Args: {0}", JsonConvert.SerializeObject(args, Formatting.Indented));
+
+            GetConfig();
 
             NLog.LogManager.GetCurrentClassLogger().Info("Requesting Machine Info");
             machineDetails = GetMachineDetails();
@@ -207,6 +232,7 @@ namespace WOLMeshClientService
                         _mc.ConnectionReconnected += onReconnected;
                         _mc.ConnectionReconnecting += OnReconnecting;
                         _mc.ConnectionConnected += OnConnected;
+                        _mc.MachineConfigChange += _mc_MachineConfigChange;
                         _mc.WakeUp += WakeUpCallReceived;
                         return true;
                     }
@@ -230,6 +256,15 @@ namespace WOLMeshClientService
             }
 
         }
+
+        private static void _mc_MachineConfigChange(object sender, MachineConfig e)
+        {
+            NLog.LogManager.GetCurrentClassLogger().Info("Machine Update Received: ", JsonConvert.SerializeObject(e, Formatting.Indented));
+            _config.timerInterval = e.HeartBeatIntervalSeconds;
+            _config.maxPackets = e.MaxPackets;
+            SaveConfig();
+        }
+
         static void DisposeConnection()
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Disposing Connection");
@@ -239,15 +274,21 @@ namespace WOLMeshClientService
             _mc.ConnectionReconnecting -= OnReconnecting;
             _mc.ConnectionConnected -= OnConnected;
             _mc.WakeUp -= WakeUpCallReceived;
+            _mc.MachineConfigChange -= _mc_MachineConfigChange;
             _mc = null;
         }
 
         private void _reconnectTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            if(_config.timerInterval * 1000 != _reconnectTimer.Interval)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Info("Updating Interval Timer");
+                _reconnectTimer.Interval = _config.timerInterval * 1000;
+            }
             var sessions = WTSUnsafeMethods.Helpers.ListSessions();
             foreach(var session in sessions)
             {
-                NLog.LogManager.GetCurrentClassLogger().Debug("Session: {0} - Winstation {1} - State {2}",session.SessionID, session.pWinStationName, session.State);
+                NLog.LogManager.GetCurrentClassLogger().Trace("Session: {0} - Winstation {1} - State {2}",session.SessionID, session.pWinStationName, session.State);
                 
             }
             NLog.LogManager.GetCurrentClassLogger().Debug("Timer Ticking");

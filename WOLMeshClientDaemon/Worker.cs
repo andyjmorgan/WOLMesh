@@ -53,7 +53,7 @@ namespace WOLMeshClientDaemon
         {
             _di = CoreHelpers.GetMachineDetails(_dnc.UUID);
             _reconnectTmr = new System.Timers.Timer();
-            _reconnectTmr.Interval = 30 * 1000;
+            _reconnectTmr.Interval = _dnc.timerInterval * 1000;
             _reconnectTmr.Elapsed += _reconnectTimer_Elapsed;
             _reconnectTimer_Elapsed(null, null);
             _reconnectTmr.Start();
@@ -91,6 +91,7 @@ namespace WOLMeshClientDaemon
                         _mc.ConnectionReconnecting += OnReconnecting;
                         _mc.ConnectionConnected += OnConnected;
                         _mc.WakeUp += WakeUpCallReceived;
+                        _mc.MachineConfigChange += _mc_MachineConfigChange;
                         return true;
                     }
                     else
@@ -113,6 +114,16 @@ namespace WOLMeshClientDaemon
             }
 
         }
+
+        private static void _mc_MachineConfigChange(object sender, MachineConfig e)
+        {
+            NLog.LogManager.GetCurrentClassLogger().Info("Updated Machine Settings received: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(e));
+            _reconnectTmr.Interval = e.HeartBeatIntervalSeconds * 1000;
+            _dnc.timerInterval = e.HeartBeatIntervalSeconds;
+            _dnc.maxPackets = e.MaxPackets;
+            WOLMeshCoreSignalRClient.CoreHelpers.SaveNodeConfig(_dnc);
+        }
+
         static void DisposeConnection()
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Disposing Connection");
@@ -122,6 +133,7 @@ namespace WOLMeshClientDaemon
             _mc.ConnectionReconnecting -= OnReconnecting;
             _mc.ConnectionConnected -= OnConnected;
             _mc.WakeUp -= WakeUpCallReceived;
+            _mc.MachineConfigChange -= _mc_MachineConfigChange;
             _mc = null;
         }
 

@@ -60,10 +60,24 @@ namespace WOLMeshWebAPI.Controllers
         public bool Delete(string id)
         {
             var removeList = _context.Machines.Where(x => x.ID == id).ToList();
+            foreach(var item in removeList)
+            {
+                var activity = new ViewModels.RecentActivity
+                {
+                    device = item.HostName,
+                    result = true,
+                    type = ViewModels.RecentActivity.activityType.DeviceRemoved
+                };
+                activity.GetActivityDescriptionByType();
+                Runtime.SharedObjects.AddActivity(activity);
+            }
             _context.Machines.RemoveRange(removeList);
             var networkDetailsRemoveList = _context.MachineNetworkDetails.Where(x => x.DeviceID == id).ToList();
+            
             _context.MachineNetworkDetails.RemoveRange(networkDetailsRemoveList);
             _context.SaveChanges();
+
+            
             return true;
         }
     }

@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WOLMeshWebAPI.ViewModels;
 
 namespace WOLMeshWebAPI.Hubs
 {
@@ -13,43 +15,29 @@ namespace WOLMeshWebAPI.Hubs
         {
             _context = context;
         }
-        public async Task SendMessage(string user, string message)
-        {
-
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
-            var id = Context.ConnectionId;
-            //Clients.
-
-        }
 
         public override Task OnConnectedAsync()
         {
-            NLog.LogManager.GetCurrentClassLogger().Debug("New Connection, {0}", Context.ConnectionId);
+            NLog.LogManager.GetCurrentClassLogger().Trace("New Connection, {0}", Context.ConnectionId);
             return base.OnConnectedAsync();
         }
 
 
         public override Task OnDisconnectedAsync(Exception exception)
         {
+
             if (exception != null)
             {
-                Console.WriteLine("Disconnect: {0}", exception.ToString());
-
+                NLog.LogManager.GetCurrentClassLogger().Trace("Session Disconnected, {0} with Error: {1}", Context.ConnectionId, exception.ToString());
+                Runtime.SharedObjects.RemoveHubConnection(Context.ConnectionId, exception.ToString());
+            }
+            else
+            {
+                NLog.LogManager.GetCurrentClassLogger().Trace("Session Disconnected, {0}", Context.ConnectionId);
+                Runtime.SharedObjects.RemoveHubConnection(Context.ConnectionId);
             }
             //var RemoveList = Runtime.SharedObjects.connections.Connections.Where(x => x.ConnectionID == Context.ConnectionId).ToList();
-            Runtime.SharedObjects.RemoveHubConnection(Context.ConnectionId);
-
-
             return base.OnDisconnectedAsync(exception);
-        }
-
-        public async Task SendToType(string type, string message)
-        {
-            var connectionList = Runtime.SharedObjects.connections.Connections.Where(x => x.type == type).ToList();
-            foreach (var connection in connectionList)
-            {
-                await Clients.Client(connection.ConnectionID).SendAsync("TypeMessage", "Test Message");
-            }
         }
 
         public void UpdateUser(string UserName)
@@ -60,8 +48,18 @@ namespace WOLMeshWebAPI.Hubs
                 var device = _context.Machines.Where(x => x.ID == MachineID).FirstOrDefault();
                 if (device != null)
                 {
+                    device.LastHeardFrom = DateTime.Now;
                     device.CurrentUser = UserName;
                     _context.SaveChangesAsync();
+                    var activity = new RecentActivity
+                    {
+                        type = ViewModels.RecentActivity.activityType.DeviceUserUpdate,
+                        device = device.HostName,
+                        result = true,
+                    };
+                    activity.GetActivityDescriptionByType();
+                    activity.message += " User: " + UserName;
+                    Runtime.SharedObjects.AddActivity(activity);
                 }
             }
         }
@@ -87,6 +85,8 @@ namespace WOLMeshWebAPI.Hubs
             machine.DomainName = details.DomainName;
             machine.LastHeardFrom = DateTime.Now;
             machine.WindowsVersion = details.WindowsVersion;
+            machine.DeviceType = details.DeviceType;
+            machine.LastWakeCount = 0;
             bool ChangesMadeToNetwork = false;
 
             foreach (var network in details.AccessibleNetworks)
@@ -99,8 +99,17 @@ namespace WOLMeshWebAPI.Hubs
                     {
                         BroadcastAddress = network.BroadcastAddress,
                         SubnetMask = network.SubnetMask,
-                        
+
                     };
+
+                    var activity = new ViewModels.RecentActivity
+                    {
+                        device = newNet.BroadcastAddress,
+                        result = true,
+                        type = ViewModels.RecentActivity.activityType.NetworkDiscovered
+                    };
+                    activity.GetActivityDescriptionByType();
+                    Runtime.SharedObjects.AddActivity(activity);
                     _context.Networks.Add(newNet);
                 }
             }
@@ -110,8 +119,9 @@ namespace WOLMeshWebAPI.Hubs
                 machine.BroadcastAddress = details.AccessibleNetworks[0].BroadcastAddress;
                 machine.MacAddress = details.AccessibleNetworks[0].MacAddress;
                 machine.IPAddress = details.AccessibleNetworks[0].IPAddress;
+
             }
-            else if(details.AccessibleNetworks.Count == 0)
+            else if (details.AccessibleNetworks.Count == 0)
             {
                 machine.BroadcastAddress = "None";
                 machine.MacAddress = "Unknown";
@@ -137,7 +147,7 @@ namespace WOLMeshWebAPI.Hubs
                     MacAddress = network.MacAddress,
                     NetworkID = _context.Networks.Where(x => x.SubnetMask == network.SubnetMask && x.BroadcastAddress == network.BroadcastAddress).First().NetworkID,
                     IPAddress = network.IPAddress
-                    
+
                 });
             }
             _context.SaveChangesAsync();
@@ -149,19 +159,39 @@ namespace WOLMeshWebAPI.Hubs
             {
                 ConnectionID = Context.ConnectionId,
                 ID = machine.ID,
-                type = WOLMeshTypes.Models.MachineType,
+                type = details.DeviceType.ToString(),
                 AccessibleNetworks = accessibleNetworks,
                 name = machine.HostName
             });
+
+
+            try
+            {
+
+                Clients.Client(Context.ConnectionId).SendAsync("MachineSettings", new WOLMeshTypes.Models.MachineConfig
+                {
+                    HeartBeatIntervalSeconds = Runtime.SharedObjects.ServiceConfiguration.HeartBeatIntervalSeconds,
+                    MaxPackets = Runtime.SharedObjects.ServiceConfiguration.PacketsToSend
+                });
+
+            }
+            catch (Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Failed to send MachineSettings to device {0}", machine.HostName);
+            }
         }
 
         public void HeartBeat()
         {
+            NLog.LogManager.GetCurrentClassLogger().Trace("HeartBeat received from {0}", Context.ConnectionId);
             var MachineID = Runtime.SharedObjects.GetMachineIDFromSessionID(Context.ConnectionId);
             if (!string.IsNullOrEmpty(MachineID))
             {
+
                 var device = _context.Machines.Where(x => x.ID == MachineID).FirstOrDefault();
-                if(device != null)
+                NLog.LogManager.GetCurrentClassLogger().Trace("HeartBeat received from {0}. Updating Last Heard From", device.HostName);
+
+                if (device != null)
                 {
                     device.LastHeardFrom = DateTime.Now;
                     _context.SaveChangesAsync();
@@ -169,6 +199,6 @@ namespace WOLMeshWebAPI.Hubs
             }
         }
 
-        
+
     }
 }

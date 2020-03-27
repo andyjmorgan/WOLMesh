@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ConnectorService } from '../../services/connector.service';
 import { MachineItems, WakeUpCallResult, MachineDetailView } from '../../classes/types';
 
@@ -10,13 +10,19 @@ import { MachineItems, WakeUpCallResult, MachineDetailView } from '../../classes
 export class DevicetableComponent implements OnInit {
 
   public wakeLoading: boolean = false;
-  public showDeleteModal: boolean = false;
+  
   public selected: MachineDetailView[]=[];
   public machines: MachineDetailView[];
-  public showDeleteErrorOnline: boolean;
-  public itemsToDelete: string[];
+
   public wakeRunning: boolean = false;
   public wakeUpResults: WakeUpCallResult[];
+
+
+  public showDeleteModal: boolean = false;
+  public showDeleteErrorOnline: boolean;
+  public itemsToDelete: string[];
+
+  @Output() UpdateAvailable: EventEmitter<number> = new EventEmitter();
   constructor(private connector: ConnectorService) { }
 
   ngOnInit() {
@@ -27,6 +33,7 @@ export class DevicetableComponent implements OnInit {
     this.connector.GetMachines().subscribe(
       _machines => {
         this.machines = _machines;
+        this.UpdateAvailable.emit(this.machines.length);
         //this.selected.length
       }
     );
@@ -53,14 +60,18 @@ export class DevicetableComponent implements OnInit {
       this.selected.forEach(item => {
         if (item.Online) {
           this.showDeleteErrorOnline = true;
-          
         }
-        this.itemsToDelete.push(item.machineSummary.id);
+        else {
+          this.itemsToDelete.push(item.machineSummary.id);
+        }
       })
     }
 
     if (this.itemsToDelete.length > 0 && !this.showDeleteErrorOnline) {
       this.showDeleteModal = true;
+    }
+    else {
+      this.itemsToDelete = [];
     }
 
   }

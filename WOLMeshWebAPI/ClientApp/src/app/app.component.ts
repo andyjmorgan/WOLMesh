@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app';
+  public showAbout: boolean;
+  public aboutLogo = require("./Assets/icon128.png");
+  title = 'Wake On Lan Mesh';
 }

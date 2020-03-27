@@ -50,6 +50,9 @@ namespace WOLMeshWebAPI.Migrations
                     b.Property<string>("CurrentUser")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("DeviceType")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("DomainName")
                         .HasColumnType("TEXT");
 
@@ -62,6 +65,9 @@ namespace WOLMeshWebAPI.Migrations
                     b.Property<DateTime>("LastHeardFrom")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("LastWakeCount")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("MacAddress")
                         .HasColumnType("TEXT");
 
@@ -71,6 +77,22 @@ namespace WOLMeshWebAPI.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Machines");
+                });
+
+            modelBuilder.Entity("WOLMeshWebAPI.DB.ManualMachineItems", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MacAddress")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MachineName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("id");
+
+                    b.ToTable("ManualMachines");
                 });
 
             modelBuilder.Entity("WOLMeshWebAPI.DB.Networks", b =>
