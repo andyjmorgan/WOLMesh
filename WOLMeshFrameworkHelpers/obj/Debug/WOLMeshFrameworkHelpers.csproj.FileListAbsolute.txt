@@ -2,3 +2,4 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\bin\Debug\WOLMeshFram
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\bin\Debug\WOLMeshFrameworkHelpers.pdb
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Debug\WOLMeshFrameworkHelpers.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Debug\WOLMeshFrameworkHelpers.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshFrameworkHelpers\obj\Debug\WOLMeshFrameworkHelpers.csprojAssemblyReference.cache

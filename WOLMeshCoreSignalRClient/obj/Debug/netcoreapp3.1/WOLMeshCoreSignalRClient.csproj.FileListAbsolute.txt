@@ -9,3 +9,4 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.csproj.CopyComplete
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshCoreSignalRClient\obj\Debug\netcoreapp3.1\WOLMeshCoreSignalRClient.csproj.CoreCompileInputs.cache

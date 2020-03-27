@@ -112,6 +112,7 @@ namespace WOLMeshTypes
                 public string macAddress { get; set; }
                 public bool IsOnline { get; set; }
                 public bool isRelay { get; set; }
+                public string machineType { get; set; }
             }
 
             public class DeviceNetworkDetails

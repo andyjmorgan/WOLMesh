@@ -360,7 +360,8 @@ namespace WOLMeshWebAPI.Controllers
                 ipAddress = machine.IPAddress,
                 macAddress = machine.MacAddress,
                 IsOnline = Runtime.SharedObjects.isMachineOnline(machine.ID),
-                isRelay = machine.DeviceType == DeviceType.Relay
+                isRelay = machine.DeviceType == DeviceType.Relay,
+                machineType = machine.DeviceType.ToString()
             };
 
             foreach (var network in _context.MachineNetworkDetails.Where(x => x.DeviceID == machine.ID))

@@ -59,3 +59,4 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\W
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\WOLMeshClientDaemon.csproj.CopyComplete
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\WOLMeshClientDaemon.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\WOLMeshClientDaemon.pdb
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\WOLMeshClientDaemon.genruntimeconfig.cache

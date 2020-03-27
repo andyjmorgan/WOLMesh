@@ -8,6 +8,8 @@ export class MachineItems {
   public macAddress: string;
   public lastHeardFrom: Date;
   public isOnline: boolean;
+  public isRelay: boolean;
+  public machineType: string;
 }
 
 export class WakeUpCallResult {
