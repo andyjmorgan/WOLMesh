@@ -15,10 +15,11 @@ WOLMesh aims to help people who have limitations around Wake on Lan today by pro
 
 ## How it works:
 
-Wake on Lan Mesh Helper has two components:
+Wake on Lan Mesh Helper has three components:
 
 1. A web service / server.
 2. An agent to be installed on PC's.
+3. (Optional) relays running linux / macos that will relay broadcasts to remote networks.
 
 
 ### WOLMesh Server:
@@ -45,11 +46,23 @@ Once connected, the device can be leveraged to wake up other devices on the same
 
 #### How machines are woken:
 
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/Peer.png?raw=true">
+</p>
+
 When a wake request is sent for a known device, from the Web App or REST API, WOLMesh check's its active connections, if devices are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
+
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/direct.png?raw=true">
+</p>
 
 If the server is on the same subnet as the target device, the server will attempt to also send a wake up.
 
-If not devices are online in the target subnet, and the server is not on the same subnet. It will attempt to perform a directed broadcast to the subnet. This will most likely be blocked by most networks, but it never hurts to try ;)
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/SubnetDirected.png?raw=true">
+</p>
+
+If no devices are online in the target subnet, and the server is not on the same subnet. It will attempt to perform a directed broadcast to the subnet. This will most likely be blocked by most networks, but it never hurts to try ;)
 
 # How to install:
 
@@ -176,10 +189,10 @@ This is my "I gotta do these things next" list. I welcome all suggestions.
 1. Implement Authentication.
 2.  ~~Allow server to use another ssl cert.~~
 3.  ~~Allow wake up of unknown devices.~~
-4. Networks view.
+4. ~~Networks view.~~
 5. Online devices view.
 6. Search.
 7.  ~~Run as Service for web service. Stupid .Net Core 3.0 changed everything.~~
 8.  ~~Test agent for Linux / Raspberry Pi.~~
-9. Add Swagger and test REST API.
+9. ~~Add Swagger and test REST API.~~
 10. Make the agent a little easier to deploy.
