@@ -10,7 +10,13 @@ This use case really falls down when the user accidentally or intentionally shut
 WOLMesh aims to help people who have limitations around Wake on Lan today by providing a Web Portal and REST API to allow administrators to view power status of remote machines and power them on via other machines on the same subnet should they need to.
 
 <p align="center">
-  <img src="https://github.com/andyjmorgan/WOLMesh/raw/master/WOL%20Mesh%20Preview.png" width=900 height=408>
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/devices.png?raw=true">
+</p>
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/activity.png?raw=true">
+</p>
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/settings.png?raw=true">
 </p>
 
 ## How it works:
@@ -20,6 +26,27 @@ Wake on Lan Mesh Helper has three components:
 1. A web service / server.
 2. An agent to be installed on PC's.
 3. (Optional) relays running linux / macos that will relay broadcasts to remote networks.
+
+
+#### How machines are woken:
+
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/Peer.png?raw=true">
+</p>
+
+When a wake request is sent for a known device, from the Web App or REST API, WOLMesh check's its active connections, if devices or relays are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
+
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/direct.png?raw=true">
+</p>
+
+If the server is on the same subnet as the target device, the server will attempt to also send a wake up.
+
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/SubnetDirected.png?raw=true">
+</p>
+
+If no devices are online in the target subnet, and the server is not on the same subnet. It will attempt to perform a directed broadcast to the subnet. This will most likely be blocked by most networks, but it never hurts to try ;)
 
 
 ### WOLMesh Server:
@@ -43,26 +70,6 @@ Requires .Net Framework 4.7.2
 The WOLMesh Agent needs to be installed on all devices you wish to manage with WOLMesh. Once installed, you must configure the agent to communicate with the server via a SignalR websocket. Once connected, the agent monitors it's network connection and state and sends it to the server.
 
 Once connected, the device can be leveraged to wake up other devices on the same subnet.
-
-#### How machines are woken:
-
-<p align="center">
-  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/Peer.png?raw=true">
-</p>
-
-When a wake request is sent for a known device, from the Web App or REST API, WOLMesh check's its active connections, if devices are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
-
-<p align="center">
-  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/direct.png?raw=true">
-</p>
-
-If the server is on the same subnet as the target device, the server will attempt to also send a wake up.
-
-<p align="center">
-  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/SubnetDirected.png?raw=true">
-</p>
-
-If no devices are online in the target subnet, and the server is not on the same subnet. It will attempt to perform a directed broadcast to the subnet. This will most likely be blocked by most networks, but it never hurts to try ;)
 
 # How to install:
 
