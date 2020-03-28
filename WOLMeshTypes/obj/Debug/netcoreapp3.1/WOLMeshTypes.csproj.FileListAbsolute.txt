@@ -6,4 +6,3 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\netcoreapp3.1\WOLMeshT
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\netcoreapp3.1\WOLMeshTypes.AssemblyInfo.cs
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\netcoreapp3.1\WOLMeshTypes.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\netcoreapp3.1\WOLMeshTypes.pdb
-C:\Users\andy\source\repos\WOLMesh\WOLMeshTypes\obj\Debug\netcoreapp3.1\WOLMeshTypes.csproj.CoreCompileInputs.cache
