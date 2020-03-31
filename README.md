@@ -9,23 +9,45 @@ This use case really falls down when the user accidentally or intentionally shut
 
 WOLMesh aims to help people who have limitations around Wake on Lan today by providing a Web Portal and REST API to allow administrators to view power status of remote machines and power them on via other machines on the same subnet should they need to.
 
+## Registered Devices / Relays:
+
 <p align="center">
-  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/devices.png?raw=true">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/registereddevices.png?raw=true">
 </p>
+
+## Manual Devices:
+
+<p align="center">
+  <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/manualdevices.png?raw=true">
+</p>
+
+## Activity:
+
 <p align="center">
   <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/activity.png?raw=true">
 </p>
+
+## Settings:
+
 <p align="center">
   <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/settings.png?raw=true">
 </p>
 
-## How it works:
+# Devices and Relays:
 
-Wake on Lan Mesh Helper has three components:
+The target machines for WOLMesh can be deployed in three ways:
 
-1. A web service / server.
-2. An agent to be installed on PC's.
-3. (Optional) relays running linux / macos that will relay broadcasts to remote networks.
+1. Registered Machines 
+2. Relays
+3. Manual Machines
+
+Registered Machines are machines running a WOLMesh agent. This agent maintains constant communication with the WOLMesh server, to report current user, and it's online state. The agent is extremely thin and allows the WOLMesh server to relay Wake on Lan packets to powered off machines on the same subnet.
+
+Relays are like registered machines, they maintain a constant connection to the WOLMesh server but are designed strictly for non windows playforms such as MacOS or Linux. This usecase is really for leveraging inexpensive devices such as Raspberry Pi's to wake up subnets of devices.
+
+Manual machines are added to the WOLMesh server manually (via DNS Name, Mac Address and the broadcast address) of the network they reside. Manual devices do not have a dedicated connection to the WOLMesh server, as such their online state is determined by ICMP. 
+
+In the case of manual machines, every 1 minute, the devices DNS name is looked up, the ip address is updated (if neccessary) and a 2 second ttl ICMP is sent to the device. Should the device fail to respond, it's considered down.
 
 
 #### How machines are woken:
@@ -34,7 +56,7 @@ Wake on Lan Mesh Helper has three components:
   <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/Peer.png?raw=true">
 </p>
 
-When a wake request is sent for a known device, from the Web App or REST API, WOLMesh check's its active connections, if devices or relays are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
+When a wake request is sent for a device, from the Web App or REST API, WOLMesh check's its active connections, if devices or relays are found on the same subnet, subnet local broadcasts are sent from up to 3 devices (configurable) to the mac address of the machine requested.
 
 <p align="center">
   <img src="https://github.com/andyjmorgan/WOLMesh/blob/master/Icons/direct.png?raw=true">
@@ -71,6 +93,12 @@ The WOLMesh Agent needs to be installed on all devices you wish to manage with W
 
 Once connected, the device can be leveraged to wake up other devices on the same subnet.
 
+### WOLMesh Daemon:
+
+The WOLMesh Daemon is designed to be used for relaying Wake On Lan Messages from the server, to the Daemon, for machines on the same network as the Daemon.
+
+Once installed, the nodeconfig.json file must be updated to point to the server, once the process begins, this Daemon will be used as a relay to wake up other devices on the same subnet.
+
 # How to install:
 
 In the publish folder above, you'll find both the agent and server zip file:
@@ -100,13 +128,13 @@ New-Service -Name "WOLMeshWebAPI" -DisplayName "Wake on Lan Mesh Web API" -Binar
 https://github.com/andyjmorgan/WOLMesh/tree/master/Publish
 
 1. On a target machine, install the agent msi file. 
-2. Download the nodeconfig.json file and modify the server address
+2. Download the windows-nodeconfig.json file and modify the server address
 
 ```json
 "serveraddress": "https://recording.lab.local:7443",
 ```
 
-3. Drop the nodeconfig.json file into the installation folder
+3. Rename the file to nodeconfig.json and place the file in the installation folder.
 4. Start the Wake On Lan Mesh Agent service.
 5. Your device should now appear in the console.
 
@@ -116,7 +144,7 @@ https://github.com/andyjmorgan/WOLMesh/raw/master/Publish
 
 1. Download the correct version for your build (linux x64, ARM for raspberry pi) above.
 2. Extract the contents to /usr/bin/wolmeshclient or another directory in the linux file system.
-3. Download the daemon-nodeconfig.json file, modify the serveradddress field and store it in the same directory as the installation.
+3. Download the daemon-nodeconfig.json file, modify the serveraddress field, rename it to nodeconfig.json and store it in the same directory as the installation.
 4. Make the file executable:
 
 ```bash
