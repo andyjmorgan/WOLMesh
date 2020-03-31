@@ -9,6 +9,8 @@ This use case really falls down when the user accidentally or intentionally shut
 
 WOLMesh aims to help people who have limitations around Wake on Lan today by providing a Web Portal and REST API to allow administrators to view power status of remote machines and power them on via other machines on the same subnet should they need to.
 
+WOLMesh can also be configured to keep devices (registered, or manual) online during certain times. E.G. if you sent an online time between 9 AM and 5 PM, if a device goes offline, WOLMesh will attempt to wake it up. Further, if devices are offline and the online time begins (say 9 AM) WOLMesh will attempt to wake all the devices and keep them awake.
+
 ## Registered Devices / Relays:
 
 <p align="center">
@@ -204,6 +206,10 @@ Check /var/log/WOLMeshCoreClientDaemon.log
 
 
 # Change Log:
+
+# 1.2 release:
+
+1. Added support for Manual Devices (without an agent).
 
 # 1.1 release:
 
