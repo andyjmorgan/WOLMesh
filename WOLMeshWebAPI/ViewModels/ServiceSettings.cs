@@ -8,6 +8,7 @@ namespace WOLMeshWebAPI.ViewModels
     public class ServiceSettings
     {
         public bool KeepDevicesAwake { get; set; }
+        public bool KeepManualDevicesAwake { get; set; }
         public bool IncludeWeekends { get; set; }
         public int startTime { get; set; }
         public int endTime { get; set; }

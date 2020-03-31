@@ -1,0 +1,130 @@
+<div *ngIf="manualMachines">
+
+
+  <clr-datagrid [(clrDgSelected)]="selected" class="datagrid-compact">
+    <clr-dg-column style="min-width: 35px; width:35px;" [clrDgSortBy]="'machineSummary.isOnline'"></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.machineName'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.lastKnownIP'"><ng-container *clrDgHideableColumn="{hidden: false}">Last Known IP</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.lastKnownIP'"><ng-container *clrDgHideableColumn="{hidden: false}">Broadcast Address</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineSummary.lastKnownIP'"><ng-container *clrDgHideableColumn="{hidden: false}">Last Seen</ng-container></clr-dg-column>
+
+
+
+    <clr-dg-row *clrDgItems="let machine of manualMachines" [clrDgItem]="machine">
+      <clr-dg-cell style="min-width: 35px; width:35px;">
+        <clr-icon shape="computer" [ngClass]="{'is-success' : machine.isOnline}"></clr-icon>
+      </clr-dg-cell>
+      <clr-dg-cell>{{machine.machineName}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.macAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.lastKnownIP}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.broadcastAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{machine.lastHeardFrom | date:'short'}}</clr-dg-cell>
+
+
+    </clr-dg-row>
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+  <button class="btn btn-icon" title="Add Device" aria-label="add" style="margin-left:12px;"><clr-icon shape="plus-circle" (click)="showAddModal = true"></clr-icon></button>
+  <button class="btn btn-icon" title="Refresh" aria-label="refresh"><clr-icon shape="refresh" (click)="ReloadMachines()"></clr-icon></button>
+  <button class="btn btn-success" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="WakeUp()">Wake</button>
+  <button class="btn btn-danger" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()">Delete</button>
+</div>
+
+
+<div *ngIf="wakeUpResults && wakeUpResults.length > 0">
+  <h3>Wake Results:</h3>
+  <clr-datagrid class="datagrid-compact">
+    <clr-dg-column [clrDgSortBy]="'sent'">Result</clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'machineName'"><ng-container *clrDgHideableColumn="{hidden: false}">Machine Name:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgSortBy]="'macAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Mac Address:</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'viaMachine'">Via Machine:</clr-dg-column>
+    <clr-dg-column [clrDgField]="'failureReason'">Failure Reason:</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let result of wakeUpResults" [clrDgItem]="machine">
+      <clr-dg-cell><clr-icon shape="check-circle" size="16" [ngClass]="{'is-success': result.sent,'is-error': !result.sent}" style="margin-right: 5px;"></clr-icon> {{result.sent | booltoresult}}</clr-dg-cell>
+      <clr-dg-cell>{{result.machineName}}</clr-dg-cell>
+      <clr-dg-cell>{{result.macAddress}}</clr-dg-cell>
+      <clr-dg-cell>{{result.viaMachine}}</clr-dg-cell>
+      <clr-dg-cell>{{result.failureReason}}</clr-dg-cell>
+    </clr-dg-row>
+    <clr-dg-footer>
+      <clr-dg-pagination #pagination [clrDgPageSize]="10">
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} Items
+        <clr-dg-page-size [clrPageSizeOptions]="[10,20,50,100]">Items per page</clr-dg-page-size>
+      </clr-dg-pagination>
+    </clr-dg-footer>
+  </clr-datagrid>
+</div>
+
+
+<clr-modal [(clrModalOpen)]="showDeleteModal">
+  <h3 class="modal-title">Confirm Delete</h3>
+  <div class="modal-body">
+    <p>Are you really sure you want to delete these devices?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="ReallyDelete(false)">Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="ReallyDelete(true)">Ok</button>
+  </div>
+</clr-modal>
+
+
+<clr-modal [(clrModalOpen)]="showAddModal" [clrModalSize]="'xl'">
+  <h3 class="modal-title">Add Device:</h3>
+  <div class="modal-body">
+    <form clrForm [formGroup]="SettingsForm">
+      <div class="alert alert-danger" *ngIf="discoveryFailed">
+        <div class="alert-items">
+          <div class="alert-item static" role="alert">
+            <div class="alert-icon-wrapper">
+              <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+            </div>
+            <span class="alert-text">
+              {{discoveryFailureMessage}}
+            </span>
+          </div>
+        </div>
+      </div>
+      <section class="form-block">
+        <div class="form-group">
+          <clr-input-container>
+            <label>DNS Name:</label>
+            <input clrInput type="text" formControlName="HostNameValidator" [value]="newMachineName" [(ngModel)]="newMachineName" />
+            <clr-control-helper>The new machine's dns name</clr-control-helper>
+            <clr-control-error>(Required)</clr-control-error>
+          </clr-input-container>
+          <clr-input-container>
+            <label>Mac Address:</label>
+            <input clrInput type="text" formControlName="MACAddressValidator" [value]="newMachineMacAddress" [(ngModel)]="newMachineMacAddress" />
+            <clr-control-helper>The new machine's Mac Address</clr-control-helper>
+            <clr-control-error>(A valid mac address is required, using ':', '.' or '-')</clr-control-error>
+          </clr-input-container>
+          <clr-input-container>
+            <label>IP Address:</label>
+            <input clrInput type="text" formControlName="IPAddressValidator" [value]="newMachineIPAddress" [(ngModel)]="newMachineIPAddress" />
+            <clr-control-helper>The new machine's IP Address</clr-control-helper>
+            <clr-control-error>(Required)</clr-control-error>
+          </clr-input-container>
+          <clr-input-container>
+            <label>Broadcast Address:</label>
+            <input clrInput type="text" formControlName="BroadcastAddressValidator" [value]="newMachineBroadcastAddress" [(ngModel)]="newMachineBroadcastAddress" />
+            <clr-control-helper>The broadcast address to use to contact this machine, in a network of 192.168.0.0/24, this would be 192.168.0.255.</clr-control-helper>
+            <clr-control-error>(Required)</clr-control-error>
+          </clr-input-container>
+        </div>
+      </section>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" [clrLoading]="discoverybtnState" (click)="Discover()" [disabled]="newMachineName.length <=0">Discover</button>
+    <button type="button" class="btn btn-success" (click)="AddMachine()" [disabled]="!SettingsForm.valid">Add</button>
+  </div>
+</clr-modal>

@@ -24,115 +24,27 @@ namespace WOLMeshWebAPI.Controllers
 
         }
 
-        // GET: api/WakeUp
-        [HttpGet]
-        public List<WOLMeshTypes.Models.WakeUpCallResult> Get()
-        {
-
-            List<WOLMeshTypes.Models.WakeUpCallResult> wcrList = new List<WOLMeshTypes.Models.WakeUpCallResult>();
-
-            List<DB.MachineItems> AllMachines = _context.Machines.ToList();
-
-            List<Hubs.ConnectionList.Connection> activeDevices = Runtime.SharedObjects.GetOnlineSessions();
-
-            foreach (DB.MachineItems machine in AllMachines)
-            {
-                if (activeDevices.Where(x => x.ID == machine.ID).Count() > 0)
-                {
-                    wcrList.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                    {
-                        Sent = false,
-                        FailureReason = "Device is already online",
-                        MachineName = machine.HostName,
-                    });
-                }
-                else
-                {
-                    wcrList.AddRange(Helpers.WakeMachine(machine, _context, _hub, activeDevices));
-
-                    var results = wcrList.Where(x => x.Sent).ToList();
-                    if (results.Count > 0)
-                    {
-                        var activity = new ViewModels.RecentActivity
-                        {
-                            device = machine.HostName,
-                            result = true,
-                            type = ViewModels.RecentActivity.activityType.WakeUpCall,
-                        };
-                        activity.GetActivityDescriptionByType();
-                        Runtime.SharedObjects.AddActivity(activity);
-                    }
-                    else
-                    {
-                        var activity = new ViewModels.RecentActivity
-                        {
-                            device = machine.HostName,
-                            result = false,
-                            type = ViewModels.RecentActivity.activityType.WakeUpCall,
-                            errorReason = "All Attempts made to wake device failed."
-                        };
-                        activity.GetActivityDescriptionByType();
-                        Runtime.SharedObjects.AddActivity(activity);
-                    }
-                }
-
-
-            }
-            return wcrList;
-        }
+  
 
         // GET: api/WakeUp/5
-        [HttpGet("{mac}", Name = "WakeDevice")]
-        public List<WOLMeshTypes.Models.WakeUpCallResult> Get(string mac)
+        [HttpGet("{mac}", Name = "WakeUnknownDevice")]
+        public List<WOLMeshTypes.Models.WakeUpCallResult> Get(string id)
         {
-            mac = mac.Replace(":", "").Replace("-", "");
+            id = id.Replace(":", "").Replace("-", "");
             List<WOLMeshTypes.Models.WakeUpCallResult> wucResults = new List<WOLMeshTypes.Models.WakeUpCallResult>();
-            var machine = _context.MachineNetworkDetails.Where(x => x.MacAddress.ToLower() == mac.ToLower()).FirstOrDefault();
+            //var machine = _context.MachineNetworkDetails.Where(x => x.MacAddress.ToLower() == id.ToLower()).FirstOrDefault();
             List<Hubs.ConnectionList.Connection> activeDevices = Runtime.SharedObjects.GetOnlineSessions();
 
 
-            if (machine != null)
-            {
-                var machineDetails = _context.Machines.Where(x => x.ID == machine.DeviceID).FirstOrDefault();
-                if (machineDetails != null)
-                {
-                    if (activeDevices.Where(x => x.ID == machine.DeviceID).Count() <= 0)
-                    {
-                        wucResults.AddRange(Helpers.WakeMachine(machineDetails, _context, _hub, activeDevices));
-                    }
-                    else
-                    {
-                        wucResults.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                        {
-                            FailureReason = "Machine is online",
-                            Sent = false,
-                            MacAddress = machine.MacAddress,
-                            MachineName = machineDetails.HostName,
-                        });
-                    }
-                }
-                else
-                {
-                    wucResults.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                    {
-                        FailureReason = "Could not find machine details",
-                        Sent = false,
-                        MacAddress = machine.MacAddress,
-                        MachineName = machine.MacAddress,
-                    });
-                }
-            }
-            else
-            {
-                //no machine details, we'll try to wake with a global call:
-                wucResults.AddRange(Helpers.WakeUnknownMachine(_context, _hub, activeDevices, mac));
-            }
+            //no machine details, we'll try to wake with a global call:
+            wucResults.AddRange(Helpers.WakeUnknownMachine(_context, _hub, activeDevices, id));
+            
             var results = wucResults.Where(x => x.Sent).ToList();
             if (results.Count > 0)
             {
                 var activity = new ViewModels.RecentActivity
                 {
-                    device = mac,
+                    device = id,
                     result = true,
                     type = ViewModels.RecentActivity.activityType.UnknownDeviceWakeupCall,
                 };
@@ -143,7 +55,7 @@ namespace WOLMeshWebAPI.Controllers
             {
                 var activity = new ViewModels.RecentActivity
                 {
-                    device = mac,
+                    device = id,
                     result = false,
                     type = ViewModels.RecentActivity.activityType.UnknownDeviceWakeupCall,
                     errorReason = "All Attempts made to wake device failed."
@@ -152,65 +64,6 @@ namespace WOLMeshWebAPI.Controllers
                 Runtime.SharedObjects.AddActivity(activity);
             }
             return wucResults;
-        }
-
-
-        // POST: api/WakeUp
-        [HttpPost]
-        public List<WOLMeshTypes.Models.WakeUpCallResult> Post([FromBody] List<string> ids)
-        {
-            List<WOLMeshTypes.Models.WakeUpCallResult> wcrList = new List<WOLMeshTypes.Models.WakeUpCallResult>();
-
-            List<DB.MachineItems> AllMachines = _context.Machines.ToList();
-
-            List<Hubs.ConnectionList.Connection> activeDevices = Runtime.SharedObjects.GetOnlineSessions();
-
-            foreach (var id in ids)
-            {
-                var machine = _context.MachineNetworkDetails.Where(x => x.DeviceID.ToLower() == id).FirstOrDefault();
-                if (machine != null)
-                {
-                    var machineDetails = _context.Machines.Where(x => x.ID == machine.DeviceID).FirstOrDefault();
-                    if (machineDetails != null)
-                    {
-                        if (activeDevices.Where(x => x.ID == machine.DeviceID).Count() <= 0)
-                        {
-                            wcrList.AddRange(Helpers.WakeMachine(machineDetails, _context, _hub, activeDevices));
-                        }
-                        else
-                        {
-                            wcrList.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                            {
-                                FailureReason = "Machine is online",
-                                Sent = false,
-                                MacAddress = machine.MacAddress,
-                                MachineName = machineDetails.HostName,
-                            });
-                        }
-                    }
-                    else
-                    {
-                        wcrList.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                        {
-                            FailureReason = "Could not find machine details",
-                            Sent = false,
-                            MacAddress = machine.MacAddress,
-                            MachineName = machineDetails.HostName,
-                        });
-                    }
-                }
-                else
-                {
-                    //no machine details, we'll try to wake with a global call:
-                    wcrList.Add(new WOLMeshTypes.Models.WakeUpCallResult
-                    {
-                        FailureReason = "Could not find machine details",
-                        Sent = false,
-                        MacAddress = machine.DeviceID,
-                    });
-                }
-            }
-            return wcrList;
         }
     }
 }

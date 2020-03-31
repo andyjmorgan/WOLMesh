@@ -2,7 +2,7 @@ import { Injectable, Inject, Type } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { MachineItems, WakeUpCallResult, MachineDetailView, NetworkDetailView, ServiceSettings, RecentActivity } from '../classes/types';
+import { MachineItems, WakeUpCallResult, MachineDetailView, NetworkDetailView, ServiceSettings, RecentActivity, ManualMachineDetailView, ManualMachineDiscovery } from '../classes/types';
 
 @Injectable({
   providedIn: 'root'
@@ -14,29 +14,64 @@ export class ConnectorService {
     this.url = baseUrl;
     this.http = http;
   }
-  GetMachines(): Observable<MachineDetailView[]> {
-    return this.http.get<MachineDetailView[]>('api/machines');
-  }
+
+
+  /// networks
   GetNetworks(): Observable<NetworkDetailView[]> {
     return this.http.get<NetworkDetailView[]>('api/networks');
   }
+  DeleteNetwork(id: number): Observable<boolean> {
+    return this.http.delete<boolean>('api/Networks/' + id);
+  }
+
+
+
+  /// service settings
   GetServiceSettings(): Observable<ServiceSettings> {
     return this.http.get<ServiceSettings>('api/servicesettings');
   }
   SaveServiceSettings(settings: ServiceSettings): Observable<object> {
     return this.http.post<object>('api/servicesettings', settings);
   }
-  DeleteNetwork(id: number): Observable<boolean> {
-    return this.http.delete<boolean>('api/Networks/' + id);
+
+
+
+  /// registered device calls
+  GetMachines(): Observable<MachineDetailView[]> {
+    return this.http.get<MachineDetailView[]>('api/machines');
   }
   DeleteMachine(id: string): Observable<boolean> {
     return this.http.delete<boolean>('api/machines/' + id);
   }
-
-  WakeMachines(machines: string[]): Observable<WakeUpCallResult[]> {
-    return this.http.post<WakeUpCallResult[]>('api/wakeup',machines);
+  WakeRegisteredMachines(machines: string[]): Observable<WakeUpCallResult[]> {
+    return this.http.post<WakeUpCallResult[]>('api/wakeregisteredmachine', machines);
   }
 
+
+
+  /// manual device calls
+  GetManualMachines(): Observable<ManualMachineDetailView[]> {
+    return this.http.get<ManualMachineDetailView[]>('api/manualmachine');
+  }
+  DeleteManualMachine(id: number): Observable<boolean> {
+    return this.http.delete<boolean>('api/manualmachine/' + id);
+  }
+  AddManualMachine(machine: ManualMachineDetailView): Observable<object> {
+    return this.http.post<ManualMachineDetailView>('api/manualmachine', machine);
+  }
+  WakeManualMachines(machines: number[]): Observable<WakeUpCallResult[]> {
+    return this.http.post<WakeUpCallResult[]>('api/WakeManualMachine', machines);
+  }
+  DiscoverManualMachine(hostname: string): Observable<ManualMachineDiscovery> {
+    return this.http.get<ManualMachineDiscovery>('api/discovermachine/' + hostname);
+  }
+
+  
+
+
+
+  
+  /// get Activity
   GetActivity(): Observable<RecentActivity[]> {
     return this.http.get<RecentActivity[]>('api/activity');
   }

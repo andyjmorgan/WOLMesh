@@ -1,3 +1,7 @@
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.ProjectInstaller.resources
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.svcMain.resources
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.csproj.GenerateResource.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\NLog.config
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\WOLMeshClientService.exe.config
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\WOLMeshClientService.exe
@@ -65,10 +69,6 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\System.Numeric
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\System.Text.Json.xml
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\bin\Debug\Microsoft.Extensions.Primitives.xml
-C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.csprojAssemblyReference.cache
-C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.ProjectInstaller.resources
-C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.svcMain.resources
-C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.csproj.GenerateResource.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.csproj.CopyComplete
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.exe
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientService\obj\Debug\WOLMeshClientService.pdb

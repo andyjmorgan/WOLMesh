@@ -5,15 +5,20 @@
       <app-devicetable></app-devicetable>
     </clr-tab-content>
   </clr-tab>
-
   <clr-tab>
-    <button clrTabLink>Registered Networks</button>
+    <button clrTabLink>Manual Devices</button>
+    <clr-tab-content *clrIfActive>
+      <app-manualdevicetable></app-manualdevicetable>
+    </clr-tab-content>
+  </clr-tab>
+  <clr-tab>
+    <button clrTabLink>Networks</button>
     <clr-tab-content *clrIfActive>
       <app-networktable></app-networktable>
     </clr-tab-content>
   </clr-tab>
   <clr-tab>
-    <button clrTabLink>Recent Activity</button>
+    <button clrTabLink>Activity</button>
     <clr-tab-content *clrIfActive>
       <app-recentevents></app-recentevents>
     </clr-tab-content>

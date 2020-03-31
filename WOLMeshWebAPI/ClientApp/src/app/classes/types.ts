@@ -12,6 +12,19 @@ export class MachineItems {
   public machineType: string;
 }
 
+
+
+export class ManualMachineDetailView {
+  public id: number;
+  public machineName: string;
+  public macAddress: string;
+  public lastKnownIP: string;
+  public broadcastAddress: string;
+  public isOnline: boolean;
+  public lastHeardFrom: Date;
+
+}
+
 export class WakeUpCallResult {
   public sent: boolean;
   public viaMachine: string;
@@ -36,10 +49,12 @@ export class NetworkDetailView {
   public broadcastAddress: string;
   public subnetMask: string;
   public registeredDevices: number;
+  public manualDevices: number;
   public onlineDevices: number;
 }
 export class ServiceSettings {
   public keepDevicesAwake: boolean;
+  public keepManualDevicesAwake: boolean;
   public includeWeekends: boolean;
   public startTime: number;
   public endTime: number;
@@ -62,4 +77,12 @@ export class RecentActivity {
   public message: string;
   public result: boolean;
   public errorReason: string;
+}
+
+
+export class ManualMachineDiscovery {
+  public  result: boolean;
+  public  errorMessage: string;
+  public ipAddress: string;
+  public  macAddress: string;
 }

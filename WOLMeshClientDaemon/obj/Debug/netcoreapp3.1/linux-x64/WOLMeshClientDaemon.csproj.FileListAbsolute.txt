@@ -238,10 +238,10 @@ C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\l
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\linux-x64\WOLMeshCoreSignalRClient.pdb
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\bin\Debug\netcoreapp3.1\linux-x64\WOLMeshTypes.pdb
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.csprojAssemblyReference.cache
+C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.csproj.CoreCompileInputs.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.AssemblyInfoInputs.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.AssemblyInfo.cs
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.csproj.CopyComplete
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.dll
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.pdb
-C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.csproj.CoreCompileInputs.cache
 C:\Users\andy\source\repos\WOLMesh\WOLMeshClientDaemon\obj\Debug\netcoreapp3.1\linux-x64\WOLMeshClientDaemon.genruntimeconfig.cache

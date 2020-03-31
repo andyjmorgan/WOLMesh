@@ -172,7 +172,7 @@ namespace WOLMeshCoreClientProcess
         public static async void WakeUpCallReceived(object sender, WakeUpCall wakeup)
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Awaking: " + Newtonsoft.Json.JsonConvert.SerializeObject(wakeup, Formatting.Indented));
-            await WOL.WakeOnLan(wakeup, _di.AccessibleNetworks);
+            await WOL.WakeOnLan(wakeup, _di.AccessibleNetworks, _nc.maxPackets);
         }
         public static void OnDisconnect(object sender, string error)
         {

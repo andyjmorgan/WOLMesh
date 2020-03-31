@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WOLMeshWebAPI.Migrations
 {
-    public partial class _12Base : Migration
+    public partial class v2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -48,9 +48,13 @@ namespace WOLMeshWebAPI.Migrations
                 name: "ManualMachines",
                 columns: table => new
                 {
-                    id = table.Column<string>(nullable: false),
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
                     MachineName = table.Column<string>(nullable: true),
-                    MacAddress = table.Column<string>(nullable: true)
+                    MacAddress = table.Column<string>(nullable: true),
+                    lastKnownIP = table.Column<string>(nullable: true),
+                    broadCastAddress = table.Column<string>(nullable: true),
+                    LastWakeCount = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

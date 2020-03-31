@@ -16,7 +16,7 @@ namespace WOLMeshTypes
     {
         //https://stackoverflow.com/questions/861873/wake-on-lan-using-c-sharp
 
-        public static async Task WakeOnLan(WakeUpCall wakeup, List<NetworkDetails> NetworkList)
+        public static async Task WakeOnLan(WakeUpCall wakeup, List<NetworkDetails> NetworkList, int count)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace WOLMeshTypes
                     {
                         try
                         {
-                            await SendWakeOnLan(network.IPAddress, network.BroadcastAddress, magicPacket);
+                            await SendWakeOnLan(network.IPAddress, network.BroadcastAddress, magicPacket, count);
                         }
                         catch (Exception ex)
                         {
@@ -41,7 +41,7 @@ namespace WOLMeshTypes
                NLog.LogManager.GetCurrentClassLogger().Error("Failed to send wake on lan to network with Exception: " + ex.ToString());
             }
        }
-        public static async Task SUbnetDirectedWakeOnLan(string mac, NetworkDetails network)
+        public static async Task SUbnetDirectedWakeOnLan(string mac, NetworkDetails network, int count)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace WOLMeshTypes
                                   
                         try
                         {
-                            await SendWakeOnLan(network.IPAddress, network.BroadcastAddress, magicPacket);
+                            await SendWakeOnLan(network.IPAddress, network.BroadcastAddress, magicPacket, count);
                         }
                         catch (Exception ex)
                         {
@@ -90,7 +90,7 @@ namespace WOLMeshTypes
             }
         }
 
-        static async Task SendWakeOnLan(string localIpAddress, string broadcastAddress, byte[] magicPacket)
+        static async Task SendWakeOnLan(string localIpAddress, string broadcastAddress, byte[] magicPacket, int count)
         {
 
             IPAddress localip = null;
@@ -106,10 +106,15 @@ namespace WOLMeshTypes
             using (UdpClient client = new UdpClient(new IPEndPoint(localip, 0)))
             {
                 client.EnableBroadcast = true;
-                await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 9);
-                await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 7);
+                var i = 1;
+                while(count >= i)
+                {
+                    await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 9);
+                    await client.SendAsync(magicPacket, magicPacket.Length, broadcastAddress, 7);
+                    i += 1;
+                    System.Threading.Thread.Sleep(200);
+                }           
             }
         }
-
     }
 }

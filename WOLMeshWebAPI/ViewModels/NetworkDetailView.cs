@@ -11,6 +11,7 @@ namespace WOLMeshWebAPI.ViewModels
         public string broadcastAddress { get; set; }
         public string subnetMask { get; set; }
         public int registeredDevices { get; set; }
+        public int manualDevices { get; set; }
         public int onlineDevices { get; set; }
     }
 }

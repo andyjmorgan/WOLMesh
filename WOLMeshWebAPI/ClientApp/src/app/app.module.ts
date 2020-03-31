@@ -15,6 +15,7 @@ import { NetworktableComponent } from './shared/networktable/networktable.compon
 import { SettingsComponent } from './shared/settings/settings.component';
 import { Ng5SliderModule } from 'ng5-slider';
 import { RecenteventsComponent } from './shared/recentevents/recentevents.component';
+import { ManualdevicetableComponent } from './shared/manualdevicetable/manualdevicetable.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RecenteventsComponent } from './shared/recentevents/recentevents.compon
     NetworktableComponent,
     SettingsComponent,
     RecenteventsComponent,
+    ManualdevicetableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -28,7 +28,8 @@ namespace WOLMeshWebAPI.Controllers
                 UseDirectedBroadcasts = sc.UseDirectedBroadcasts,
                 PacketsToSend = sc.PacketsToSend,
                 MaxWakeRetries = sc.MaxWakeRetries,
-                MaxStoredActivities = sc.MaxStoredActivities
+                MaxStoredActivities = sc.MaxStoredActivities,
+                KeepManualDevicesAwake = sc.KeepManualDevicesOnline
             };
         }
 
@@ -48,6 +49,7 @@ namespace WOLMeshWebAPI.Controllers
             Runtime.SharedObjects.ServiceConfiguration.PacketsToSend = value.PacketsToSend;
             Runtime.SharedObjects.ServiceConfiguration.MaxWakeRetries = value.MaxWakeRetries;
             Runtime.SharedObjects.ServiceConfiguration.MaxStoredActivities = value.MaxStoredActivities;
+            Runtime.SharedObjects.ServiceConfiguration.KeepManualDevicesOnline = value.KeepManualDevicesAwake;
 
 
             Runtime.SharedObjects.SaveConfig();

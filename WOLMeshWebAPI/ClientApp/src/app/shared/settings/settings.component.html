@@ -35,16 +35,23 @@
             <label>Keep registered devices online during this time period.</label>
           </clr-checkbox-wrapper>
         </clr-toggle-container>
+        <clr-toggle-container>
+          <label>Keep Manual Devices online:</label>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle formControlName="ManualAutoWakeUp" [value]="settings.keepManualDevicesAwake" [(ngModel)]="settings.keepManualDevicesAwake" />
+            <label>Keep manual devices online during this time period.</label>
+          </clr-checkbox-wrapper>
+        </clr-toggle-container>
         <clr-input-container>
           <label>Power policy wake attempts:</label>
-          <input clrInput type="number" formControlName="MaxWakeRetries" [value]="settings.maxWakeRetries" [(ngModel)]="settings.maxWakeRetries"  [disabled]="settings.keepDevicesAwake" />
+          <input clrInput type="number" formControlName="MaxWakeRetries" [value]="settings.maxWakeRetries" [(ngModel)]="settings.maxWakeRetries" [disabled]="settings.keepDevicesAwake" />
           <clr-control-helper>The Maximum ammount of time a the server will try to wake a device during a power policy operation.</clr-control-helper>
           <clr-control-error>(min 3, max 10)</clr-control-error>
         </clr-input-container>
         <clr-toggle-container>
           <label>Include Weekends:</label>
           <clr-checkbox-wrapper>
-            <input type="checkbox" clrToggle formControlName="AutoWakeUpAtWeekend" [value]="settings.includeWeekends" [(ngModel)]="settings.includeWeekends" [disabled]="settings.keepDevicesAwake"/>
+            <input type="checkbox" clrToggle formControlName="AutoWakeUpAtWeekend" [value]="settings.includeWeekends" [(ngModel)]="settings.includeWeekends" [disabled]="settings.keepDevicesAwake" />
             <label>Keep registered devices online at weekends, too.</label>
           </clr-checkbox-wrapper>
         </clr-toggle-container>
@@ -54,7 +61,7 @@
   <div>
     <table>
       <tr>
-        <td style="width:312px; font-weight:600; font-size: .541667rem;">Online Range:</td>
+        <td style="width:312px; font-weight:600; font-size: .541667rem;">Online Time Range:</td>
         <td style="width:600px; height: 110px"><ng5-slider [(value)]="settings.startTime" [(highValue)]="settings.endTime" [options]="sliderOptions"></ng5-slider></td>
       </tr>
     </table>

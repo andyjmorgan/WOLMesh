@@ -31,7 +31,7 @@
       </clr-dg-pagination>
     </clr-dg-footer>
   </clr-datagrid>
-  <button class="btn btn-icon" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadEvents()"></clr-icon></button>
+  <button class="btn btn-icon" aria-label="home" title="Refresh" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadEvents()"></clr-icon></button>
   <button class="btn btn-danger" [clrLoading]="wakeLoading"  (click)="Delete()" [disabled]="events?.length == 0">Clear</button>
 </div>
 

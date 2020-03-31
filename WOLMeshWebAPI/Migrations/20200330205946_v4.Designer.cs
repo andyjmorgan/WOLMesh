@@ -9,8 +9,8 @@ using WOLMeshWebAPI.DB;
 namespace WOLMeshWebAPI.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20200327115736_1.2 Base")]
-    partial class _12Base
+    [Migration("20200330205946_v4")]
+    partial class v4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -83,13 +83,29 @@ namespace WOLMeshWebAPI.Migrations
 
             modelBuilder.Entity("WOLMeshWebAPI.DB.ManualMachineItems", b =>
                 {
-                    b.Property<string>("id")
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("LastHeardFrom")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("LastWakeCount")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("MacAddress")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("MachineName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("broadCastAddress")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("isOnline")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("lastKnownIP")
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");

@@ -10,6 +10,103 @@ namespace WOLMeshWebAPI.Controllers
 {
     public class Helpers
     {
+        public static ViewModels.ManualMachineDiscovery DiscoverManualMachine(string dnsName)
+        {
+            NLog.LogManager.GetCurrentClassLogger().Info("Performing DNS lookup on: {0}", dnsName);
+
+            System.Net.IPAddress[] addresses = null;
+            try
+            {
+                addresses = System.Net.Dns.GetHostAddresses(dnsName);
+                NLog.LogManager.GetCurrentClassLogger().Debug("Performing DNS lookup returned {0} addresses.", addresses.Length);
+
+            }
+            catch (Exception ex)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Performing DNS lookup failed on dns resoltion: {0}", ex.ToString());
+
+                return new ViewModels.ManualMachineDiscovery
+                {
+                    result = false,
+                    errorMessage = "Could not perform a dns lookup, " + ex.ToString()
+                };
+            }
+            if (addresses.Length == 0)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Performing DNS lookup failed on as no addresses were received from dns");
+
+                return new ViewModels.ManualMachineDiscovery
+                {
+                    result = false,
+                    errorMessage = "Could not perform a dns lookup, no results received"
+                };
+            }
+            else if (addresses.Length > 1)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Performing DNS lookup failed on as too many addresses were received from dns");
+                return new ViewModels.ManualMachineDiscovery
+                {
+                    result = false,
+                    errorMessage = "Dns Lookup returned more than one result. "
+                };
+            }
+            else
+            {
+
+                try
+                {
+                    if (ArpLookup.Arp.IsSupported)
+                    {
+                        NLog.LogManager.GetCurrentClassLogger().Debug("Performing Arp lookup on: {0} ", addresses[0].ToString());
+                        Task<System.Net.NetworkInformation.PhysicalAddress> result = ArpLookup.Arp.LookupAsync(addresses[0]);
+                        result.Wait();
+                        NLog.LogManager.GetCurrentClassLogger().Debug("Performing Arp lookup returned: {0} ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented));
+
+                        if (result.IsCompletedSuccessfully)
+                        {
+                            NLog.LogManager.GetCurrentClassLogger().Info("Performing Arp lookup completed successfully. DNS Name: {0} - IP: {1} - Mac: {2}", dnsName, addresses[0].ToString(), result.Result.ToString());
+
+
+                            return new ViewModels.ManualMachineDiscovery
+                            {
+                                result = true,
+                                ipAddress = addresses[0].ToString(),
+                                macAddress = WOLMeshTypes.IPAddressExtensions.FormatMacAddress(result.Result)
+                            };
+                        }
+                        else
+                        {
+                            NLog.LogManager.GetCurrentClassLogger().Error("Arp task failed: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented));
+                            return new ViewModels.ManualMachineDiscovery
+                            {
+                                result = false,
+                                errorMessage = "Could not perform an arp lookup, the task failed",
+                            };
+                        }
+                    }
+                    else
+                    {
+                        NLog.LogManager.GetCurrentClassLogger().Error("Could not perform Arp lookup on: {0} as arp lookup is not supported on this platform", addresses[0].ToString());
+
+                        return new ViewModels.ManualMachineDiscovery
+                        {
+                            result = false,
+                            errorMessage = "ARP lookup is not supported on this platform"
+                        };
+                    }
+                }
+                catch(Exception ex)
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Error("Could not perform Arp lookup as the arp query threw an exception: {0}", ex.ToString());
+
+                    return new ViewModels.ManualMachineDiscovery
+                    {
+                        result = false,
+                        errorMessage = "Could not perform Arp lookup as the arp query threw an exception: "+ ex.ToString()
+                    };
+                }
+            }
+        }
 
         public static ViewModels.SummaryView GetSummaryView(DB.AppDBContext _context)
         {
@@ -35,6 +132,7 @@ namespace WOLMeshWebAPI.Controllers
                     subnetMask = network.SubnetMask,
                 };
                 ndv.onlineDevices = Runtime.SharedObjects.GetOnlineSessionsByNetwork(network.NetworkID);
+                ndv.manualDevices = _context.ManualMachines.Where(x => x.broadCastAddress == network.BroadcastAddress && x.isOnline).Count();
                 ndv.registeredDevices = _context.MachineNetworkDetails.Where(x => x.NetworkID == network.NetworkID).Count();
                 lndv.Add(ndv);
             }
@@ -72,8 +170,8 @@ namespace WOLMeshWebAPI.Controllers
                                 {
                                     BroadcastAddress = networkObject.BroadcastAddress,
                                     MacAddress = network.MacAddress,
-                                    SubnetMask = networkObject.SubnetMask
-                                }, Runtime.SharedObjects.localNetworks);
+                                    SubnetMask = networkObject.SubnetMask,
+                                }, Runtime.SharedObjects.localNetworks, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
                                 wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                                 {
                                     MachineName = machine.HostName,
@@ -156,7 +254,7 @@ namespace WOLMeshWebAPI.Controllers
                                     SubnetMask = networkObject.SubnetMask,
                                     MacAddress = network.MacAddress
                                 };
-                                WOLMeshTypes.WOL.SUbnetDirectedWakeOnLan(network.MacAddress, lnd);
+                                WOLMeshTypes.WOL.SUbnetDirectedWakeOnLan(network.MacAddress, lnd, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
                                 wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                                 {
                                     MachineName = machine.HostName,
@@ -222,6 +320,156 @@ namespace WOLMeshWebAPI.Controllers
             return wucResult;
         }
 
+        public static List<WOLMeshTypes.Models.WakeUpCallResult> WakeManualMachine(DB.ManualMachineItems machine, DB.AppDBContext _context, IHubContext<Hubs.WOLMeshHub> _hub, List<Hubs.ConnectionList.Connection> activeDevices)
+        {
+            NLog.LogManager.GetCurrentClassLogger().Debug("Attempting to wake up Device: {0}", JsonConvert.SerializeObject(machine, Formatting.Indented));
+            List<WOLMeshTypes.Models.WakeUpCallResult> wucResult = new List<WOLMeshTypes.Models.WakeUpCallResult>();
+
+
+            //using servers local network
+            var ServerLocalNetwork = Runtime.SharedObjects.localNetworks.Where(x => x.BroadcastAddress == machine.broadCastAddress).FirstOrDefault();
+            if (ServerLocalNetwork != null)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Trace("WakeMachine Using ServerLocalNetwork: {0}", JsonConvert.SerializeObject(ServerLocalNetwork, Formatting.Indented));
+
+                NLog.LogManager.GetCurrentClassLogger().Debug("Attempting to wake up Device: {0} using servers local network.", machine.MachineName);
+
+                try
+                {
+                    WOLMeshTypes.WOL.WakeOnLan(new WakeUpCall
+                    {
+                        BroadcastAddress = machine.broadCastAddress,
+                        MacAddress = machine.MacAddress,
+                        SubnetMask = ServerLocalNetwork.SubnetMask
+                    }, Runtime.SharedObjects.localNetworks, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
+                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                    {
+                        MachineName = machine.MachineName,
+                        Sent = true,
+                        MacAddress = machine.MacAddress,
+                        ViaMachine = Environment.MachineName
+                    });
+                }
+
+                catch (Exception ex)
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Error("Failed to relay a wakeup to {0} from the server: {2}", machine.MachineName, ex.ToString());
+                }
+            }
+
+
+            //checking for relay hubs
+            foreach (var network in _context.Networks)
+            {
+                if(network.BroadcastAddress == machine.broadCastAddress)
+                {
+                    var relayHubs = activeDevices.Where(x => x.AccessibleNetworks.Contains(network.NetworkID)).ToList();
+                    if (relayHubs.Count > 0)
+                    {
+                        NLog.LogManager.GetCurrentClassLogger().Trace("WakeMachine Using relayhubs: {0}", JsonConvert.SerializeObject(relayHubs, Formatting.Indented));
+
+                        NLog.LogManager.GetCurrentClassLogger().Debug("Found {0} relays to wake up Device: {1}. Will use up to: {2}", relayHubs.Count,
+                            machine.MachineName,
+                            Runtime.SharedObjects.ServiceConfiguration.relayCount);
+
+                        var relays = relayHubs.Take(Runtime.SharedObjects.ServiceConfiguration.relayCount).ToList();
+
+
+                        //use the relays
+                        foreach (var relayhub in relays)
+                        {
+                            NLog.LogManager.GetCurrentClassLogger().Trace("WakeMachine Using relayhub: {0}", JsonConvert.SerializeObject(relayhub, Formatting.Indented));
+
+                            try
+                            {
+                                NLog.LogManager.GetCurrentClassLogger().Debug("Attempting to wake up Device: {0} using relay: {1}.", machine.MachineName, relayhub.name);
+
+                                _hub.Clients.Client(relayhub.ConnectionID).SendAsync("WakeUp", new WOLMeshTypes.Models.WakeUpCall
+                                {
+                                    BroadcastAddress = machine.broadCastAddress,
+                                    MacAddress = machine.MacAddress,
+                                    SubnetMask = network.SubnetMask,
+                                });
+                                wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                                {
+                                    MachineName = machine.MachineName,
+                                    Sent = true,
+                                    MacAddress = machine.MacAddress,
+                                    ViaMachine = relayhub.name
+                                });
+                            }
+                            catch (Exception ex)
+                            {
+                                NLog.LogManager.GetCurrentClassLogger().Error("Attempting to wake up Device: {0} using a relay failed with Exception: {1}", machine.MachineName, ex.ToString());
+
+                                wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                                {
+                                    MachineName = machine.MachineName,
+                                    Sent = false,
+                                    MacAddress = machine.MacAddress,
+                                    ViaMachine = relayhub.name,
+                                    FailureReason = "An Exception occurred while sending message to mesh: " + ex.ToString()
+                                });
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            //using direct broadcast
+            if (Runtime.SharedObjects.ServiceConfiguration.UseDirectedBroadcasts)
+            {
+                try
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Debug("Attempting to wake up Device: {0} using a directed broadcast.", machine.MachineName);
+
+                    NetworkDetails lnd = new NetworkDetails
+                    {
+                        BroadcastAddress = machine.broadCastAddress,
+                        SubnetMask = "n/a",
+                        MacAddress = machine.MacAddress
+                    };
+                    WOLMeshTypes.WOL.SUbnetDirectedWakeOnLan(machine.MacAddress, lnd, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
+                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                    {
+                        MachineName = machine.MachineName,
+                        Sent = true,
+                        MacAddress = machine.MacAddress,
+                        ViaMachine = "Directed Broadcast (" + lnd.BroadcastAddress + ")"
+                    });
+                }
+                catch (Exception ex)
+                {
+                    NLog.LogManager.GetCurrentClassLogger().Error("Attempting to wake up Device: {0} using a directed broadcast failed with Exception: {1}", machine.MachineName, ex.ToString());
+
+                    wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                    {
+                        MachineName = machine.MachineName,
+                        Sent = false,
+                        MacAddress = machine.MacAddress,
+                        ViaMachine = "Directed Broadcast",
+                        FailureReason = ex.ToString()
+                    });
+                }
+            }
+
+
+            if (wucResult.Count <= 0)
+            {
+                NLog.LogManager.GetCurrentClassLogger().Error("Attempting to wake up Device: {0} failed as no relays or directly connected networks were available to relay the message.");
+
+                wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
+                {
+                    MachineName = machine.MachineName,
+                    Sent = false,
+                    MacAddress = machine.MacAddress,
+                    FailureReason = "No Matching Networks found for device"
+                }); 
+            }
+            return wucResult;
+        }
+
         public static List<WOLMeshTypes.Models.WakeUpCallResult> WakeUnknownMachine(DB.AppDBContext _context, IHubContext<Hubs.WOLMeshHub> _hub, List<Hubs.ConnectionList.Connection> activeDevices, string macaddress)
         {
             List<WOLMeshTypes.Models.WakeUpCallResult> wucResult = new List<WOLMeshTypes.Models.WakeUpCallResult>();
@@ -244,7 +492,7 @@ namespace WOLMeshWebAPI.Controllers
                             SubnetMask = network.SubnetMask,
                             MacAddress = macaddress
                         };
-                        WOLMeshTypes.WOL.SUbnetDirectedWakeOnLan(macaddress, lnd);
+                        WOLMeshTypes.WOL.SUbnetDirectedWakeOnLan(macaddress, lnd, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
                         wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                         {
                             MachineName = macaddress,
@@ -284,7 +532,7 @@ namespace WOLMeshWebAPI.Controllers
                             BroadcastAddress = network.BroadcastAddress,
                             MacAddress = macaddress,
                             SubnetMask = network.SubnetMask
-                        }, Runtime.SharedObjects.localNetworks);
+                        }, Runtime.SharedObjects.localNetworks, Runtime.SharedObjects.ServiceConfiguration.PacketsToSend);
                         wucResult.Add(new WOLMeshTypes.Models.WakeUpCallResult
                         {
                             MachineName = macaddress,

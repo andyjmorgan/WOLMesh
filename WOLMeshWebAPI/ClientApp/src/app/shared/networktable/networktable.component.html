@@ -3,11 +3,13 @@
     <clr-dg-column [clrDgSortBy]="'broadcastAddress'"><ng-container *clrDgHideableColumn="{hidden: false}">Broadcast Address</ng-container></clr-dg-column>
     <clr-dg-column [clrDgSortBy]="'subnetMask'"><ng-container *clrDgHideableColumn="{hidden: false}">Subnet Mask</ng-container></clr-dg-column>
     <clr-dg-column [clrDgField]="'registeredDevices'"><ng-container *clrDgHideableColumn="{hidden: false}">Registered Devices</ng-container></clr-dg-column>
+    <clr-dg-column [clrDgField]="'registeredDevices'"><ng-container *clrDgHideableColumn="{hidden: false}">Manual Devices</ng-container></clr-dg-column>
     <clr-dg-column [clrDgField]="'onlineDevices'"><ng-container *clrDgHideableColumn="{hidden: false}">Online Devices</ng-container></clr-dg-column>
     <clr-dg-row *clrDgItems="let network of networks" [clrDgItem]="network">
       <clr-dg-cell>{{network.broadcastAddress}}</clr-dg-cell>
       <clr-dg-cell>{{network.subnetMask}}</clr-dg-cell>
       <clr-dg-cell>{{network.registeredDevices}}</clr-dg-cell>
+      <clr-dg-cell>{{network.manualDevices}}</clr-dg-cell>
       <clr-dg-cell>{{network.onlineDevices}}</clr-dg-cell>
     </clr-dg-row>
     <clr-dg-footer>
@@ -18,7 +20,7 @@
       </clr-dg-pagination>
     </clr-dg-footer>
   </clr-datagrid>
-  <button class="btn btn-icon" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadNetworks()"></clr-icon></button>
+  <button class="btn btn-icon" title="Refresh" aria-label="home" style="margin-left:12px;"><clr-icon shape="refresh" (click)="ReloadNetworks()"></clr-icon></button>
   <button class="btn btn-danger" [clrLoading]="wakeLoading" [disabled]="selected.length <=0" (click)="Delete()">Delete</button>
 </div>
 

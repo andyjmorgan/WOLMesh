@@ -61,6 +61,9 @@ export class SettingsComponent implements OnInit {
       AutoWakeUp: [null, [
         Validators.required
       ]],
+      ManualAutoWakeUp: [null, [
+        Validators.required
+      ]],
       AutoWakeUpAtWeekend: [null, [
         Validators.required
       ]],

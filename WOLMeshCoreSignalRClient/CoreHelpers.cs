@@ -93,13 +93,16 @@ namespace WOLMeshCoreSignalRClient
                                 {
                                     var ips = new IPSegment(c.Address.ToString(), c.IPv4Mask.ToString());
 
+                                    
                                     di.AccessibleNetworks.Add(new NetworkDetails
                                     {
+
                                         IPAddress = c.Address.ToString(),
                                         MacAddress = physicalAddress.ToString(),
                                         BroadcastAddress = IpHelpers.ToIpString(ips.BroadcastAddress),
                                         SubnetMask = c.IPv4Mask.ToString(),
                                     });
+                                    
                                 }
 
                             }

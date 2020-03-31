@@ -380,7 +380,7 @@ namespace WOLMeshClientService
         public static async void WakeUpCallReceived(object sender, WakeUpCall wakeup)
         {
              NLog.LogManager.GetCurrentClassLogger().Info("Awaking: " + Newtonsoft.Json.JsonConvert.SerializeObject(wakeup, Formatting.Indented));
-            await WOL.WakeOnLan(wakeup, machineDetails.AccessibleNetworks);
+            await WOL.WakeOnLan(wakeup, machineDetails.AccessibleNetworks, _config.maxPackets);
         }
         public static void OnDisconnect(object sender, string error)
         {

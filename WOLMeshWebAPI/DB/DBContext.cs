@@ -26,9 +26,14 @@ namespace WOLMeshWebAPI.DB
     public class ManualMachineItems
     {
         [Key]
-        public string id { get; set; }
+        public int id { get; set; }
         public string MachineName { get; set; }
         public string MacAddress { get; set; }
+        public string lastKnownIP { get; set; }
+        public string broadCastAddress { get; set; }
+        public int LastWakeCount { get; set; }
+        public bool isOnline { get; set; }
+        public DateTime LastHeardFrom { get; set; }
 
     }
     public class Networks

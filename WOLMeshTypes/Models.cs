@@ -98,6 +98,8 @@ namespace WOLMeshTypes
             public string FailureReason { get; set; }
         }
 
+
+
         public class MachineDetails
         {
             public class MachineItems
@@ -125,6 +127,7 @@ namespace WOLMeshTypes
 
             }
 
+
             public MachineItems machineSummary { get; set; }
             public List<DeviceNetworkDetails> MappedNetworks { get; set; }
             public MachineDetails()
@@ -132,6 +135,7 @@ namespace WOLMeshTypes
                 MappedNetworks = new List<DeviceNetworkDetails>();
             }
         }
+
 
     }
 }

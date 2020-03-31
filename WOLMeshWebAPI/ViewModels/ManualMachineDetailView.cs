@@ -7,8 +7,13 @@ namespace WOLMeshWebAPI.ViewModels
 {
     public class ManualMachineDetailView
     {
-        public string id { get; set; }
-        public string name { get; set; }
-        public string macAddress { get; set; }
+        public int id { get; set; }
+        public string MachineName { get; set; }
+        public string MacAddress { get; set; }
+        public string lastKnownIP { get; set; }
+        public string broadcastAddress { get; set; }
+        public bool isOnline { get; set; }
+        public DateTime lastHeardFrom { get; set; }
+
     }
 }

@@ -81,13 +81,29 @@ namespace WOLMeshWebAPI.Migrations
 
             modelBuilder.Entity("WOLMeshWebAPI.DB.ManualMachineItems", b =>
                 {
-                    b.Property<string>("id")
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("LastHeardFrom")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("LastWakeCount")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("MacAddress")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("MachineName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("broadCastAddress")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("isOnline")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("lastKnownIP")
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");

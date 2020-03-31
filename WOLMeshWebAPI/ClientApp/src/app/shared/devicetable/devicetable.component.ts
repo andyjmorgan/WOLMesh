@@ -45,7 +45,7 @@ export class DevicetableComponent implements OnInit {
       this.selected.forEach(item => {
         idList.push(item.machineSummary.id);
       });
-      this.connector.WakeMachines(idList).subscribe(
+      this.connector.WakeRegisteredMachines(idList).subscribe(
 
         _results => {
           this.wakeUpResults = _results;

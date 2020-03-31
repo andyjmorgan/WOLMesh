@@ -14,6 +14,7 @@ namespace WOLMeshWebAPI.Models
         public string SSLCertificatePFXPassword { get; set; }
         public int HeartBeatIntervalSeconds { get; set; }
         public bool KeepDevicesOnline { get; set; }
+        public bool KeepManualDevicesOnline { get; set; }
         public bool KeepDevicesOnlineAtWeekend { get; set; }
         public int KeepDevicesOnlineStartHour { get; set; }
         public int KeepDevicesOnlineEndHour { get; set; }

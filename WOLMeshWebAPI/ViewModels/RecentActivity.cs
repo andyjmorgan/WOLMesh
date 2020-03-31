@@ -15,6 +15,7 @@ namespace WOLMeshWebAPI.ViewModels
             WakeUpCall,
             PolicyWakeUpCall,
             UnknownDeviceWakeupCall,
+            ManualDeviceWakeupCall,
             DeviceAdded,
             DeviceOnline,
             DeviceUpdate,
@@ -57,6 +58,9 @@ namespace WOLMeshWebAPI.ViewModels
                     break;
                 case activityType.WakeUpCall:
                     message =  "A wake up call was sent to the device. ";
+                    break;
+                case activityType.ManualDeviceWakeupCall:
+                    message = "A wake up call was sent to the device. ";
                     break;
                 case activityType.PolicyWakeUpCall:
                     message =  "The power policy sent a wake up call to the device. ";

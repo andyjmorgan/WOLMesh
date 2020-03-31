@@ -183,7 +183,7 @@ namespace WOLMeshClientDaemon
         public static async void WakeUpCallReceived(object sender, WakeUpCall wakeup)
         {
             NLog.LogManager.GetCurrentClassLogger().Info("Awaking: " + JsonConvert.SerializeObject(wakeup, Formatting.Indented));
-            await WOL.WakeOnLan(wakeup, _di.AccessibleNetworks);
+            await WOL.WakeOnLan(wakeup, _di.AccessibleNetworks,_dnc.maxPackets);
         }
         public static void OnDisconnect(object sender, string error)
         {

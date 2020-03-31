@@ -22,7 +22,7 @@ namespace WOLMeshWebAPI.Runtime
                 {
                     var configString = System.IO.File.ReadAllText(SettingsFilePath);
                     Runtime.SharedObjects.ServiceConfiguration = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.ServiceSettings>(configString);
-                    if(ServiceConfiguration.DBVersion == 0)
+                    if (ServiceConfiguration.DBVersion < 2)
                     {
                         string dbPath = Directory.GetCurrentDirectory() + @"\local.db";
                         if (System.IO.File.Exists(dbPath))
@@ -30,7 +30,7 @@ namespace WOLMeshWebAPI.Runtime
                             NLog.LogManager.GetCurrentClassLogger().Info("Deleting old Database");
                             System.IO.File.Delete(dbPath);
                         }
-                        ServiceConfiguration.DBVersion = 1;
+                        ServiceConfiguration.DBVersion = 2;
                         SaveConfig();
                     }
                 }
@@ -141,8 +141,6 @@ namespace WOLMeshWebAPI.Runtime
                             device = i.name,
                             result = error.Length == 0,
                             errorReason = error,
-
-
                         };
                         disconnectActivity.GetActivityDescriptionByType();
                         AddActivity(disconnectActivity);
